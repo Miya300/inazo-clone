@@ -36,7 +36,9 @@ export default function Home() {
         .from("courses")
         .select("*");
 
-      console.log(data);
+      console.log("件数:", data?.length);
+      console.log("データ:", data);
+      console.log("エラー:", error);
 
       if (!error && data) {
         setCourses(data);
@@ -75,6 +77,10 @@ export default function Home() {
         <h1 className="text-6xl font-extrabold mb-8 text-blue-400 text-center">
           稲蔵
         </h1>
+
+        <p className="text-center text-slate-400 mb-6">
+          登録科目数: {courses.length}
+        </p>
 
         <input
           value={keyword}
