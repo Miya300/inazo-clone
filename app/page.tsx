@@ -46,15 +46,28 @@ export default function Home() {
     loadData();
   }, []);
 
-  const filtered = courses
-    .filter((c) =>
-      c.subject.includes(keyword)
-    )
-    .sort((a, b) =>
-      sortOrder === "high"
-        ? b.easy_rate - a.easy_rate
-        : a.easy_rate - b.easy_rate
-    );
+const filtered = courses
+  .filter((c) =>
+    c.subject.includes(keyword)
+  )
+  .sort((a, b) => {
+    switch (sortOrder) {
+      case "easy-high":
+        return b.easy_rate - a.easy_rate;
+
+      case "easy-low":
+        return a.easy_rate - b.easy_rate;
+
+      case "excellent-high":
+        return (
+          b.excellent_rate -
+          a.excellent_rate
+        );
+
+      default:
+        return 0;
+    }
+  });
 
   return (
     <main className="max-w-5xl mx-auto p-8">
@@ -83,6 +96,12 @@ export default function Home() {
         >
           楽単率低い順
         </button>
+        <button
+  onClick={() => setSortOrder("excellent-high")}
+  className="bg-yellow-500 text-white px-4 py-2 rounded"
+>
+  優単率高い順
+</button>
       </div>
 
       <div className="mt-6 space-y-4">
