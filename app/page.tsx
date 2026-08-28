@@ -89,20 +89,22 @@ export default function Home() {
     });
 
   return (
-    <main className="min-h-screen bg-slate-900 text-white">
+    <main className="min-h-screen bg-gradient-to-b from-slate-100 via-blue-50 to-slate-200 text-slate-900">
       <div className="max-w-5xl mx-auto p-4 md:p-8">
 
-        <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-blue-400 text-center">
+        <h1 className="text-5xl md:text-8xl font-black mb-4 text-blue-900 text-center drop-shadow-lg">
+
           NUKYOYO Search
         </h1>
-<p className="text-center text-xl text-slate-300 mb-2">
+<p className="text-center text-xl text-slate-700 font-semibold mb-2">
   長崎大学教養教育 成績分布検索サービス
 </p>
 
-<p className="text-center text-slate-400 mb-8">
+<p className="text-center text-slate-600 text-2xl mb-8">
   Nagasaki University Kyoyo Search
 </p>
-        <p className="text-center text-xl font-semibold text-slate-300 mb-8">
+
+        <p className="text-center text-xl font-semibold text-slate-700 mb-8">
           📚 登録科目数: {courses.length}
         </p>
 
@@ -114,13 +116,16 @@ export default function Home() {
             }
             className="
               w-full
-              p-4
-              text-lg
-              rounded-2xl
-              bg-slate-800
+              p-6
+              text-2xl
+              rounded-full
+              bg-white
               border-2
-              border-slate-600
-              text-white
+              border-blue-200
+              text-slate-700
+              shadow-2xl
+              focus:outline-none
+              focus:border-blue-400
               placeholder-slate-400
               shadow-lg
               focus:outline-none
@@ -143,14 +148,21 @@ export default function Home() {
     onClick={() => setSemester("all")}
     className={`
       w-full
-      py-4
-      rounded-2xl
-      font-bold
-      mb-3
+      py-6
+      rounded-3xl
+      font-black
+      mb-4
+      bg-white
+      text-slate-800
+      border-2
+      border-blue-200
+      shadow-2xl
+      hover:shadow-blue-200
+      transition-all
       ${
         semester === "all"
-          ? "bg-slate-500"
-          : "bg-slate-700"
+          ? "ring-4 ring-blue-300"
+          : ""
       }
     `}
   >
@@ -162,7 +174,12 @@ export default function Home() {
     <button
       onClick={() => setSemester("前期")}
       className={`
-        py-3 rounded-xl font-bold
+        py-3 
+        rounded-xl 
+        font-bold
+        text-white
+        text-2xl
+        drop-shadow-md
         ${
           semester === "前期"
             ? "bg-blue-400"
@@ -176,7 +193,12 @@ export default function Home() {
     <button
       onClick={() => setSemester("後期")}
       className={`
-        py-3 rounded-xl font-bold
+        py-3 
+        rounded-xl 
+        font-bold
+        text-white
+        text-2xl
+        drop-shadow-md
         ${
           semester === "後期"
             ? "bg-purple-400"
@@ -190,7 +212,12 @@ export default function Home() {
     <button
       onClick={() => setSemester("１Q")}
       className={`
-        py-3 rounded-xl font-bold
+        py-3 
+        rounded-xl 
+        font-bold
+        text-white
+        text-2xl
+        drop-shadow-md
         ${
           semester === "１Q"
             ? "bg-cyan-400"
@@ -204,7 +231,12 @@ export default function Home() {
     <button
       onClick={() => setSemester("２Q")}
       className={`
-        py-3 rounded-xl font-bold
+        py-3 
+        rounded-xl 
+        font-bold
+        text-white
+        text-2xl
+        drop-shadow-md
         ${
           semester === "２Q"
             ? "bg-teal-400"
@@ -218,7 +250,12 @@ export default function Home() {
     <button
       onClick={() => setSemester("３Q")}
       className={`
-        py-3 rounded-xl font-bold
+        py-3 
+        rounded-xl 
+        font-bold
+        text-white
+        text-2xl
+        drop-shadow-md
         ${
           semester === "３Q"
             ? "bg-orange-400"
@@ -232,7 +269,12 @@ export default function Home() {
     <button
       onClick={() => setSemester("４Q")}
       className={`
-        py-3 rounded-xl font-bold
+        py-3 
+        rounded-xl 
+        font-bold
+        text-white
+        text-2xl
+        drop-shadow-md
         ${
           semester === "４Q"
             ? "bg-pink-400"
@@ -285,21 +327,20 @@ export default function Home() {
             <div
               key={c.id}
               className="
-                bg-slate-800/70
-                backdrop-blur-sm
+                bg-white
+                rounded-3xl
+                p-6
+                shadow-xl
                 border
-                border-slate-700
-                rounded-2xl
-                p-5
-                shadow-lg
+                border-blue-100
               "
             >
 
-              <h2 className="text-xl md:text-3xl font-bold mb-2 break-words">
+              <h2 className="text-2xl md:text-3xl font-black mb-4 break-words text-slate-800">
                 {c.subject}
               </h2>
 
-              <div className="space-y-1">
+              <div className="space-y-2 text-slate-700 text-lg">
 
                 <p>
                   📅 年度：
@@ -308,24 +349,24 @@ export default function Home() {
 
                 <p>
                   🗓 学期：
-                  <span className="font-bold text-cyan-300">
+                  <span className="font-bold text-sky-600">
                     {c.semester ?? "未設定"}
                   </span>
                 </p>
 
-                <p>
+                <p className="text-green-600 font-bold">
                   ✅ 楽単率：
                   {(c.easy_rate * 100).toFixed(1)}%
                 </p>
 
-                <p>
+                <p className="text-amber-500 font-bold">
                   🌟 優単率：
                   {(c.excellent_rate * 100).toFixed(1)}%
                 </p>
 
               </div>
 
-              <div className="mt-6 h-64">
+              <div className="mt-4 h-52">
                 <ResponsiveContainer
                   width="100%"
                   height="100%"
