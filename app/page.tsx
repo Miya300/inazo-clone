@@ -132,7 +132,7 @@ export default function Home() {
               focus:border-blue-500
               transition
             "
-            placeholder="🔍 科目名・年度で検索..."
+            placeholder="🔍 講義名・年度・学期で検索..."
           />
 
           <p className="text-slate-400 mt-2 text-center">
