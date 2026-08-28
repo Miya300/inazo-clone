@@ -93,9 +93,15 @@ export default function Home() {
       <div className="max-w-5xl mx-auto p-4 md:p-8">
 
         <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-blue-400 text-center">
-          稲蔵
+          NUKYOYO Search
         </h1>
+<p className="text-center text-xl text-slate-300 mb-2">
+  長崎大学教養教育 成績分布検索サービス
+</p>
 
+<p className="text-center text-slate-400 mb-8">
+  Nagasaki University Kyoyo Search
+</p>
         <p className="text-center text-xl font-semibold text-slate-300 mb-8">
           📚 登録科目数: {courses.length}
         </p>
@@ -129,89 +135,116 @@ export default function Home() {
           </p>
         </div>
 
-        {/* 学期フィルター */}
+{/* 学期フィルター */}
 
-        <div className="grid grid-cols-2 md:grid-cols-7 gap-3 mb-6">
+<div className="mb-6">
 
-          <button
-            onClick={() => setSemester("all")}
-            className={`py-3 rounded-xl font-bold ${
-              semester === "all"
-                ? "bg-slate-500"
-                : "bg-slate-700"
-            }`}
-          >
-            全期間
-          </button>
+  <button
+    onClick={() => setSemester("all")}
+    className={`
+      w-full
+      py-4
+      rounded-2xl
+      font-bold
+      mb-3
+      ${
+        semester === "all"
+          ? "bg-slate-500"
+          : "bg-slate-700"
+      }
+    `}
+  >
+    全期間
+  </button>
 
-          <button
-            onClick={() => setSemester("前期")}
-            className={`py-3 rounded-xl font-bold ${
-              semester === "前期"
-                ? "bg-blue-400"
-                : "bg-blue-600"
-            }`}
-          >
-            前期
-          </button>
+  <div className="grid grid-cols-2 gap-3">
 
-          <button
-            onClick={() => setSemester("後期")}
-            className={`py-3 rounded-xl font-bold ${
-              semester === "後期"
-                ? "bg-purple-400"
-                : "bg-purple-600"
-            }`}
-          >
-            後期
-          </button>
+    <button
+      onClick={() => setSemester("前期")}
+      className={`
+        py-3 rounded-xl font-bold
+        ${
+          semester === "前期"
+            ? "bg-blue-400"
+            : "bg-blue-600"
+        }
+      `}
+    >
+      前期
+    </button>
 
-          <button
-            onClick={() => setSemester("１Q")}
-            className={`py-3 rounded-xl font-bold ${
-              semester === "１Q"
-                ? "bg-cyan-400"
-                : "bg-cyan-600"
-            }`}
-          >
-            １Q
-          </button>
+    <button
+      onClick={() => setSemester("後期")}
+      className={`
+        py-3 rounded-xl font-bold
+        ${
+          semester === "後期"
+            ? "bg-purple-400"
+            : "bg-purple-600"
+        }
+      `}
+    >
+      後期
+    </button>
 
-          <button
-            onClick={() => setSemester("２Q")}
-            className={`py-3 rounded-xl font-bold ${
-              semester === "２Q"
-                ? "bg-teal-400"
-                : "bg-teal-600"
-            }`}
-          >
-            ２Q
-          </button>
+    <button
+      onClick={() => setSemester("１Q")}
+      className={`
+        py-3 rounded-xl font-bold
+        ${
+          semester === "１Q"
+            ? "bg-cyan-400"
+            : "bg-cyan-600"
+        }
+      `}
+    >
+      １Q
+    </button>
 
-          <button
-            onClick={() => setSemester("３Q")}
-            className={`py-3 rounded-xl font-bold ${
-              semester === "３Q"
-                ? "bg-orange-400"
-                : "bg-orange-600"
-            }`}
-          >
-            ３Q
-          </button>
+    <button
+      onClick={() => setSemester("２Q")}
+      className={`
+        py-3 rounded-xl font-bold
+        ${
+          semester === "２Q"
+            ? "bg-teal-400"
+            : "bg-teal-600"
+        }
+      `}
+    >
+      ２Q
+    </button>
 
-          <button
-            onClick={() => setSemester("４Q")}
-            className={`py-3 rounded-xl font-bold ${
-              semester === "４Q"
-                ? "bg-pink-400"
-                : "bg-pink-600"
-            }`}
-          >
-            ４Q
-          </button>
+    <button
+      onClick={() => setSemester("３Q")}
+      className={`
+        py-3 rounded-xl font-bold
+        ${
+          semester === "３Q"
+            ? "bg-orange-400"
+            : "bg-orange-600"
+        }
+      `}
+    >
+      ３Q
+    </button>
 
-        </div>
+    <button
+      onClick={() => setSemester("４Q")}
+      className={`
+        py-3 rounded-xl font-bold
+        ${
+          semester === "４Q"
+            ? "bg-pink-400"
+            : "bg-pink-600"
+        }
+      `}
+    >
+      ４Q
+    </button>
 
+  </div>
+</div>
         {/* ソート */}
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6">
