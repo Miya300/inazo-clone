@@ -198,14 +198,17 @@ export default function Home() {
     <button
       onClick={() => setSemester("後期")}
       className={`
-        py-4
-        rounded-3xl
-        font-black
-        text-2xl
-        text-white
-        border-4
-        border-purple-300
-        shadow-xl
+      py-6
+      rounded-3xl
+      font-black
+      mb-4
+      bg-white
+      text-slate-800
+      border-2
+      border-purple-300
+      shadow-2xl
+      hover:shadow-blue-200
+      transition-all
         ${
           semester === "後期"
             ? "bg-purple-400"
@@ -219,14 +222,17 @@ export default function Home() {
     <button
       onClick={() => setSemester("１Q")}
       className={`
-        py-4
-        rounded-3xl
-        font-black
-        text-2xl
-        text-white
-        border-4
-        border-cyan-300
-        shadow-xl
+      py-6
+      rounded-3xl
+      font-black
+      mb-4
+      bg-white
+      text-slate-800
+      border-2
+      border-cyan-300
+      shadow-2xl
+      hover:shadow-blue-200
+      transition-all
         ${
           semester === "１Q"
             ? "bg-cyan-400"
@@ -240,14 +246,17 @@ export default function Home() {
     <button
       onClick={() => setSemester("２Q")}
       className={`
-        py-4
-        rounded-3xl
-        font-black
-        text-2xl
-        text-white
-        border-4
-        border-teal-300
-        shadow-xl
+       py-6
+      rounded-3xl
+      font-black
+      mb-4
+      bg-white
+      text-slate-800
+      border-2
+      border-teal-300
+      shadow-2xl
+      hover:shadow-blue-200
+      transition-all
         ${
           semester === "２Q"
             ? "bg-teal-400"
@@ -261,14 +270,17 @@ export default function Home() {
     <button
       onClick={() => setSemester("３Q")}
       className={`
-        py-4
-        rounded-3xl
-        font-black
-        text-2xl
-        text-white
-        border-4
-        border-orange-300
-        shadow-xl
+      py-6
+      rounded-3xl
+      font-black
+      mb-4
+      bg-white
+      text-slate-800
+      border-2
+      border-orange-300
+      shadow-2xl
+      hover:shadow-blue-200
+      transition-all
         ${
           semester === "３Q"
             ? "bg-orange-400"
@@ -282,14 +294,17 @@ export default function Home() {
     <button
       onClick={() => setSemester("４Q")}
       className={`
-        py-4
-        rounded-3xl
-        font-black
-        text-2xl
-        text-white
-        border-4
-        border-pink-300
-        shadow-xl
+      py-6
+      rounded-3xl
+      font-black
+      mb-4
+      bg-white
+      text-slate-800
+      border-2
+      border-pink-300
+      shadow-2xl
+      hover:shadow-blue-200
+      transition-all
         ${
           semester === "４Q"
             ? "bg-pink-400"
