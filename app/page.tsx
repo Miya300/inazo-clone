@@ -54,6 +54,20 @@ export default function Home() {
 </section>
       <div className="max-w-5xl mx-auto space-y-6">
 
+        {/* 履修支援 */}
+        <Link href="/risyu-support1" className="block">
+          <div className="bg-white rounded-3xl shadow-xl p-8 border border-slate-200 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all">
+
+            <h2 className="text-4xl font-black text-slate-700">
+              📅 履修支援
+            </h2>
+
+            <p className="text-slate-500 mt-2">
+              履修登録をサポート
+            </p>
+
+          </div>
+        </Link>
         {/* NUKYOYO Search */}
         <Link href="/nukyoyo-search" className="block">
           <div className="bg-white rounded-3xl shadow-xl p-8 border border-blue-100 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all">
@@ -68,21 +82,6 @@ export default function Home() {
 
             <p className="text-blue-500 mt-2">
               Nagasaki University Kyoyo Search
-            </p>
-
-          </div>
-        </Link>
-
-        {/* 履修支援 */}
-        <Link href="/risyu-support1" className="block">
-          <div className="bg-white rounded-3xl shadow-xl p-8 border border-slate-200 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all">
-
-            <h2 className="text-4xl font-black text-slate-700">
-              📅 履修支援
-            </h2>
-
-            <p className="text-slate-500 mt-2">
-              履修登録をサポート
             </p>
 
           </div>
