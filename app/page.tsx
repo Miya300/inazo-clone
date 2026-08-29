@@ -169,12 +169,12 @@ export default function Home() {
     全期間
   </button>
 
-  <div className="grid grid-cols-2 gap-6">
+  <div className="grid grid-cols-2 gap-3">
 
     <button
       onClick={() => setSemester("前期")}
       className={`
-      py-6
+      py-10
       rounded-3xl
       font-black
       mb-4
@@ -198,7 +198,7 @@ export default function Home() {
     <button
       onClick={() => setSemester("後期")}
       className={`
-      py-6
+      py-10
       rounded-3xl
       font-black
       mb-4
@@ -222,7 +222,7 @@ export default function Home() {
     <button
       onClick={() => setSemester("１Q")}
       className={`
-      py-6
+      py-10
       rounded-3xl
       font-black
       mb-4
@@ -246,7 +246,7 @@ export default function Home() {
     <button
       onClick={() => setSemester("２Q")}
       className={`
-       py-6
+       py-10
       rounded-3xl
       font-black
       mb-4
@@ -270,7 +270,7 @@ export default function Home() {
     <button
       onClick={() => setSemester("３Q")}
       className={`
-      py-6
+      py-10
       rounded-3xl
       font-black
       mb-4
@@ -294,7 +294,7 @@ export default function Home() {
     <button
       onClick={() => setSemester("４Q")}
       className={`
-      py-6
+      py-10
       rounded-3xl
       font-black
       mb-4
