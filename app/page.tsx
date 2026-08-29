@@ -319,7 +319,17 @@ export default function Home() {
 </div>
         {/* ソート */}
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6">
+        <div className="w-full
+             py-10
+             rounded-3xl
+             font-black
+             text-4xl
+             bg-white
+             text-green-600
+             border-4
+             border-green-300
+             shadow-xl">
+
 
           <button
             onClick={() =>
