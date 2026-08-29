@@ -151,6 +151,7 @@ export default function Home() {
       py-6
       rounded-3xl
       font-black
+      text-xl
       mb-4
       bg-white
       text-slate-800
@@ -177,6 +178,7 @@ export default function Home() {
       py-10
       rounded-3xl
       font-black
+      text-xl
       mb-4
       bg-white
       text-slate-800
@@ -201,6 +203,7 @@ export default function Home() {
       py-10
       rounded-3xl
       font-black
+      text-xl
       mb-4
       bg-white
       text-slate-800
@@ -225,6 +228,7 @@ export default function Home() {
       py-10
       rounded-3xl
       font-black
+      text-xl
       mb-4
       bg-white
       text-slate-800
@@ -249,6 +253,7 @@ export default function Home() {
        py-10
       rounded-3xl
       font-black
+      text-xl
       mb-4
       bg-white
       text-slate-800
@@ -273,6 +278,7 @@ export default function Home() {
       py-10
       rounded-3xl
       font-black
+      text-xl
       mb-4
       bg-white
       text-slate-800
@@ -297,6 +303,7 @@ export default function Home() {
       py-10
       rounded-3xl
       font-black
+      text-xl
       mb-4
       bg-white
       text-slate-800
