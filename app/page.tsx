@@ -326,7 +326,7 @@ export default function Home() {
 </div>
         {/* ソート */}
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-2">
 
           <button
             onClick={() =>
