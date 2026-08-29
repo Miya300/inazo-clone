@@ -169,7 +169,7 @@ export default function Home() {
     全期間
   </button>
 
-  <div className="grid grid-cols-2 gap-3">
+  <div className="grid grid-cols-2 gap-2">
 
     <button
       onClick={() => setSemester("前期")}
