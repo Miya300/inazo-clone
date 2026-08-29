@@ -326,12 +326,12 @@ export default function Home() {
               setSortOrder("easy-high")
             }
             className="w-full
-            py-10
+            py-6
             rounded-3xl
             font-black
-            text-4xl
+            text-2xl
             bg-white
-            text-green-600
+            text-slate-900
             border-4
             border-green-300
             shadow-xl"
