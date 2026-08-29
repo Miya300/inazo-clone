@@ -38,15 +38,22 @@ export default function Home() {
         </Link>
 
         {/* 履修支援 */}
-        <div className="bg-white rounded-3xl shadow-xl p-8 border border-slate-200">
-          <h2 className="text-4xl font-black text-slate-700">
-            📝 履修支援
-          </h2>
+        <Link
+  href="/risyu-support1"
+  className="block"
+>
+  <div className="bg-white rounded-3xl shadow-xl p-8 border border-slate-200 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all">
 
-          <p className="text-slate-500 mt-2">
-            準備中
-          </p>
-        </div>
+    <h2 className="text-4xl font-black text-slate-700">
+      📝 履修支援
+    </h2>
+
+    <p className="text-slate-500 mt-2">
+      履修登録をサポート
+    </p>
+
+  </div>
+</Link>
 
         {/* 時間割作成 */}
         <div className="bg-white rounded-3xl shadow-xl p-8 border border-slate-200">
