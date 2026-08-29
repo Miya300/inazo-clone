@@ -105,13 +105,17 @@ export default function Home() {
 </p>
 
 <div className="bg-white rounded-3xl shadow-xl p-6 mb-8 border border-blue-100">
-  <h2 className="text-3xl font-black text-blue-800 mb-2">
-    📚 NUKYOYO Search
-  </h2>
+<h2 className="text-3xl font-black text-blue-800 mb-2">
+  📚 NUKYOYO Search
+</h2>
 
-  <p className="text-slate-700">
-    長崎大学教養教育 成績分布検索サービス
-  </p>
+<p className="text-slate-700 text-lg">
+  長崎大学教養教育 成績分布検索サービス
+</p>
+
+<p className="text-slate-500 text-sm mt-2">
+  Nagasaki University Kyoyo Search
+</p>
 </div>
 
 <p className="text-center text-xl font-semibold text-slate-700 mb-8">
