@@ -181,7 +181,7 @@ export default function Home() {
       bg-white
       text-slate-800
       border-2
-      border-blue-200
+      border-sky-400
       shadow-2xl
       hover:shadow-blue-200
       transition-all
