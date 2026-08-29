@@ -174,12 +174,17 @@ export default function Home() {
     <button
       onClick={() => setSemester("前期")}
       className={`
-        py-3 
-        rounded-xl 
-        font-bold
-        text-white
-        text-2xl
-        drop-shadow-md
+      py-6
+      rounded-3xl
+      font-black
+      mb-4
+      bg-white
+      text-slate-800
+      border-2
+      border-blue-200
+      shadow-2xl
+      hover:shadow-blue-200
+      transition-all
         ${
           semester === "前期"
             ? "bg-blue-400"
