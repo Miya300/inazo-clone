@@ -142,7 +142,7 @@ export default function Home() {
 
 {/* 学期フィルター */}
 
-<div className="mb-6">
+<div className="mb-3">
 
   <button
     onClick={() => setSemester("all")}
