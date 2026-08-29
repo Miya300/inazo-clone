@@ -175,11 +175,10 @@ export default function Home() {
     <button
       onClick={() => setSemester("前期")}
       className={`
-      py-10
+      py-6
       rounded-3xl
       font-black
       text-xl
-      mb-4
       bg-white
       text-slate-800
       border-2
@@ -200,11 +199,10 @@ export default function Home() {
     <button
       onClick={() => setSemester("後期")}
       className={`
-      py-10
+      py-6
       rounded-3xl
       font-black
       text-xl
-      mb-4
       bg-white
       text-slate-800
       border-2
