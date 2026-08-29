@@ -198,12 +198,14 @@ export default function Home() {
     <button
       onClick={() => setSemester("後期")}
       className={`
-        py-3 
-        rounded-xl 
-        font-bold
-        text-white
+        py-4
+        rounded-3xl
+        font-black
         text-2xl
-        drop-shadow-md
+        text-white
+        border-4
+        border-purple-300
+        shadow-xl
         ${
           semester === "後期"
             ? "bg-purple-400"
@@ -217,12 +219,14 @@ export default function Home() {
     <button
       onClick={() => setSemester("１Q")}
       className={`
-        py-3 
-        rounded-xl 
-        font-bold
-        text-white
+        py-4
+        rounded-3xl
+        font-black
         text-2xl
-        drop-shadow-md
+        text-white
+        border-4
+        border-cyan-300
+        shadow-xl
         ${
           semester === "１Q"
             ? "bg-cyan-400"
@@ -236,12 +240,14 @@ export default function Home() {
     <button
       onClick={() => setSemester("２Q")}
       className={`
-        py-3 
-        rounded-xl 
-        font-bold
-        text-white
+        py-4
+        rounded-3xl
+        font-black
         text-2xl
-        drop-shadow-md
+        text-white
+        border-4
+        border-teal-300
+        shadow-xl
         ${
           semester === "２Q"
             ? "bg-teal-400"
@@ -255,12 +261,14 @@ export default function Home() {
     <button
       onClick={() => setSemester("３Q")}
       className={`
-        py-3 
-        rounded-xl 
-        font-bold
-        text-white
+        py-4
+        rounded-3xl
+        font-black
         text-2xl
-        drop-shadow-md
+        text-white
+        border-4
+        border-orange-300
+        shadow-xl
         ${
           semester === "３Q"
             ? "bg-orange-400"
@@ -274,12 +282,14 @@ export default function Home() {
     <button
       onClick={() => setSemester("４Q")}
       className={`
-        py-3 
-        rounded-xl 
-        font-bold
-        text-white
+        py-4
+        rounded-3xl
+        font-black
         text-2xl
-        drop-shadow-md
+        text-white
+        border-4
+        border-pink-300
+        shadow-xl
         ${
           semester === "４Q"
             ? "bg-pink-400"
