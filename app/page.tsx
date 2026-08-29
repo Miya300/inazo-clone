@@ -24,9 +24,7 @@ export default function Home() {
   <div className="space-y-6 text-slate-700 text-lg leading-8">
 
     <p>
-      NUSNAVIは、長崎大学へ入学した学生が
-     <br />
-      より充実した大学生活のスタートダッシュを切るための
+      NUSNAVIは、長崎大学へ入学した学生がより充実した大学生活のスタートダッシュを切るための
      <br />
       総合支援プラットフォームです。
     </p>
