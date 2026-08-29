@@ -327,7 +327,7 @@ export default function Home() {
               setSortOrder("easy-high")
             }
             className="w-full
-            py-6
+            py-4
             rounded-3xl
             font-black
             text-2xl
@@ -345,7 +345,7 @@ export default function Home() {
               setSortOrder("easy-low")
             }
             className="w-full
-            py-6
+            py-4
             rounded-3xl
             font-black
             text-2xl
@@ -363,7 +363,7 @@ export default function Home() {
               setSortOrder("excellent-high")
             }
             className="w-full
-            py-6
+            py-4
             rounded-3xl
             font-black
             text-2xl
