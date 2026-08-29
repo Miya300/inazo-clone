@@ -223,11 +223,10 @@ export default function Home() {
     <button
       onClick={() => setSemester("１Q")}
       className={`
-      py-10
+      py-6
       rounded-3xl
       font-black
       text-xl
-      mb-4
       bg-white
       text-slate-800
       border-2
@@ -248,11 +247,10 @@ export default function Home() {
     <button
       onClick={() => setSemester("２Q")}
       className={`
-       py-10
+       py-6
       rounded-3xl
       font-black
       text-xl
-      mb-4
       bg-white
       text-slate-800
       border-2
@@ -273,11 +271,10 @@ export default function Home() {
     <button
       onClick={() => setSemester("３Q")}
       className={`
-      py-10
+      py-6
       rounded-3xl
       font-black
       text-xl
-      mb-4
       bg-white
       text-slate-800
       border-2
@@ -298,11 +295,10 @@ export default function Home() {
     <button
       onClick={() => setSemester("４Q")}
       className={`
-      py-10
+      py-6
       rounded-3xl
       font-black
       text-xl
-      mb-4
       bg-white
       text-slate-800
       border-2
