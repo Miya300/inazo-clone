@@ -325,7 +325,16 @@ export default function Home() {
             onClick={() =>
               setSortOrder("easy-high")
             }
-            className="bg-green-500 text-white py-3 rounded-xl font-bold"
+            className="w-full
+            py-10
+            rounded-3xl
+            font-black
+            text-4xl
+            bg-white
+            text-green-600
+            border-4
+            border-green-300
+            shadow-xl"
           >
             楽単率高い順
           </button>
