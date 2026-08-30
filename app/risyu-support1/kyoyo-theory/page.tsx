@@ -10,7 +10,7 @@ export default function KyoyoTheoryPage() {
           href="/risyu-support1"
           className="inline-block mb-8 px-5 py-3 bg-white text-blue-800 font-bold rounded-2xl border-2 border-blue-200 shadow-md hover:shadow-xl transition-all"
         >
-          ← 履修支援へ戻る
+          ← NUKYO REGI Suppoへ戻る
         </Link>
 
         {/* タイトル */}
