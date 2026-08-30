@@ -9,17 +9,44 @@ export default function RisyuSupportPage() {
         {/* NUSNAVIへ戻る */}
         <Link
           href="/"
-          className="inline-block mb-6 px-6 py-3 bg-white text-blue-800 font-bold rounded-2xl border-2 border-blue-200 shadow-lg hover:shadow-xl transition-all"
+          className="inline-block mb-8 px-6 py-3 bg-white text-blue-800 font-bold rounded-2xl border-2 border-blue-200 shadow-lg hover:shadow-xl transition-all"
         >
           ← NUSNAVIへ戻る
         </Link>
 
-        {/* タイトル */}
-        <h1 className="text-5xl md:text-6xl font-black text-blue-900 mb-8">
-          📅 履修支援
+        {/* NUSNAVIタイトル */}
+        <h1 className="text-5xl md:text-8xl font-black mb-4 text-blue-900 text-center drop-shadow-lg">
+          NUSNAVI
         </h1>
 
-        {/* 教養教育〈理論編〉 */}
+        {/* サイト説明 */}
+        <p className="text-center text-xl text-slate-700 font-semibold mb-2">
+          長崎大学生のための総合支援サイト
+        </p>
+
+        {/* 英語タイトル */}
+        <p className="text-center text-slate-600 text-2xl mb-8">
+          Nagasaki University Registration Support
+        </p>
+
+        {/* NUKYO REGI Support */}
+        <div className="bg-white rounded-3xl shadow-xl p-6 mb-8 border border-blue-100 text-center">
+
+          <h2 className="text-5xl md:text-6xl font-black text-blue-800 mb-2">
+            📅 NUKYO REGI Suppo
+          </h2>
+
+          <p className="text-slate-700 text-lg">
+            長崎大学 履修登録支援サービス
+          </p>
+
+          <p className="text-slate-500 text-sm mt-2">
+            Nagasaki University Registration Support
+          </p>
+
+        </div>
+
+        {/* 教養教育〈総論編〉 */}
         <Link
           href="/risyu-support1/kyoyo-theory"
           className="block"

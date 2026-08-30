@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-100 via-blue-50 to-slate-200 p-8">
 
+      {/* サイトタイトル */}
       <h1 className="text-6xl md:text-8xl font-black text-center text-blue-900 mb-4">
         NUSNAVI
       </h1>
@@ -11,66 +12,80 @@ export default function Home() {
       <p className="text-center text-2xl text-slate-700 mb-4">
         新・長崎大学生のための総合支援サイト
       </p>
-      
+
       <p className="text-center text-slate-600 text-xl mb-10">
         Nagasaki University Student Navigation
       </p>
-　　　　<section className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 border border-blue-100 mb-10">
 
-  <h2 className="text-4xl md:text-5xl font-black text-blue-800 text-center mb-8">
-    NUSNAVIとは？
-  </h2>
+      {/* NUSNAVIとは？ */}
+      <section className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl p-8 border border-blue-100 mb-10">
 
-  <div className="space-y-6 text-slate-700 text-lg leading-8">
+        <h2 className="text-4xl md:text-5xl font-black text-blue-800 text-center mb-8">
+          NUSNAVIとは？
+        </h2>
 
-    <p>
-      NUSNAVIは、長崎大学へ入学した学生がより充実した大学生活のスタートダッシュを切るための
-     <br />
-      総合支援プラットフォームです。
-    </p>
+        <div className="space-y-6 text-slate-700 text-lg leading-8">
 
-    <div className="bg-blue-50 rounded-2xl p-6">
+          <p>
+            NUSNAVIは、長崎大学へ入学した学生がより充実した大学生活の
+            スタートダッシュを切るための総合支援プラットフォームです。
+          </p>
 
-      <p className="font-bold text-blue-800 mb-4">
-        主なサポート内容
-      </p>
+          {/* 主なサポート内容 */}
+          <div className="bg-blue-50 rounded-2xl p-6">
 
-      <ul className="space-y-3">
-        <li>✅ 履修登録</li>
-        <li>✅ 講義情報の収集</li>
-        <li>✅ 学生生活に関する情報提供</li>
-        <li>✅ 奨学金・学費支援制度案内</li>
-      </ul>
+            <p className="font-bold text-blue-800 mb-4">
+              主なサポート内容
+            </p>
 
-    </div>
+            <ul className="space-y-3">
+              <li>✅ 履修登録</li>
+              <li>✅ 講義情報の収集</li>
+              <li>✅ 学生生活に関する情報提供</li>
+              <li>✅ 奨学金・学費支援制度案内</li>
+            </ul>
 
-    <p>
-      主に新入生から学部2年生を対象としていますが、
-      <br />
-      すべての長崎大学生が活用できるサービスを目指しています。
-    </p>
+          </div>
 
-  </div>
+          <p>
+            主に新入生から学部2年生を対象としていますが、
+            <br />
+            すべての長崎大学生が活用できるサービスを目指しています。
+          </p>
 
-</section>
+        </div>
+      </section>
+
+      {/* サービス一覧 */}
       <div className="max-w-5xl mx-auto space-y-6">
 
         {/* 履修支援 */}
-        <Link href="/risyu-support1" className="block">
-          <div className="bg-white rounded-3xl shadow-xl p-8 border border-slate-200 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all">
+        <Link
+          href="/risyu-support1"
+          className="block"
+        >
+          <div className="bg-white rounded-3xl shadow-xl p-8 border border-blue-100 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all">
 
-            <h2 className="text-4xl font-black text-slate-700">
-              📅 履修支援
+            <h2 className="text-4xl font-black text-blue-800 mb-2">
+              📅 NUKYO REGI Suppo
             </h2>
 
-            <p className="text-slate-500 mt-2">
-              履修登録をサポート
+            <p className="text-slate-700 text-xl">
+              長崎大学 履修登録支援サービス
+            </p>
+
+            <p className="text-blue-500 mt-2">
+              Nagasaki University Registration Support
             </p>
 
           </div>
         </Link>
+
         {/* NUKYOYO Search */}
-        <Link href="/nukyoyo-search" className="block">
+        <Link
+          href="/nukyoyo-search"
+          className="block"
+        >
           <div className="bg-white rounded-3xl shadow-xl p-8 border border-blue-100 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all">
 
             <h2 className="text-4xl font-black text-blue-800 mb-2">
@@ -89,7 +104,10 @@ export default function Home() {
         </Link>
 
         {/* 学生生活支援情報 */}
-        <Link href="/student-support" className="block">
+        <Link
+          href="/student-support"
+          className="block"
+        >
           <div className="bg-white rounded-3xl shadow-xl p-8 border border-slate-200 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all">
 
             <h2 className="text-4xl font-black text-slate-700">

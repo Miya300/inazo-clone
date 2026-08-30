@@ -125,8 +125,8 @@ export default function Home() {
   Nagasaki University Kyoyo Search
 </p>
 
-<div className="bg-white rounded-3xl shadow-xl p-6 mb-8 border border-blue-100">
-<h2 className="text-3xl font-black text-blue-800 mb-2">
+<div className="bg-white rounded-3xl shadow-xl p-6 mb-8 border border-blue-100 text-center">
+<h2 className="text-5xl md:text-6xl font-black text-blue-800 mb-2">
   📚 NUKYOYO Search
 </h2>
 
