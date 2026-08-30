@@ -26,7 +26,7 @@ export default function RisyuSupportPage() {
 
         {/* 英語タイトル */}
         <p className="text-center text-slate-600 text-2xl mb-8">
-          Nagasaki University Registration Support
+          Nagasaki University Student Navigation
         </p>
 
         {/* NUKYO REGI Support */}

@@ -122,7 +122,7 @@ export default function Home() {
 </p>
 
 <p className="text-center text-slate-600 text-2xl mb-8">
-  Nagasaki University Kyoyo Search
+  Nagasaki University Student Navigation
 </p>
 
 <div className="bg-white rounded-3xl shadow-xl p-6 mb-8 border border-blue-100 text-center">
