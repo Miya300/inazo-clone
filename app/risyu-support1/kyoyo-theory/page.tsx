@@ -15,7 +15,7 @@ export default function KyoyoTheoryPage() {
 
         {/* タイトル */}
         <h1 className="text-4xl md:text-6xl font-black text-blue-900 mb-4">
-          📚 教養教育〈理論編〉
+          📚 教養教育〈総論編〉
         </h1>
 
         <h2 className="text-2xl font-bold text-slate-700 mb-8">
@@ -213,7 +213,7 @@ export default function KyoyoTheoryPage() {
           />
 
           <p className="text-sm text-slate-500 mt-3">
-            出典：長崎大学『令和8年度 教養教育 学生便覧』
+            出典：長崎大学『令和8年度 教養教育 学生便覧』 p9
           </p>
         </div>
 
@@ -241,7 +241,7 @@ export default function KyoyoTheoryPage() {
           />
 
           <p className="text-sm text-slate-500 mt-3">
-            出典：長崎大学『令和8年度 教養教育 学生便覧』
+            出典：長崎大学『令和8年度 教養教育 学生便覧』 p9
           </p>
 
           <div className="mt-6 bg-red-50 border-2 border-red-200 rounded-2xl p-6">
@@ -596,8 +596,10 @@ export default function KyoyoTheoryPage() {
           </h2>
 
           <p className="text-slate-700 leading-8 mb-6">
-            オンライン授業についても、卒業要件として修得できる
+            オンライン授業について、卒業要件として修得できる
             単位数に上限があります。
+            <br />
+            しかし、通常は意識しなければ履修上限に達することはありません。
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -646,7 +648,7 @@ export default function KyoyoTheoryPage() {
               "不足する単位区分を確認",
               "選択科目を追加",
               "履修上限を超えていないか確認",
-              "NU-Web等で履修登録",
+              "NU-Web等で履修登録（教養教育＜実践編＞で詳しく解説）",
             ].map((item, index) => (
               <div
                 key={item}
