@@ -198,11 +198,19 @@ export default function KyoyoTheoryPage() {
               学部・学科によって異なります
             </p>
 
-            <ul className="space-y-2 text-slate-700">
-              <li>・必修科目</li>
-              <li>・選択科目</li>
-              <li>・必要単位数</li>
-            </ul>
+            <ul className="space-y-2">
+  <li>
+    <span className="text-red-600 font-bold">🔴 必修科目</span>
+  </li>
+
+  <li>
+    <span className="text-blue-600 font-bold">🔵 選択科目</span>
+  </li>
+
+  <li>
+    <span className="text-green-600 font-bold">🟢 必要単位数</span>
+  </li>
+</ul>
           </div>
 
           {/* 必修科目画像 */}
@@ -230,8 +238,16 @@ export default function KyoyoTheoryPage() {
           </p>
 
           <p className="text-slate-700 leading-8 mb-6">
-            例えば、歯学部では教養教育の必要単位数を確認する必要があります。
+           教養教育基礎科目、プラネタリーヘルス科目、選択科目のそれぞれの小計より
+           <br />
+           多くの単位を取得する必要があります。
           </p>
+　　　　　　<p className="text-red-600 leading-8 mb-6">
+           ＜選択科目の最低修得単位に見られる〇～〇標記について＞
+           <br />
+           例えば工学部の生命・自然科学科目の２～４では、最低２単位を修得する必要があり、かつ４単位より多く修得しても選択科目の小計には４までしか算入されないという意味です。
+          </p>
+
 
           {/* 最低修得単位数画像 */}
           <img
@@ -254,6 +270,7 @@ export default function KyoyoTheoryPage() {
               <strong>科目区分ごとの必要単位数</strong>
               も確認しましょう。
             </p>
+            
           </div>
         </div>
 
@@ -338,7 +355,7 @@ export default function KyoyoTheoryPage() {
             1年次の教養教育では、学部ごとに指定された曜日など、
             大学が示す履修上のルールを確認する必要があります。
           </p>
-
+　　　　　
           <div className="bg-yellow-50 border-2 border-yellow-300 rounded-2xl p-6 mb-8">
             <p className="font-black text-yellow-800 text-lg mb-3">
               ❌ よくある考え方
@@ -395,29 +412,7 @@ export default function KyoyoTheoryPage() {
             ))}
           </div>
 
-          <div className="bg-slate-50 rounded-2xl p-6">
-            <div className="grid grid-cols-2 gap-4 text-center">
-              <div className="bg-white rounded-xl p-5">
-                <p className="font-black text-blue-800">1Q</p>
-                <p className="text-sm text-slate-600">前期前半</p>
-              </div>
-
-              <div className="bg-white rounded-xl p-5">
-                <p className="font-black text-blue-800">2Q</p>
-                <p className="text-sm text-slate-600">前期後半</p>
-              </div>
-
-              <div className="bg-white rounded-xl p-5">
-                <p className="font-black text-blue-800">3Q</p>
-                <p className="text-sm text-slate-600">後期前半</p>
-              </div>
-
-              <div className="bg-white rounded-xl p-5">
-                <p className="font-black text-blue-800">4Q</p>
-                <p className="text-sm text-slate-600">後期後半</p>
-              </div>
-            </div>
-          </div>
+          
 
           <div className="mt-8 grid md:grid-cols-2 gap-6">
 
