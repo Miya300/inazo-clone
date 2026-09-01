@@ -14,15 +14,15 @@ export default function KyoyoTheoryPage() {
         </Link>
 
         {/* タイトル */}
-        <h1 className="text-4xl md:text-6xl font-black text-blue-900 mb-4">
+        <h1 className="text-4xl md:text-6xl font-black text-blue-900 mb-4 text-center">
           📚 教養教育〈総論編〉
         </h1>
 
-        <h2 className="text-2xl font-bold text-slate-700 mb-8">
+        <h2 className="text-2xl font-bold text-slate-700 mb-8 text-center">
           新入生向け・履修登録完全ガイド
         </h2>
 
-        <p className="text-lg text-slate-600 mb-10">
+        <p className="text-lg text-slate-600 mb-10 text-center">
           ―「何を取ればいい？」を解決するための教養教育の基本―
         </p>
 

@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 
 export default function RisyuSupportPage() {
@@ -33,7 +34,7 @@ export default function RisyuSupportPage() {
         <div className="bg-white rounded-3xl shadow-xl p-6 mb-8 border border-blue-100 text-center">
 
           <h2 className="text-5xl md:text-6xl font-black text-blue-800 mb-2">
-            📅 NUKYO REGI Suppo
+            📅 NUKYO REGI Support
           </h2>
 
           <p className="text-slate-700 text-lg">
@@ -46,7 +47,10 @@ export default function RisyuSupportPage() {
 
         </div>
 
-        {/* 教養教育〈総論編〉 */}
+
+        {/* =========================
+            教養教育〈総論編〉
+        ========================= */}
         <Link
           href="/risyu-support1/kyoyo-theory"
           className="block"
@@ -73,7 +77,40 @@ export default function RisyuSupportPage() {
           </div>
         </Link>
 
-        {/* 今後追加する履修支援コンテンツ */}
+
+        {/* =========================
+            教養教育〈実践編〉
+        ========================= */}
+        <Link
+          href="/risyu-support1/kyoyo-practice"
+          className="block mt-8"
+        >
+          <div className="bg-white rounded-3xl shadow-xl p-8 border border-blue-100 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all">
+
+            <h2 className="text-3xl font-black text-blue-800 mb-3">
+              📝 教養教育〈実践編〉
+            </h2>
+
+            <p className="text-xl font-semibold text-slate-700 mb-3">
+              新入生向け・科目選択＆履修登録ガイド
+            </p>
+
+            <p className="text-slate-600 leading-7">
+              実際にどの科目を選び、どのように履修登録するのかを
+              新入生にも分かりやすく解説します。
+            </p>
+
+            <p className="mt-5 font-bold text-blue-600">
+              ▶ 記事を読む
+            </p>
+
+          </div>
+        </Link>
+
+
+        {/* =========================
+            その他の履修支援
+        ========================= */}
         <div className="bg-white rounded-3xl shadow-xl p-8 border border-blue-100 mt-8">
 
           <h2 className="text-3xl font-black text-blue-800 mb-4">
@@ -85,6 +122,7 @@ export default function RisyuSupportPage() {
           </p>
 
         </div>
+
 
       </div>
 
