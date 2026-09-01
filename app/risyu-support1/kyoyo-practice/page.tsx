@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 import Link from "next/link";
 
@@ -68,7 +69,7 @@ export default function KyoyoPracticePage() {
           </h2>
 
           <p className="text-slate-700 leading-8 mb-5">
-            教養教育〈理論編〉では、教養教育の制度や単位の考え方の基本を解説しました。
+            教養教育〈総論編〉では、教養教育の制度や単位の考え方の基本を解説しました。
             このページでは、その知識をもとに実際の履修登録の方法や科目選択を解説します。
           </p>
 
@@ -79,11 +80,73 @@ export default function KyoyoPracticePage() {
             </p>
 
             <ul className="space-y-2 text-slate-700">
-              <li>・長崎大学「令和8年度 教養教育 学生便覧」</li>
-              <li>・長崎大学「令和8年度 教養教育 授業時間割」</li>
-              <li>・NU-Web</li>
-              <li>・NUSNAVI「NUKYOYO Search」</li>
-            </ul>
+
+  <li>
+    <a
+      href="/pdfs/kyoyo-binran.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
+    >
+      📖 令和8年度 教養教育 学生便覧
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="/pdfs/kyoyo-jikanwari.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
+    >
+      📅 令和8年度 教養教育 授業時間割
+    </a>
+  </li>
+
+</ul>
+{/* 関連サービス */}
+<div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+
+  {/* NU-Web */}
+  <a
+    href="https://nuweb.nagasaki-u.ac.jp/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block bg-blue-50 border-2 border-blue-200 rounded-2xl p-6 hover:bg-blue-100 hover:shadow-lg transition-all"
+  >
+    <p className="text-2xl font-black text-blue-800">
+      💻 NU-Web
+    </p>
+
+    <p className="mt-2 text-slate-600">
+      履修登録・成績確認・シラバス閲覧など
+    </p>
+
+    <p className="mt-4 font-bold text-blue-600">
+      ▶ NU-Webへ移動
+    </p>
+  </a>
+
+
+  {/* NUKYOYO Search */}
+  <Link
+    href="/nukyoyo-search"
+    className="block bg-blue-50 border-2 border-blue-200 rounded-2xl p-6 hover:bg-blue-100 hover:shadow-lg transition-all"
+  >
+    <p className="text-2xl font-black text-blue-800">
+      🔍 NUKYOYO Search
+    </p>
+
+    <p className="mt-2 text-slate-600">
+      長崎大学教養教育の成績分布を検索
+    </p>
+
+    <p className="mt-4 font-bold text-blue-600">
+      ▶ NUKYOYO Searchへ移動
+    </p>
+  </Link>
+
+</div>
 
           </div>
 
@@ -220,8 +283,19 @@ export default function KyoyoPracticePage() {
             <Step
               number="1"
               title="NU-Webへログイン"
-              description="長大IDとパスワードを入力してログインします。"
+              description="長大IDとパスワードを入力してログインします。
+              IDとパスワードは入学後に渡されます。"
             />
+             <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-md">
+    <Image
+      src="/images/kyoyo/rishu1.png"
+      alt="NU-Webログイン画面"
+      width={1200}
+      height={800}
+      className="w-full h-auto"
+    />
+  </div>
+            
 
             <Arrow />
 
@@ -230,6 +304,16 @@ export default function KyoyoPracticePage() {
               title="「履修」→「履修登録・登録状況照会」"
               description="履修メニューから「履修登録・登録状況照会」を選択します。"
             />
+            <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-md">
+  <Image
+    src="/images/kyoyo/rishu2.png"
+    alt="履修登録・登録状況照会画面"
+    width={1200}
+    height={800}
+    className="w-full h-auto"
+  />
+</div>
+            
 
             <Arrow />
 
@@ -242,6 +326,15 @@ export default function KyoyoPracticePage() {
 <p className="text-red-600 font-bold text-lg mt-3 mb-6">
    ※クォーター科目(1Q・2Q・3Q・4Q)とセメスター科目（前期・後期）は区別して確認しましょう。
 </p>
+<div className="overflow-hidden rounded-2xl border border-slate-200 shadow-md">
+  <Image
+    src="/images/kyoyo/rishu3.png"
+    alt="学期・クォーター選択画面"
+    width={1200}
+    height={800}
+    className="w-full h-auto"
+  />
+</div>
 
 <Arrow />
 
@@ -251,6 +344,16 @@ export default function KyoyoPracticePage() {
               title="「未登録」をクリック"
               description="登録したい曜日・時限の「未登録」をクリックします。"
             />
+            {/* STEP 4 画面 */}
+<div className="overflow-hidden rounded-2xl border border-slate-200 shadow-md">
+  <Image
+    src="/images/kyoyo/rishu4.png"
+    alt="「未登録」をクリックする画面"
+    width={1200}
+    height={800}
+    className="w-full h-auto"
+  />
+</div>
 
             <Arrow />
 
@@ -328,10 +431,11 @@ export default function KyoyoPracticePage() {
             <p className="mt-3 text-slate-700 leading-8">
               「登録完了」をクリックするところまで行い、
               最後に登録内容を確認しましょう。
-              <p className="text-red-600 font-bold text-lg mt-3 mb-6">
-   ※このボタンを押さないと履修登録は完了しません
-</p>
+    
             </p>
+            <p className="text-red-600 font-bold text-lg mt-3 mb-6">
+  　　　　　　　 ※このボタンを押さないと履修登録は完了しません
+　　　　　　　 </p>
 
           </div>
 
@@ -493,8 +597,24 @@ export default function KyoyoPracticePage() {
               <strong>各カテゴリーの最低修得単位数</strong>と、
               <strong>選択科目全体の必要単位数</strong>の両方を確認する必要があります。
             </p>
-
+    
           </div>
+          <div className="overflow-hidden border border-slate-200 shadow-md">
+  <Image
+    src="/images/kyoyo/rishu8.png"
+    alt="NU-Web画面"
+    width={1200}
+    height={800}
+    className="w-full h-auto"
+  />
+</div>
+<p className="text-slate-700 leading-8">
+              「令和8年度 教養教育 学生便覧」p.９より
+            </p>
+
+          
+          
+
 
         </section>
 
@@ -520,6 +640,19 @@ export default function KyoyoPracticePage() {
             </p>
 
           </div>
+          <div className="overflow-hidden border border-slate-200 shadow-md">
+  <Image
+    src="/images/kyoyo/rishu9.png"
+    alt="NU-Web画面"
+    width={1200}
+    height={800}
+    className="w-full h-auto"
+  />
+</div>
+<p className="text-slate-700 leading-8">
+              「令和8年度 教養教育 学生便覧」p.31より
+            </p>
+
 
         </section>
 
@@ -541,6 +674,7 @@ export default function KyoyoPracticePage() {
               STEP 1
             </p>
 
+
             <h3 className="text-xl font-black text-slate-800 mt-2">
               『教養教育 授業時間割』から探す
             </h3>
@@ -551,6 +685,16 @@ export default function KyoyoPracticePage() {
             </p>
 
           </div>
+          <div className="overflow-hidden border border-slate-200 shadow-md">
+  <Image
+    src="/images/kyoyo/rishu15.png"
+    alt="NU-Web画面"
+    width={1200}
+    height={800}
+    className="w-full h-auto"
+  />
+</div>
+         
 
 
           <Arrow />
@@ -588,6 +732,33 @@ export default function KyoyoPracticePage() {
             </div>
 
           </div>
+          <div className="overflow-hidden border border-slate-200 shadow-md">
+  <Image
+    src="/images/kyoyo/rishu11.png"
+    alt="NU-Web画面"
+    width={1200}
+    height={800}
+    className="w-full h-auto"
+  />
+</div>
+<div className="overflow-hidden border border-slate-200 shadow-md">
+  <Image
+    src="/images/kyoyo/rishu12.png"
+    alt="NU-Web画面"
+    width={1200}
+    height={800}
+    className="w-full h-auto"
+  />
+</div>
+<div className="overflow-hidden border border-slate-200 shadow-md">
+  <Image
+    src="/images/kyoyo/rishu13.png"
+    alt="NU-Web画面"
+    width={1200}
+    height={800}
+    className="w-full h-auto"
+  />
+</div>
 
 
           <Arrow />
