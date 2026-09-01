@@ -68,13 +68,8 @@ export default function KyoyoPracticePage() {
           </h2>
 
           <p className="text-slate-700 leading-8 mb-5">
-            教養教育〈理論編〉では、教養教育の制度や卒業要件、
-            単位の考え方などの基本を解説しました。
-          </p>
-
-          <p className="text-slate-700 leading-8 mb-5">
-            このページでは、その知識をもとに、
-            実際の科目選択や履修登録の方法について解説します。
+            教養教育〈理論編〉では、教養教育の制度や単位の考え方の基本を解説しました。
+            このページでは、その知識をもとに実際の履修登録の方法や科目選択を解説します。
           </p>
 
           <div className="bg-slate-50 rounded-2xl p-5">
@@ -145,6 +140,7 @@ export default function KyoyoPracticePage() {
             </p>
 
           </div>
+          
 
         </section>
 
@@ -178,8 +174,46 @@ export default function KyoyoPracticePage() {
       ※ <strong>必修教養科目は、</strong>『教養教育 授業時間割』の指示に従って登録しましょう。
     </li>
   </ul>
-</div>
+  　{/* 履修登録日程 */}
+<div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-10">
+  <h3 className="text-2xl font-bold text-blue-800 mb-4">
+    📅 令和8年度 履修登録スケジュール（例）
+  </h3>
 
+  <div className="space-y-5 text-slate-700">
+
+    <div>
+      <p className="font-bold text-lg text-blue-700 mb-2">
+        前期（第1・第2クォーター）
+      </p>
+
+      <ul className="space-y-1">
+        <li><strong>履修登録期間</strong><br />3月23日（月）〜4月6日（月）</li>
+        <li className="text-red-600">※選択科目は4月5日（日）まで</li>
+        <li><strong>履修登録調整期間</strong><br />4月7日（火）〜4月20日（月）</li>
+        <li><strong>プラネタリーヘルスⅠ 科目テーマ選択申請期間</strong><br />5月11日（月）〜5月18日（月）</li>
+        <li><strong>プラネタリーヘルスⅠ 科目テーマ選択結果発表</strong><br />6月15日（月）</li>
+      </ul>
+    </div>
+
+    <div>
+      <p className="font-bold text-lg text-blue-700 mb-2">
+        後期（第3・第4クォーター）
+      </p>
+
+      <ul className="space-y-1">
+        <li><strong>履修登録期間</strong><br />9月18日（金）〜9月27日（日）</li>
+        <li className="text-red-600">
+          ※選択科目は9月25日（金）17:00まで
+        </li>
+        <li><strong>履修登録調整期間</strong><br />9月28日（月）〜10月9日（金）</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</div>
+　　
           {/* STEP 1 */}
           <div className="space-y-4">
 
@@ -200,12 +234,17 @@ export default function KyoyoPracticePage() {
             <Arrow />
 
             <Step
-              number="3"
-              title="学期・クォーターを選択"
-              description="登録する学期・クォーターを確認します。"
-            />
+  number="3"
+  title="学期・クォーターを選択"
+  description="登録する学期・クォーターを確認します。"
+/>
 
-            <Arrow />
+<p className="text-red-600 font-bold text-lg mt-3 mb-6">
+   ※クォーター科目(1Q・2Q・3Q・4Q)とセメスター科目（前期・後期）は区別して確認しましょう。
+</p>
+
+<Arrow />
+
 
             <Step
               number="4"
@@ -289,6 +328,9 @@ export default function KyoyoPracticePage() {
             <p className="mt-3 text-slate-700 leading-8">
               「登録完了」をクリックするところまで行い、
               最後に登録内容を確認しましょう。
+              <p className="text-red-600 font-bold text-lg mt-3 mb-6">
+   ※このボタンを押さないと履修登録は完了しません
+</p>
             </p>
 
           </div>
@@ -306,8 +348,7 @@ export default function KyoyoPracticePage() {
           </h2>
 
           <p className="text-slate-700 leading-8 mb-6">
-            履修登録調整期間は、授業開始後に履修科目の追加・削除などを
-            調整するための期間です。
+            履修登録調整期間は、授業開始後に履修科目の追加・削除などを調整するための期間です。
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -359,6 +400,15 @@ export default function KyoyoPracticePage() {
               履修登録調整期間の日程や、追加・削除できる科目には
               条件がある場合があります。必ず最新の大学公式情報を確認してください。
             </p>
+            <p className="font-bold text-red-700">
+令和８年度履修登録調整期間（例）
+</p>
+<p className="text-slate-700 mb-2">
+<strong>前期</strong>：4月7日（火）〜4月20日（月）
+<br />
+
+<strong>後期</strong>：9月28日（月）〜10月9日（金）
+</p>
 
           </div>
 
@@ -440,8 +490,8 @@ export default function KyoyoPracticePage() {
 
             <p className="mt-3 text-slate-700 leading-8">
               学部によって条件は異なりますが、
-              各カテゴリーの最低修得単位数と、
-              選択科目全体の必要単位数の両方を確認する必要があります。
+              <strong>各カテゴリーの最低修得単位数</strong>と、
+              <strong>選択科目全体の必要単位数</strong>の両方を確認する必要があります。
             </p>
 
           </div>
@@ -465,8 +515,8 @@ export default function KyoyoPracticePage() {
             </p>
 
             <p className="text-slate-700 leading-8">
-              テーマ選択期間中に希望するテーマを選択し、
-              そのテーマに沿った授業を履修します。
+              テーマ選択期間中である5月11日（月）から5月18日（月）（例）に希望するテーマを選択し、
+              そのテーマに沿った授業２科目を１年後期に履修します。
             </p>
 
           </div>
