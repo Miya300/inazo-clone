@@ -4,7 +4,9 @@ import Link from "next/link";
 
 export default function KyoyoPracticePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-blue-50 to-slate-100">
+    <main 
+    id="top"
+    className="min-h-screen bg-gradient-to-b from-slate-50 via-blue-50 to-slate-100">
 
       <div className="max-w-5xl mx-auto px-5 py-10">
 
@@ -463,7 +465,7 @@ export default function KyoyoPracticePage() {
                 理由①
               </p>
 
-              <h3 className="font-black text-xl mt-2 mb-3">
+              <h3 className="font-black text-xl mt-2 mb-3 text-black">
                 授業を受けてから判断できる
               </h3>
 
@@ -481,7 +483,7 @@ export default function KyoyoPracticePage() {
                 理由②
               </p>
 
-              <h3 className="font-black text-xl mt-2 mb-3">
+              <h3 className="font-black text-xl mt-2 mb-3 text-black">
                 抽選落選時の選択肢
               </h3>
 
@@ -535,11 +537,11 @@ export default function KyoyoPracticePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-            <div className="bg-slate-50 rounded-2xl p-5 font-bold">
+            <div className="bg-slate-50 rounded-2xl p-5 font-bold text-black">
               📚 選択科目
             </div>
 
-            <div className="bg-slate-50 rounded-2xl p-5 font-bold">
+            <div className="bg-slate-50 rounded-2xl p-5 font-bold text-black">
               🌍 プラネタリーヘルスⅠ科目
             </div>
 
@@ -717,15 +719,15 @@ export default function KyoyoPracticePage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4">
 
-              <div className="bg-white rounded-xl p-4 text-center font-bold">
+              <div className="bg-white rounded-xl p-4 text-center font-bold text-black">
                 授業内容
               </div>
 
-              <div className="bg-white rounded-xl p-4 text-center font-bold">
+              <div className="bg-white rounded-xl p-4 text-center font-bold text-black">
                 評価方法
               </div>
 
-              <div className="bg-white rounded-xl p-4 text-center font-bold">
+              <div className="bg-white rounded-xl p-4 text-center font-bold text-black">
                 到達目標
               </div>
 
@@ -781,15 +783,15 @@ export default function KyoyoPracticePage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4">
 
-              <div className="bg-white rounded-xl p-4 text-center font-bold">
+              <div className="bg-white rounded-xl p-4 text-center font-bold text-black">
                 楽単率
               </div>
 
-              <div className="bg-white rounded-xl p-4 text-center font-bold">
+              <div className="bg-white rounded-xl p-4 text-center font-bold text-black">
                 優単率
               </div>
 
-              <div className="bg-white rounded-xl p-4 text-center font-bold">
+              <div className="bg-white rounded-xl p-4 text-center font-bold text-black">
                 履修者数
               </div>
 
@@ -866,12 +868,12 @@ export default function KyoyoPracticePage() {
         ========================= */}
         <div className="text-center mt-10">
 
-          <Link
-            href="/risyu-support1"
-            className="inline-block px-8 py-4 bg-white text-blue-700 border-2 border-blue-200 rounded-2xl font-bold shadow-lg hover:bg-blue-50 transition"
-          >
-            ← 履修登録支援トップへ戻る
-          </Link>
+        <a
+  href="#top"
+  className="inline-block px-8 py-4 bg-white text-blue-700 border-2 border-blue-200 rounded-2xl font-bold shadow-lg hover:bg-blue-50 transition"
+>
+  ↑ ページトップへ戻る
+</a>
 
         </div>
 

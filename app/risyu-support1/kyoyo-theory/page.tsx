@@ -75,18 +75,18 @@ export default function KyoyoTheoryPage() {
               📌 参考資料
             </p>
 
-            <p className="text-slate-700 leading-7 mb-5">
-              長崎大学『令和8年度 教養教育 学生便覧』
-            </p>
+            
 
-            <a
-              href="/pdfs/handbook.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-4 bg-blue-700 text-white font-bold rounded-2xl shadow-md hover:bg-blue-800 hover:shadow-xl transition-all"
-            >
-              📖 学生便覧を開く
-            </a>
+            <li>
+    <a
+      href="/pdfs/kyoyo-binran.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
+    >
+      📖 長崎大学『令和8年度 教養教育 学生便覧』
+    </a>
+  </li>
           </div>
 
           <div className="mt-6 bg-yellow-50 border-2 border-yellow-300 rounded-2xl p-6">
@@ -371,7 +371,7 @@ export default function KyoyoTheoryPage() {
               ⭕ 基本的な考え方
             </p>
 
-            <div className="space-y-3 text-center font-bold">
+            <div className="space-y-6 text-center font-bold text-xl text-slate-800 max-w-md mx-auto">
               <div>📅 学部の指定曜日</div>
               <div>↓</div>
               <div>📚 その曜日の開講科目</div>
@@ -464,25 +464,25 @@ export default function KyoyoTheoryPage() {
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              <div className="bg-white rounded-xl p-4 text-center">
+              <div className="bg-white rounded-xl p-4 text-center text-black">
                 📅
                 <br />
                 <strong>曜日</strong>
               </div>
 
-              <div className="bg-white rounded-xl p-4 text-center">
+              <div className="bg-white rounded-xl p-4 text-center text-black">
                 ⏰
                 <br />
                 <strong>時限</strong>
               </div>
 
-              <div className="bg-white rounded-xl p-4 text-center">
+              <div className="bg-white rounded-xl p-4 text-center text-black">
                 📆
                 <br />
                 <strong>開講時期</strong>
               </div>
 
-              <div className="bg-white rounded-xl p-4 text-center">
+              <div className="bg-white rounded-xl p-4 text-center text-black">
                 🔢
                 <br />
                 <strong>単位数</strong>
@@ -529,7 +529,7 @@ export default function KyoyoTheoryPage() {
             ))}
           </div>
 
-          <div className="mt-8 bg-slate-50 rounded-2xl p-6 text-center">
+          <div className="mt-8 bg-slate-50 rounded-2xl p-6 text-center text-black">
             <p className="font-bold">📊 1年次の成績を確認</p>
             <p className="my-2">↓</p>
             <p className="font-bold">🔢 取得単位を確認</p>
@@ -818,7 +818,7 @@ export default function KyoyoTheoryPage() {
             最初は複雑に感じますが、
           </p>
 
-          <div className="bg-blue-50 rounded-2xl p-6 text-center font-bold leading-10">
+          <div className="bg-blue-50 rounded-2xl p-6 text-center font-bold leading-10 text-black">
             「卒業に必要なものを確認する」
             <br />
             ↓
