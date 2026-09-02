@@ -25,6 +25,8 @@ type CourseData = {
   excellent_rate: number;
   year: string | null;
   semester: string | null;
+  target_grade: string | null;
+　course_type: string | null;
 };
 
 export default function Home() {
@@ -75,6 +77,13 @@ export default function Home() {
         String(c.year ?? "")
           .toLowerCase()
           .includes(search);
+        (c.target_grade ?? "")
+        　.toLowerCase()
+        　.includes(search) ||
+        (c.course_type ?? "")
+        　.toLowerCase()
+        　.includes(search);
+
 
       const matchSemester =
         semester === "all" ||
@@ -205,7 +214,7 @@ export default function Home() {
               placeholder-slate-400
               transition
             "
-            placeholder="🔍 講義名・年度・学期で検索..."
+            placeholder="🔍 講義名・年度・学期・対象学年・科目種類で検索..."
           />
 
           <p className="text-slate-400 mt-2 text-center">
@@ -521,9 +530,11 @@ export default function Home() {
                 <h2 className="text-2xl md:text-3xl font-black mb-4 break-words text-slate-800">
                   {c.subject}
                 </h2>
+                
 
 
                 {/* 基本情報 */}
+                
 
                 <div className="space-y-2 text-slate-700 text-lg">
 
@@ -538,6 +549,19 @@ export default function Home() {
                       {c.semester ?? "未設定"}
                     </span>
                   </p>
+                   <p>
+                      🎓 対象学年：
+                       <span className="font-bold text-purple-600">
+                         {c.target_grade ?? "未設定"}
+                      </span>
+                   </p>
+
+                   <p>
+                      📚 科目種類：
+                       <span className="font-bold text-blue-600">
+                          {c.course_type ?? "未設定"}
+                       </span>
+                   </p>
 
                   <p className="text-green-600 font-bold">
                     ✅ 楽単率：
