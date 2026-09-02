@@ -1,8 +1,13 @@
+"use client";
+
 import Link from "next/link";
 
 export default function KyoyoTheoryPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-blue-50 to-slate-100">
+    <main
+      id="top"
+      className="min-h-screen bg-gradient-to-b from-slate-50 via-blue-50 to-slate-100"
+    >
       <div className="max-w-5xl mx-auto px-5 py-10">
 
         {/* 履修支援へ戻る */}
@@ -75,18 +80,16 @@ export default function KyoyoTheoryPage() {
               📌 参考資料
             </p>
 
-            
-
             <li>
-    <a
-      href="/pdfs/kyoyo-binran.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-    >
-      📖 長崎大学『令和8年度 教養教育 学生便覧』
-    </a>
-  </li>
+              <a
+                href="/pdfs/kyoyo-binran.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
+              >
+                📖 長崎大学『令和8年度 教養教育 学生便覧』
+              </a>
+            </li>
           </div>
 
           <div className="mt-6 bg-yellow-50 border-2 border-yellow-300 rounded-2xl p-6">
@@ -199,21 +202,26 @@ export default function KyoyoTheoryPage() {
             </p>
 
             <ul className="space-y-2">
-  <li>
-    <span className="text-red-600 font-bold">🔴 必修科目</span>
-  </li>
+              <li>
+                <span className="text-red-600 font-bold">
+                  🔴 必修科目
+                </span>
+              </li>
 
-  <li>
-    <span className="text-blue-600 font-bold">🔵 選択科目</span>
-  </li>
+              <li>
+                <span className="text-blue-600 font-bold">
+                  🔵 選択科目
+                </span>
+              </li>
 
-  <li>
-    <span className="text-green-600 font-bold">🟢 必要単位数</span>
-  </li>
-</ul>
+              <li>
+                <span className="text-green-600 font-bold">
+                  🟢 必要単位数
+                </span>
+              </li>
+            </ul>
           </div>
 
-          {/* 必修科目画像 */}
           <img
             src="/images/kyoyo/handbook-minimum-credits.jpg"
             alt="令和8年度 教養教育 学生便覧・必修科目"
@@ -238,18 +246,18 @@ export default function KyoyoTheoryPage() {
           </p>
 
           <p className="text-slate-700 leading-8 mb-6">
-           教養教育基礎科目、プラネタリーヘルス科目、選択科目のそれぞれの小計より
-           <br />
-           多くの単位を取得する必要があります。
-          </p>
-　　　　　　<p className="text-red-600 leading-8 mb-6">
-           ＜選択科目の最低修得単位に見られる〇～〇標記について＞
-           <br />
-           例えば工学部の生命・自然科学科目の２～４では、最低２単位を修得する必要があり、かつ４単位より多く修得しても選択科目の小計には４までしか算入されないという意味です。
+            教養教育基礎科目、プラネタリーヘルス科目、選択科目のそれぞれの小計より
+            <br />
+            多くの単位を取得する必要があります。
           </p>
 
+          <p className="text-red-600 leading-8 mb-6">
+            ＜選択科目の最低修得単位に見られる〇～〇標記について＞
+            <br />
+            例えば工学部の生命・自然科学科目の２～４では、最低２単位を修得する必要があり、
+            かつ４単位より多く修得しても選択科目の小計には４までしか算入されないという意味です。
+          </p>
 
-          {/* 最低修得単位数画像 */}
           <img
             src="/images/kyoyo/handbook-required.jpg"
             alt="最低修得単位数"
@@ -270,7 +278,6 @@ export default function KyoyoTheoryPage() {
               <strong>科目区分ごとの必要単位数</strong>
               も確認しましょう。
             </p>
-            
           </div>
         </div>
 
@@ -355,7 +362,7 @@ export default function KyoyoTheoryPage() {
             1年次の教養教育では、学部ごとに指定された曜日など、
             大学が示す履修上のルールを確認する必要があります。
           </p>
-　　　　　
+
           <div className="bg-yellow-50 border-2 border-yellow-300 rounded-2xl p-6 mb-8">
             <p className="font-black text-yellow-800 text-lg mb-3">
               ❌ よくある考え方
@@ -406,13 +413,15 @@ export default function KyoyoTheoryPage() {
                 key={q}
                 className="bg-blue-50 border-2 border-blue-100 rounded-2xl p-5 text-center"
               >
-                <p className="text-2xl font-black text-blue-800">{q}</p>
-                <p className="text-slate-600 mt-2">{label}</p>
+                <p className="text-2xl font-black text-blue-800">
+                  {q}
+                </p>
+                <p className="text-slate-600 mt-2">
+                  {label}
+                </p>
               </div>
             ))}
           </div>
-
-          
 
           <div className="mt-8 grid md:grid-cols-2 gap-6">
 
@@ -717,6 +726,7 @@ export default function KyoyoTheoryPage() {
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
+
             <div className="bg-blue-50 rounded-2xl p-6">
               <p className="text-2xl font-black text-blue-800 mb-3">
                 ① 何を取るか
@@ -752,6 +762,7 @@ export default function KyoyoTheoryPage() {
                 1年次？2年次？
               </p>
             </div>
+
           </div>
         </div>
 
@@ -762,6 +773,7 @@ export default function KyoyoTheoryPage() {
           </h2>
 
           <div className="space-y-4 text-center">
+
             <div className="bg-white/10 rounded-2xl p-4 font-bold">
               🎓 卒業に必要な単位
             </div>
@@ -801,6 +813,7 @@ export default function KyoyoTheoryPage() {
             <div className="bg-white rounded-2xl p-5 text-blue-900 font-black text-xl">
               ✅ 履修完了！
             </div>
+
           </div>
         </div>
 
@@ -868,6 +881,19 @@ export default function KyoyoTheoryPage() {
           <p className="text-sm text-slate-500 leading-7 mt-5">
             ※履修登録を行う際は、必ず大学が公開する最新の公式資料を確認してください。
           </p>
+        </div>
+
+        {/* =========================
+            ページトップへ戻る
+        ========================= */}
+        <div className="text-center mt-10">
+          <a
+            href="#top"
+            className="inline-block px-8 py-4 bg-white text-blue-700 border-2 border-blue-200 rounded-2xl font-bold shadow-lg hover:bg-blue-50 transition"
+            
+          >
+            ↑ ページのトップへ戻る
+          </a>
         </div>
 
       </div>
