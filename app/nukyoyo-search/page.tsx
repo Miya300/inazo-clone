@@ -71,18 +71,21 @@ export default function Home() {
       const search = keyword.toLowerCase();
 
       const matchKeyword =
-        (c.subject ?? "")
-          .toLowerCase()
-          .includes(search) ||
-        String(c.year ?? "")
-          .toLowerCase()
-          .includes(search);
-        (c.target_grade ?? "")
-        　.toLowerCase()
-        　.includes(search) ||
-        (c.course_type ?? "")
-        　.toLowerCase()
-        　.includes(search);
+  (c.subject ?? "")
+    .toLowerCase()
+    .includes(search) ||
+
+  String(c.year ?? "")
+    .toLowerCase()
+    .includes(search) ||
+
+  (c.target_grade ?? "")
+    .toLowerCase()
+    .includes(search) ||
+
+  (c.course_type ?? "")
+    .toLowerCase()
+    .includes(search);
 
 
       const matchSemester =
@@ -230,204 +233,203 @@ export default function Home() {
 
         <div className="mb-3">
 
-          {/* 全期間 */}
+  {/* 全期間 */}
 
-          <button
-            onClick={() => setSemester("all")}
-            className={`
-              w-full
-              py-6
-              rounded-3xl
-              font-black
-              text-xl
-              mb-4
-              bg-white
-              text-slate-800
-              border-2
-              border-blue-200
-              shadow-2xl
-              hover:shadow-blue-200
-              transition-all
-              ${
-                semester === "all"
-                  ? "ring-4 ring-blue-300"
-                  : ""
-              }
-            `}
-          >
-            全期間
-          </button>
-
-
-          {/* 前期・後期・1Q～4Q */}
-
-          <div className="grid grid-cols-2 gap-1">
-
-            {/* 前期 */}
-
-            <button
-              onClick={() => setSemester("前期")}
-              className={`
-                py-6
-                rounded-3xl
-                font-black
-                text-xl
-                bg-white
-                text-black
-                border-4
-                border-sky-400
-                shadow-2xl
-                hover:shadow-blue-200
-                transition-all
-                ${
-                  semester === "前期"
-                    ? "ring-4 ring-sky-300"
-                    : ""
-                }
-              `}
-            >
-              前期
-            </button>
+  <button
+    onClick={() => setSemester("all")}
+    className={`
+      w-full
+      py-3
+      rounded-3xl
+      font-black
+      text-xl
+      mb-3
+      bg-white
+      text-slate-800
+      border-2
+      border-blue-200
+      shadow-2xl
+      hover:shadow-blue-200
+      transition-all
+      ${
+        semester === "all"
+          ? "ring-4 ring-blue-300"
+          : ""
+      }
+    `}
+  >
+    全期間
+  </button>
 
 
-            {/* 後期 */}
+  {/* 前期・後期・1Q～4Q */}
 
-            <button
-              onClick={() => setSemester("後期")}
-              className={`
-                py-6
-                rounded-3xl
-                font-black
-                text-xl
-                bg-white
-                text-black
-                border-4
-                border-purple-300
-                shadow-2xl
-                hover:shadow-purple-200
-                transition-all
-                ${
-                  semester === "後期"
-                    ? "ring-4 ring-purple-300"
-                    : ""
-                }
-              `}
-            >
-              後期
-            </button>
+  <div className="grid grid-cols-2 gap-1">
 
+    {/* 前期 */}
 
-            {/* 1Q */}
-
-            <button
-              onClick={() => setSemester("１Q")}
-              className={`
-                py-6
-                rounded-3xl
-                font-black
-                text-xl
-                bg-white
-                text-black
-                border-4
-                border-cyan-300
-                shadow-2xl
-                hover:shadow-cyan-200
-                transition-all
-                ${
-                  semester === "１Q"
-                    ? "ring-4 ring-cyan-300"
-                    : ""
-                }
-              `}
-            >
-              １Q
-            </button>
+    <button
+      onClick={() => setSemester("前期")}
+      className={`
+        py-3
+        rounded-3xl
+        font-black
+        text-xl
+        bg-white
+        text-black
+        border-4
+        border-sky-400
+        shadow-2xl
+        hover:shadow-blue-200
+        transition-all
+        ${
+          semester === "前期"
+            ? "ring-4 ring-sky-300"
+            : ""
+        }
+      `}
+    >
+      前期
+    </button>
 
 
-            {/* 2Q */}
+    {/* 後期 */}
 
-            <button
-              onClick={() => setSemester("２Q")}
-              className={`
-                py-6
-                rounded-3xl
-                font-black
-                text-xl
-                bg-white
-                text-black
-                border-4
-                border-teal-300
-                shadow-2xl
-                hover:shadow-teal-200
-                transition-all
-                ${
-                  semester === "２Q"
-                    ? "ring-4 ring-teal-300"
-                    : ""
-                }
-              `}
-            >
-              ２Q
-            </button>
-
-
-            {/* 3Q */}
-
-            <button
-              onClick={() => setSemester("３Q")}
-              className={`
-                py-6
-                rounded-3xl
-                font-black
-                text-xl
-                bg-white
-                text-black
-                border-4
-                border-orange-300
-                shadow-2xl
-                hover:shadow-orange-200
-                transition-all
-                ${
-                  semester === "３Q"
-                    ? "ring-4 ring-orange-300"
-                    : ""
-                }
-              `}
-            >
-              ３Q
-            </button>
+    <button
+      onClick={() => setSemester("後期")}
+      className={`
+        py-3
+        rounded-3xl
+        font-black
+        text-xl
+        bg-white
+        text-black
+        border-4
+        border-purple-300
+        shadow-2xl
+        hover:shadow-purple-200
+        transition-all
+        ${
+          semester === "後期"
+            ? "ring-4 ring-purple-300"
+            : ""
+        }
+      `}
+    >
+      後期
+    </button>
 
 
-            {/* 4Q */}
+    {/* 1Q */}
 
-            <button
-              onClick={() => setSemester("４Q")}
-              className={`
-                py-6
-                rounded-3xl
-                font-black
-                text-xl
-                bg-white
-                text-black
-                border-4
-                border-pink-300
-                shadow-2xl
-                hover:shadow-pink-200
-                transition-all
-                ${
-                  semester === "４Q"
-                    ? "ring-4 ring-pink-300"
-                    : ""
-                }
-              `}
-            >
-              ４Q
-            </button>
+    <button
+      onClick={() => setSemester("１Q")}
+      className={`
+        py-3
+        rounded-3xl
+        font-black
+        text-xl
+        bg-white
+        text-black
+        border-4
+        border-cyan-300
+        shadow-2xl
+        hover:shadow-cyan-200
+        transition-all
+        ${
+          semester === "１Q"
+            ? "ring-4 ring-cyan-300"
+            : ""
+        }
+      `}
+    >
+      １Q
+    </button>
 
-          </div>
 
-        </div>
+    {/* 2Q */}
 
+    <button
+      onClick={() => setSemester("２Q")}
+      className={`
+        py-3
+        rounded-3xl
+        font-black
+        text-xl
+        bg-white
+        text-black
+        border-4
+        border-teal-300
+        shadow-2xl
+        hover:shadow-teal-200
+        transition-all
+        ${
+          semester === "２Q"
+            ? "ring-4 ring-teal-300"
+            : ""
+        }
+      `}
+    >
+      ２Q
+    </button>
+
+
+    {/* 3Q */}
+
+    <button
+      onClick={() => setSemester("３Q")}
+      className={`
+        py-3
+        rounded-3xl
+        font-black
+        text-xl
+        bg-white
+        text-black
+        border-4
+        border-orange-300
+        shadow-2xl
+        hover:shadow-orange-200
+        transition-all
+        ${
+          semester === "３Q"
+            ? "ring-4 ring-orange-300"
+            : ""
+        }
+      `}
+    >
+      ３Q
+    </button>
+
+
+    {/* 4Q */}
+
+    <button
+      onClick={() => setSemester("４Q")}
+      className={`
+        py-3
+        rounded-3xl
+        font-black
+        text-xl
+        bg-white
+        text-black
+        border-4
+        border-pink-300
+        shadow-2xl
+        hover:shadow-pink-200
+        transition-all
+        ${
+          semester === "４Q"
+            ? "ring-4 ring-pink-300"
+            : ""
+        }
+      `}
+    >
+      ４Q
+    </button>
+
+  </div>
+
+</div>
 
         {/* =========================
             ソート
@@ -536,44 +538,69 @@ export default function Home() {
                 {/* 基本情報 */}
                 
 
-                <div className="space-y-2 text-slate-700 text-lg">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-slate-700">
 
-                  <p>
-                    📅 年度：
-                    {c.year ?? "未設定"}
-                  </p>
+  {/* 年度 */}
+  <div className="bg-slate-50 rounded-2xl p-4">
+    <p className="text-sm text-slate-500 mb-1">
+      📅 年度
+    </p>
+    <p className="font-bold text-lg">
+      {c.year ?? "未設定"}
+    </p>
+  </div>
 
-                  <p>
-                    🗓 学期：
-                    <span className="font-bold text-sky-600">
-                      {c.semester ?? "未設定"}
-                    </span>
-                  </p>
-                   <p>
-                      🎓 対象学年：
-                       <span className="font-bold text-purple-600">
-                         {c.target_grade ?? "未設定"}
-                      </span>
-                   </p>
+  {/* 学期 */}
+  <div className="bg-slate-50 rounded-2xl p-4">
+    <p className="text-sm text-slate-500 mb-1">
+      🗓 学期
+    </p>
+    <p className="font-bold text-lg text-sky-600">
+      {c.semester ?? "未設定"}
+    </p>
+  </div>
 
-                   <p>
-                      📚 科目種類：
-                       <span className="font-bold text-blue-600">
-                          {c.course_type ?? "未設定"}
-                       </span>
-                   </p>
+  {/* 対象学年 */}
+  <div className="bg-slate-50 rounded-2xl p-4">
+    <p className="text-sm text-slate-500 mb-1">
+      🎓 対象学年
+    </p>
+    <p className="font-bold text-lg text-purple-600">
+      {c.target_grade ?? "未設定"}
+    </p>
+  </div>
 
-                  <p className="text-green-600 font-bold">
-                    ✅ 楽単率：
-                    {(c.easy_rate * 100).toFixed(1)}%
-                  </p>
+  {/* 科目種類 */}
+  <div className="bg-slate-50 rounded-2xl p-4">
+    <p className="text-sm text-slate-500 mb-1">
+      📚 科目種類
+    </p>
+    <p className="font-bold text-base text-blue-600 break-words">
+      {c.course_type ?? "未設定"}
+    </p>
+  </div>
 
-                  <p className="text-amber-500 font-bold">
-                    🌟 優単率：
-                    {(c.excellent_rate * 100).toFixed(1)}%
-                  </p>
+  {/* 楽単率 */}
+  <div className="bg-slate-50 rounded-2xl p-4">
+    <p className="text-sm text-slate-500 mb-1">
+      ✅ 楽単率
+    </p>
+    <p className="font-bold text-lg text-green-600">
+      {(c.easy_rate * 100).toFixed(1)}%
+    </p>
+  </div>
 
-                </div>
+  {/* 優単率 */}
+  <div className="bg-slate-50 rounded-2xl p-4">
+    <p className="text-sm text-slate-500 mb-1">
+      🌟 優単率
+    </p>
+    <p className="font-bold text-lg text-amber-500">
+      {(c.excellent_rate * 100).toFixed(1)}%
+    </p>
+  </div>
+
+</div>
 
 
                 {/* =========================
