@@ -743,6 +743,7 @@ export default function KyoyoPracticePage() {
     className="w-full h-auto"
   />
 </div>
+<hr className="my-10 border-2 border-slate-300" />
 <div className="overflow-hidden border border-slate-200 shadow-md">
   <Image
     src="/images/kyoyo/rishu12.png"
@@ -752,6 +753,7 @@ export default function KyoyoPracticePage() {
     className="w-full h-auto"
   />
 </div>
+<hr className="my-10 border-2 border-slate-300" />
 <div className="overflow-hidden border border-slate-200 shadow-md">
   <Image
     src="/images/kyoyo/rishu13.png"
