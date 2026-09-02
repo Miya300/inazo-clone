@@ -22,7 +22,7 @@ export default function RisyuSupportPage() {
 
         {/* サイト説明 */}
         <p className="text-center text-xl text-slate-700 font-semibold mb-2">
-          長崎大学生のための総合支援サイト
+          長崎大学 新入生のための総合支援サイト
         </p>
 
         {/* 英語タイトル */}

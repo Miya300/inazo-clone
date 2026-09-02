@@ -10,7 +10,7 @@ export default function Home() {
       </h1>
 
       <p className="text-center text-2xl text-slate-700 mb-4">
-        新・長崎大学生のための総合支援サイト
+        長崎大学 新入生のための総合支援サイト
       </p>
 
       <p className="text-center text-slate-600 text-xl mb-10">
