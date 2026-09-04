@@ -401,6 +401,174 @@ export default function Home() {
           </div>
 
         </div>
+                {/* =========================
+            NUKYOYO Searchについて
+        ========================= */}
+        <div
+          className="
+            mb-8
+            rounded-3xl
+            bg-white
+            p-6
+            shadow-sm
+            ring-1
+            ring-slate-200
+            md:p-8
+          "
+        >
+
+          <div className="border-l-4 border-blue-700 pl-5">
+
+            <p
+              className="
+                text-xs
+                font-bold
+                tracking-[0.3em]
+                text-blue-700
+              "
+            >
+              ABOUT NUKYOYO SEARCH
+            </p>
+
+            <h2
+              className="
+                mt-2
+                text-2xl
+                font-black
+                text-blue-950
+                md:text-3xl
+              "
+            >
+              このサイトについて
+            </h2>
+
+          </div>
+
+
+          {/* サイトの目的 */}
+          <div className="mt-6">
+
+            <h3 className="text-xl font-black text-blue-900">
+              🎯 NUKYOYO Searchの目的
+            </h3>
+
+            <p className="mt-3 leading-8 text-slate-700">
+              NUKYOYO Searchは、長崎大学の教養教育科目について、
+              過去の成績分布を検索・確認できるサービスです。
+              <br />
+              科目ごとの成績データを確認することで、
+              履修する科目を選択する際の参考情報として活用することを目的としています。
+            </p>
+
+            <p className="mt-3 leading-8 text-slate-700">
+              講義名や年度、学期などから科目を検索できるほか、
+              「楽単率」や「優単率」、成績分布を確認することができます。
+            </p>
+
+          </div>
+
+
+          {/* 指標の説明 */}
+          <div className="mt-8">
+
+            <h3 className="text-xl font-black text-blue-900">
+              📊 楽単率・優単率とは
+            </h3>
+
+            <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
+
+              {/* 楽単率 */}
+              <div
+                className="
+                  rounded-2xl
+                  border-2
+                  border-green-200
+                  bg-green-50
+                  p-6
+                "
+              >
+
+                <p className="text-lg font-black text-green-700">
+                  ✅ 楽単率
+                </p>
+
+                <p className="mt-3 leading-7 text-slate-700">
+                  楽単率とは、
+                  <strong>
+                    全受講者のうち、単位を取得できた学生の割合
+                  </strong>
+                  を示したものです。
+                </p>
+
+                <p className="mt-3 text-sm leading-6 text-slate-600">
+                  つまり、AA・A・B・Cなどの評価を得て、
+                  単位を取得できた学生が全受講者の何％だったかを表します。
+                </p>
+
+              </div>
+
+
+              {/* 優単率 */}
+              <div
+                className="
+                  rounded-2xl
+                  border-2
+                  border-amber-200
+                  bg-amber-50
+                  p-6
+                "
+              >
+
+                <p className="text-lg font-black text-amber-600">
+                  🌟 優単率
+                </p>
+
+                <p className="mt-3 leading-7 text-slate-700">
+                  優単率とは、
+                  <strong>
+                    全受講者のうち、最高評価である「AA」を取得した学生の割合
+                  </strong>
+                  を示したものです。
+                </p>
+
+                <p className="mt-3 text-sm leading-6 text-slate-600">
+                  その科目でAA評価を得た学生が、
+                  全受講者の何％だったかを表します。
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          {/* 注意書き */}
+          <div
+            className="
+              mt-6
+              rounded-2xl
+              border-2
+              border-blue-200
+              bg-blue-50
+              p-5
+            "
+          >
+
+            <p className="font-black text-blue-800">
+              💡 利用上のポイント
+            </p>
+
+            <p className="mt-2 leading-7 text-slate-700">
+              楽単率や優単率は、あくまで過去の成績データをもとにした指標です。
+              これらの数値だけで科目の難易度や授業内容を判断するのではなく、
+              シラバスや授業時間割などの情報とあわせて、
+              履修する科目を検討する際の参考として利用してください。
+            </p>
+
+          </div>
+
+        </div>
 
 
         {/* =========================
