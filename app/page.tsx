@@ -78,9 +78,14 @@ export default function Home() {
           </p>
 
           <p className="mt-8 max-w-2xl leading-8 text-blue-100">
-            大学生活のスタートを、もっとスマートに。
+            <strong>大学生活のスタートを、もっとスマートに</strong>
             <br />
-            履修登録から学生生活まで、長崎大学生に必要な情報をまとめています。
+            履修登録から学生生活まで、長崎大学生に必要な情報をまとめています
+          </p>
+          <p className="mt-8 max-w-2xl leading-8 text-blue-100">
+            <strong>成績を味方に、大学生活をもっと安心に</strong>
+            <br />
+            GPAや成績だけでなく、奨学金や授業料等の減免など、学生生活や経済面に関わる重要な制度も、早い段階から知っておくことが大切です
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
