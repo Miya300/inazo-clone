@@ -39,6 +39,11 @@ export default function Home() {
   const [expandedCourses, setExpandedCourses] = useState<number[]>([]);
 
   // =========================
+  // ブックマーク
+  // =========================
+  const [bookmarkedCourses, setBookmarkedCourses] = useState<number[]>([]);
+
+  // =========================
   // Supabaseからデータ取得
   // =========================
   useEffect(() => {
@@ -59,10 +64,48 @@ export default function Home() {
   }, []);
 
   // =========================
+  // 保存されているブックマークを読み込み
+  // =========================
+  useEffect(() => {
+    const saved = localStorage.getItem("nukyoyo-bookmarks");
+
+    if (saved) {
+      try {
+        setBookmarkedCourses(JSON.parse(saved));
+      } catch {
+        console.log("ブックマークの読み込みに失敗しました");
+      }
+    }
+  }, []);
+
+  // =========================
+  // ブックマークを保存
+  // =========================
+  useEffect(() => {
+    localStorage.setItem(
+      "nukyoyo-bookmarks",
+      JSON.stringify(bookmarkedCourses)
+    );
+  }, [bookmarkedCourses]);
+
+  // =========================
   // グラフの開閉
   // =========================
   const toggleGraph = (id: number) => {
     setExpandedCourses((prev) => {
+      if (prev.includes(id)) {
+        return prev.filter((courseId) => courseId !== id);
+      }
+
+      return [...prev, id];
+    });
+  };
+
+  // =========================
+  // ブックマークの切り替え
+  // =========================
+  const toggleBookmark = (id: number) => {
+    setBookmarkedCourses((prev) => {
       if (prev.includes(id)) {
         return prev.filter((courseId) => courseId !== id);
       }
@@ -326,7 +369,6 @@ export default function Home() {
 
           <div className="border-l-8 border-blue-700 pl-6">
 
-            {/* TITLE */}
             <p
               className="
                 text-sm
@@ -339,7 +381,6 @@ export default function Home() {
             </p>
 
 
-            {/* ページタイトル */}
             <h1
               className="
                 mt-3
@@ -354,11 +395,9 @@ export default function Home() {
             </h1>
 
 
-            {/* アクセントライン */}
             <div className="mt-5 h-1 w-20 bg-blue-700"></div>
 
 
-            {/* サービス名 */}
             <h2
               className="
                 mt-6
@@ -372,7 +411,6 @@ export default function Home() {
             </h2>
 
 
-            {/* 日本語説明 */}
             <p
               className="
                 mt-4
@@ -386,7 +424,6 @@ export default function Home() {
             </p>
 
 
-            {/* 英語説明 */}
             <p
               className="
                 mt-2
@@ -401,169 +438,133 @@ export default function Home() {
           </div>
 
         </div>
-                {/* =========================
-            NUKYOYO Searchについて
+
+
+        {/* =========================
+            このサイトの目的・指標説明
         ========================= */}
         <div
           className="
             mb-8
             rounded-3xl
-            bg-white
+            bg-blue-50
             p-6
             shadow-sm
             ring-1
-            ring-slate-200
+            ring-blue-100
             md:p-8
           "
         >
 
-          <div className="border-l-4 border-blue-700 pl-5">
+          <p
+            className="
+              text-xs
+              font-bold
+              tracking-[0.3em]
+              text-blue-700
+            "
+          >
+            ABOUT NUKYOYO SEARCH
+          </p>
 
-            <p
+          <h2
+            className="
+              mt-2
+              text-2xl
+              font-black
+              text-blue-950
+            "
+          >
+            NUKYOYO Searchについて
+          </h2>
+
+          <p
+            className="
+              mt-4
+              leading-8
+              text-slate-700
+            "
+          >
+            NUKYOYO Searchは、長崎大学の教養教育科目について、
+            過去の成績分布を検索・比較できるサービスです。
+            科目選択や履修登録を行う際の参考情報として、
+            成績データを確認できるようにすることを目的としています。
+          </p>
+
+          <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+
+            {/* 楽単率 */}
+            <div
               className="
-                text-xs
-                font-bold
-                tracking-[0.3em]
-                text-blue-700
+                rounded-2xl
+                border-2
+                border-green-200
+                bg-white
+                p-5
               "
             >
-              ABOUT NUKYOYO SEARCH
-            </p>
 
-            <h2
+              <p className="font-black text-green-700">
+                ✅ 楽単率
+              </p>
+
+              <p className="mt-2 leading-7 text-slate-700">
+                全受講者のうち、<strong>単位を取得できた人の割合</strong>です。
+              </p>
+
+              <p className="mt-2 text-sm text-slate-500">
+                ※ AA・A・B・Cの合計割合
+              </p>
+
+            </div>
+
+
+            {/* 優単率 */}
+            <div
               className="
-                mt-2
-                text-2xl
-                font-black
-                text-blue-950
-                md:text-3xl
+                rounded-2xl
+                border-2
+                border-amber-200
+                bg-white
+                p-5
               "
             >
-              このサイトについて
-            </h2>
 
-          </div>
+              <p className="font-black text-amber-600">
+                🌟 優単率
+              </p>
 
+              <p className="mt-2 leading-7 text-slate-700">
+                全受講者のうち、<strong>最高評価であるAAを取得した人の割合</strong>です。
+              </p>
 
-          {/* サイトの目的 */}
-          <div className="mt-6">
-
-            <h3 className="text-xl font-black text-blue-900">
-              🎯 NUKYOYO Searchの目的
-            </h3>
-
-            <p className="mt-3 leading-8 text-slate-700">
-              NUKYOYO Searchは、長崎大学の教養教育科目について、
-              過去の成績分布を検索・確認できるサービスです。
-              <br />
-              科目ごとの成績データを確認することで、
-              履修する科目を選択する際の参考情報として活用することを目的としています。
-            </p>
-
-            <p className="mt-3 leading-8 text-slate-700">
-              講義名や年度、学期などから科目を検索できるほか、
-              「楽単率」や「優単率」、成績分布を確認することができます。
-            </p>
-
-          </div>
-
-
-          {/* 指標の説明 */}
-          <div className="mt-8">
-
-            <h3 className="text-xl font-black text-blue-900">
-              📊 楽単率・優単率とは
-            </h3>
-
-            <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
-
-              {/* 楽単率 */}
-              <div
-                className="
-                  rounded-2xl
-                  border-2
-                  border-green-200
-                  bg-green-50
-                  p-6
-                "
-              >
-
-                <p className="text-lg font-black text-green-700">
-                  ✅ 楽単率
-                </p>
-
-                <p className="mt-3 leading-7 text-slate-700">
-                  楽単率とは、
-                  <strong>
-                    全受講者のうち、単位を取得できた学生の割合
-                  </strong>
-                  を示したものです。
-                </p>
-
-                <p className="mt-3 text-sm leading-6 text-slate-600">
-                  つまり、AA・A・B・Cなどの評価を得て、
-                  単位を取得できた学生が全受講者の何％だったかを表します。
-                </p>
-
-              </div>
-
-
-              {/* 優単率 */}
-              <div
-                className="
-                  rounded-2xl
-                  border-2
-                  border-amber-200
-                  bg-amber-50
-                  p-6
-                "
-              >
-
-                <p className="text-lg font-black text-amber-600">
-                  🌟 優単率
-                </p>
-
-                <p className="mt-3 leading-7 text-slate-700">
-                  優単率とは、
-                  <strong>
-                    全受講者のうち、最高評価である「AA」を取得した学生の割合
-                  </strong>
-                  を示したものです。
-                </p>
-
-                <p className="mt-3 text-sm leading-6 text-slate-600">
-                  その科目でAA評価を得た学生が、
-                  全受講者の何％だったかを表します。
-                </p>
-
-              </div>
+              <p className="mt-2 text-sm text-slate-500">
+                ※ AAの割合
+              </p>
 
             </div>
 
           </div>
 
-
-          {/* 注意書き */}
           <div
             className="
-              mt-6
+              mt-5
               rounded-2xl
-              border-2
-              border-blue-200
-              bg-blue-50
+              border
+              border-slate-200
+              bg-white
               p-5
             "
           >
 
-            <p className="font-black text-blue-800">
-              💡 利用上のポイント
+            <p className="font-bold text-slate-800">
+              💡 データを見るときのポイント
             </p>
 
-            <p className="mt-2 leading-7 text-slate-700">
-              楽単率や優単率は、あくまで過去の成績データをもとにした指標です。
-              これらの数値だけで科目の難易度や授業内容を判断するのではなく、
-              シラバスや授業時間割などの情報とあわせて、
-              履修する科目を検討する際の参考として利用してください。
+            <p className="mt-2 leading-7 text-slate-600">
+              楽単率や優単率は、科目選択を考える際の一つの参考情報です。
+              成績分布だけでなく、シラバスの授業内容・評価方法・到達目標なども
+              あわせて確認し、自分に合った科目を選択しましょう。
             </p>
 
           </div>
@@ -755,7 +756,6 @@ export default function Home() {
           </button>
 
 
-          {/* 前期・後期・1Q～4Q */}
           <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
 
             {/* 前期 */}
@@ -1058,6 +1058,9 @@ export default function Home() {
             const isExpanded =
               expandedCourses.includes(c.id);
 
+            const isBookmarked =
+              bookmarkedCourses.includes(c.id);
+
             return (
 
               <div
@@ -1076,7 +1079,7 @@ export default function Home() {
               >
 
                 {/* =========================
-                    科目名
+                    科目名・ブックマーク
                 ========================= */}
                 <div className="mb-6">
 
@@ -1091,18 +1094,70 @@ export default function Home() {
                     COURSE
                   </p>
 
-                  <h2
-                    className="
-                      mt-2
-                      break-words
-                      text-2xl
-                      font-black
-                      text-blue-950
-                      md:text-3xl
-                    "
-                  >
-                    {c.subject}
-                  </h2>
+                  {/* 科目名とブックマークを横並び */}
+                  <div className="mt-2 flex items-center gap-3">
+
+                    {/* 科目名 */}
+                    <h2
+                      className="
+                        min-w-0
+                        flex-1
+                        break-words
+                        text-2xl
+                        font-black
+                        text-blue-950
+                        md:text-3xl
+                      "
+                    >
+                      {c.subject}
+                    </h2>
+
+
+                    {/* =========================
+                        ブックマークボタン
+                    ========================= */}
+                    <button
+                      onClick={() =>
+                        toggleBookmark(c.id)
+                      }
+                      aria-label={
+                        isBookmarked
+                          ? "ブックマークを解除"
+                          : "ブックマークに追加"
+                      }
+                      className={`
+                        flex
+                        flex-shrink-0
+                        items-center
+                        justify-center
+                        rounded-xl
+                        border-2
+                        px-4
+                        py-2
+                        text-sm
+                        font-bold
+                        transition-all
+                        ${
+                          isBookmarked
+                            ? "border-blue-600 bg-blue-600 text-white shadow-md"
+                            : "border-slate-300 bg-white text-slate-700 hover:border-blue-400 hover:bg-blue-50"
+                        }
+                      `}
+                    >
+
+                      <span className="text-2xl leading-none">
+                        {isBookmarked ? "★" : "☆"}
+                      </span>
+
+                      <span className="ml-1 hidden sm:inline">
+                        {isBookmarked
+                          ? "ブックマーク済み"
+                          : "ブックマーク"}
+                      </span>
+
+                    </button>
+
+                  </div>
 
                 </div>
 
