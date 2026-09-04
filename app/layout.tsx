@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   title: "ホームページ | NUSNAVI",
   description:
     "NUSNAVIは長崎大学生向けの履修登録支援、教養教育検索、学生生活支援を提供する総合支援サイトです。",
+  applicationName: "NUSNAVI",
   keywords: [
     "NUSNAVI",
     "長崎大学",
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     "学生支援",
   ],
 };
+
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
