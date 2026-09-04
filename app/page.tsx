@@ -190,7 +190,7 @@ export default function Home() {
               className="group rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
             >
 
-              <div className="text-3xl">📅</div>
+              <div className="text-3xl"></div>
 
               <p className="mt-6 text-xs font-bold tracking-[0.2em] text-blue-700">
                 NUKYO REGI SUPPORT
@@ -222,7 +222,7 @@ export default function Home() {
               className="group rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
             >
 
-              <div className="text-3xl">📚</div>
+              <div className="text-3xl"></div>
 
               <p className="mt-6 text-xs font-bold tracking-[0.2em] text-blue-700">
                 NUKYOYO SEARCH
@@ -256,7 +256,7 @@ export default function Home() {
               className="group rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
             >
 
-              <div className="text-3xl">📝</div>
+              <div className="text-3xl"></div>
 
               <p className="mt-6 text-xs font-bold tracking-[0.2em] text-blue-700">
                 STUDENT SUPPORT
@@ -374,4 +374,3 @@ export default function Home() {
     </main>
   );
 }
-

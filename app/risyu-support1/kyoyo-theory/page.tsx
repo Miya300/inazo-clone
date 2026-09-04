@@ -20,7 +20,7 @@ export default function KyoyoTheoryPage() {
 
         {/* タイトル */}
         <h1 className="text-4xl md:text-6xl font-black text-blue-900 mb-4 text-center">
-          📚 教養教育〈総論編〉
+          教養教育〈総論編〉
         </h1>
 
         <h2 className="text-2xl font-bold text-slate-700 mb-8 text-center">
@@ -61,7 +61,7 @@ export default function KyoyoTheoryPage() {
         {/* このページについて */}
         <div className="bg-white rounded-3xl p-8 shadow-xl mt-8">
           <h2 className="text-3xl font-black text-blue-800 mb-6">
-            📖 このページについて
+            このページについて
           </h2>
 
           <p className="text-slate-700 leading-8 mb-6">
@@ -108,7 +108,7 @@ export default function KyoyoTheoryPage() {
         {/* 履修登録の考え方 */}
         <div className="bg-white rounded-3xl p-8 shadow-xl mt-8">
           <h2 className="text-3xl font-black text-blue-800 mb-6">
-            🎯 まず知っておきたい「履修登録」の考え方
+            まず知っておきたい「履修登録」の考え方
           </h2>
 
           <p className="text-slate-700 leading-8 mb-6">
@@ -638,7 +638,7 @@ export default function KyoyoTheoryPage() {
         {/* 10 STEP */}
         <div className="bg-white rounded-3xl p-8 shadow-xl mt-8">
           <h2 className="text-3xl font-black text-blue-800 mb-8">
-            📝 新入生が履修登録するときの「実際の手順」
+            新入生が履修登録するときの「実際の手順」
           </h2>
 
           <div className="space-y-3">
@@ -673,7 +673,7 @@ export default function KyoyoTheoryPage() {
         {/* チェックリスト */}
         <div className="bg-white rounded-3xl p-8 shadow-xl mt-8">
           <h2 className="text-3xl font-black text-blue-800 mb-8">
-            ✅ 登録前チェックリスト
+            登録前チェックリスト
           </h2>
 
           <div className="grid md:grid-cols-2 gap-3">
@@ -714,7 +714,7 @@ export default function KyoyoTheoryPage() {
         {/* 4つのポイント */}
         <div className="bg-white rounded-3xl p-8 shadow-xl mt-8">
           <h2 className="text-3xl font-black text-blue-800 mb-6">
-            🎯 履修登録で迷ったら
+            履修登録で迷ったら
           </h2>
 
           <p className="text-slate-700 text-lg leading-8 mb-8">

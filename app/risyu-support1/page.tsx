@@ -34,7 +34,7 @@ export default function RisyuSupportPage() {
         <div className="bg-white rounded-3xl shadow-xl p-6 mb-8 border border-blue-100 text-center">
 
           <h2 className="text-5xl md:text-6xl font-black text-blue-800 mb-2">
-            📅 NUKYO REGI Support
+            NUKYO REGI Suppo
           </h2>
 
           <p className="text-slate-700 text-lg">
@@ -58,7 +58,7 @@ export default function RisyuSupportPage() {
           <div className="bg-white rounded-3xl shadow-xl p-8 border border-blue-100 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all">
 
             <h2 className="text-3xl font-black text-blue-800 mb-3">
-              📚 教養教育〈総論編〉
+              教養教育〈総論編〉
             </h2>
 
             <p className="text-xl font-semibold text-slate-700 mb-3">
@@ -88,7 +88,7 @@ export default function RisyuSupportPage() {
           <div className="bg-white rounded-3xl shadow-xl p-8 border border-blue-100 cursor-pointer hover:shadow-2xl hover:-translate-y-1 transition-all">
 
             <h2 className="text-3xl font-black text-blue-800 mb-3">
-              📝 教養教育〈実践編〉
+              教養教育〈実践編〉
             </h2>
 
             <p className="text-xl font-semibold text-slate-700 mb-3">

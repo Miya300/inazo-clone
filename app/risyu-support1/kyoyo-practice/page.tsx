@@ -29,7 +29,7 @@ export default function KyoyoPracticePage() {
           
 
           <h1 className="text-4xl md:text-6xl font-black text-blue-900 leading-tight mb-5 text-center">
-            📚 教養教育〈実践編〉
+            教養教育〈実践編〉
           </h1>
 
           <h2 className="text-2xl md:text-3xl font-bold text-slate-700 mb-6 text-center">
@@ -67,7 +67,7 @@ export default function KyoyoPracticePage() {
         <section className="bg-white rounded-3xl p-6 md:p-8 shadow-xl mb-8">
 
           <h2 className="text-3xl font-black text-blue-800 mb-6">
-            📖 このページについて
+            このページについて
           </h2>
 
           <p className="text-slate-700 leading-8 mb-5">
@@ -818,7 +818,7 @@ export default function KyoyoPracticePage() {
         <section className="bg-gradient-to-r from-blue-700 to-blue-900 text-white rounded-3xl p-7 md:p-9 shadow-xl">
 
           <h2 className="text-3xl font-black mb-7">
-            ✅ まとめ
+            まとめ
           </h2>
 
           <p className="text-blue-100 mb-6 leading-7">

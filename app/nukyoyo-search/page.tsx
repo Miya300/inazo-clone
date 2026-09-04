@@ -168,7 +168,7 @@ export default function Home() {
         <div className="bg-white rounded-3xl shadow-xl p-6 mb-8 border border-blue-100 text-center">
 
           <h2 className="text-5xl md:text-6xl font-black text-blue-800 mb-2">
-            📚 NUKYOYO Search
+            NUKYOYO Search
           </h2>
 
           <p className="text-slate-700 text-lg">
@@ -187,7 +187,7 @@ export default function Home() {
         ========================= */}
 
         <p className="text-center text-xl font-semibold text-slate-700 mb-8">
-          📚 登録講義数: {courses.length}
+          登録講義数: {courses.length}
         </p>
 
 
