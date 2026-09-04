@@ -13,10 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nusnavi.vercel.app"),
   title: "ホームページ | NUSNAVI",
   description:
     "NUSNAVIは長崎大学生向けの履修登録支援、教養教育検索、学生生活支援を提供する総合支援サイトです。",
   applicationName: "NUSNAVI",
+
+  openGraph: {
+    title: "NUSNAVI",
+    description:
+      "長崎大学生向けの総合支援サイト",
+    siteName: "NUSNAVI",
+    url: "https://nusnavi.vercel.app",
+    type: "website",
+  },
+
   keywords: [
     "NUSNAVI",
     "長崎大学",
