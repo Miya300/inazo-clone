@@ -63,23 +63,22 @@ export default function StudentSupportPage() {
         <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
 
           <Link
-            href="/"
+            href="/student-support"
             className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-5 py-2 text-sm font-semibold backdrop-blur transition hover:bg-white/20"
           >
-            ← NUSNAVIへ戻る
+            ← 経済支援情報へ戻る
           </Link>
 
           <p className="mt-10 text-sm font-bold tracking-[0.3em] text-blue-200">
-            STUDENT SUPPORT
+            NATIONAL SUPPORT
           </p>
 
           <h1 className="mt-4 text-4xl font-black tracking-tight md:text-6xl">
-            経済支援情報
+            国（JASSO）からの支援
           </h1>
 
           <p className="mt-5 max-w-3xl text-lg leading-8 text-blue-100 md:text-xl">
-            奨学金や授業料等の減免など、
-            大学生活にかかる経済的な負担を軽減するための制度をまとめています。
+            日本学生支援機構（JASSO）の給付型・貸与型奨学金や、授業料・入学金の減免など、入学前から入学後まで利用できる国の経済支援制度について分かりやすく紹介します。
           </p>
 
         </div>
@@ -1129,12 +1128,12 @@ export default function StudentSupportPage() {
               </h3>
 
               <p className="mt-3 text-sm leading-7 text-slate-700">
-                ・難易度が低いケースがあります。
+                <strong>・難易度が低い。</strong>
                 評定平均3.5以上や学習意欲などによって判断されます。
               </p>
 
               <p className="mt-2 text-sm leading-7 text-red-600">
-                ・自ら学習計画書を提出し、学校の先生と面談する場合があります。
+                ・もしくは、自ら学習計画書を提出し、学校の先生と面談で判断されます。
               </p>
 
             </div>
@@ -1147,7 +1146,7 @@ export default function StudentSupportPage() {
               </h3>
 
               <p className="mt-3 text-sm leading-7 text-slate-700">
-                ・高校時の評定平均3.5以上、
+                <strong>・難易度は中程度。</strong>高校時の評定平均3.5以上、
                 もしくは入学試験上位1/2以上などの基準があります。
               </p>
 
@@ -1169,7 +1168,7 @@ export default function StudentSupportPage() {
               </h3>
 
               <p className="mt-3 text-sm leading-7 text-slate-700">
-                ・学部内GPAが上位1/2以上などの基準があります。
+                <strong>・難易度は高い。</strong>学部内GPAが上位1/2以上などの基準があります。
               </p>
 
               <p className="mt-2 text-sm leading-7 text-slate-700">
