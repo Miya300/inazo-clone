@@ -255,36 +255,39 @@ export default function Home() {
             </Link>
 
 
-            {/* 学生生活支援 */}
-            <Link
-              href="/student-support"
-              className="group rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
-            >
+          
+{/* 経済支援 */}
+<Link
+  href="/student-support"
+  className="group rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
+>
 
-              <div className="text-3xl"></div>
+  <div className="text-3xl"></div>
 
-              <p className="mt-6 text-xs font-bold tracking-[0.2em] text-blue-700">
-                STUDENT SUPPORT
-              </p>
+  <p className="mt-6 text-xs font-bold tracking-[0.2em] text-blue-700">
+    FINANCIAL SUPPORT
+  </p>
 
-              <h3 className="mt-3 text-2xl font-bold">
-                学生生活支援情報
-              </h3>
+  <h3 className="mt-3 text-2xl font-bold">
+    経済支援情報
+  </h3>
 
-              <p className="mt-4 text-sm tracking-wide text-slate-500">
-                Scholarship & Student Support
-              </p>
+  <p className="mt-4 text-sm tracking-wide text-slate-500">
+    Financial Support Information
+  </p>
 
-              <p className="mt-6 leading-7 text-slate-600">
-                奨学金・授業料免除制度など、
-                学生生活に関する支援情報をまとめています。
-              </p>
+  <p className="mt-6 leading-7 text-slate-600">
+    奨学金、授業料免除、各種支援制度など、
+    学生生活を支える経済支援に関する情報を掲載しています。
+  </p>
 
-              <p className="mt-8 font-semibold text-blue-700">
-                支援情報を見る →
-              </p>
+  <p className="mt-8 font-semibold text-blue-700">
+    支援情報を見る →
+  </p>
 
-            </Link>
+</Link>
+
+
 
           </div>
         </div>
