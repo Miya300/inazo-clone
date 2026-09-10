@@ -1,5 +1,33 @@
 import Link from "next/link";
 
+function ImageBox({
+  src,
+  alt,
+}: {
+  src: string;
+  alt: string;
+}) {
+  return (
+    <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+      <img
+        src={src}
+        alt={alt}
+        className="h-auto w-full"
+      />
+    </div>
+  );
+}
+
+function Arrow() {
+  return (
+    <div className="flex justify-center py-5">
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-xl font-black text-blue-700">
+        ↓
+      </div>
+    </div>
+  );
+}
+
 export default function PrivateScholarshipPage() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
@@ -1180,75 +1208,251 @@ export default function PrivateScholarshipPage() {
           </p>
 
           <h2 className="mt-4 text-3xl font-black text-blue-900 md:text-4xl">
-            申込の流れ
+            申請の流れ
           </h2>
 
-          <div className="mt-8 space-y-4">
+          <div className="mt-5 h-1 w-16 bg-blue-700"></div>
 
-            <div className="flex gap-4 rounded-2xl bg-blue-50 p-5">
 
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-700 font-black text-white">
-                1
-              </div>
+          {/* ===================================================== */}
+          {/* STEP 1 */}
+          {/* ===================================================== */}
 
-              <div>
-                <p className="font-black text-blue-900">
-                  募集内容を確認
+          <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+
+            <p className="font-black text-blue-700">
+              STEP 1
+            </p>
+
+            <h3 className="mt-2 text-xl font-black text-slate-800">
+              募集内容を確認する
+            </h3>
+
+            <p className="mt-3 leading-7 text-slate-700">
+              まず、長崎大学ホームページから現在募集されている
+              民間財団・地方公共団体などの奨学金を確認します。
+            </p>
+
+            <div className="mt-5 rounded-xl bg-white p-5 ring-1 ring-slate-200">
+
+              <p className="font-black text-slate-800">
+                長崎大学ホームページで確認する場所
+              </p>
+
+              <div className="mt-4 space-y-2 text-sm leading-7 text-slate-700">
+
+                <p>
+                  <span className="font-bold text-blue-700">①</span>{" "}
+                  長崎大学ホームページ
                 </p>
 
-                <p className="mt-1 text-sm leading-7 text-slate-600">
-                  対象学年、専攻、GPA、所得、地域、
-                  就職条件などを確認します。
-                </p>
-              </div>
+                <p className="pl-5 text-slate-500">↓</p>
 
-            </div>
-
-
-            <div className="flex gap-4 rounded-2xl bg-slate-50 p-5">
-
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-700 font-black text-white">
-                2
-              </div>
-
-              <div>
-                <p className="font-black text-blue-900">
-                  必要書類を準備
+                <p>
+                  <span className="font-bold text-blue-700">②</span>{" "}
+                  在学生
                 </p>
 
-                <p className="mt-1 text-sm leading-7 text-slate-600">
-                  奨学金によって必要書類が異なります。
-                  募集要項を確認して準備します。
-                </p>
-              </div>
+                <p className="pl-5 text-slate-500">↓</p>
 
-            </div>
-
-
-            <div className="flex gap-4 rounded-2xl bg-slate-50 p-5">
-
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-700 font-black text-white">
-                3
-              </div>
-
-              <div>
-                <p className="font-black text-blue-900">
-                  申請
+                <p>
+                  <span className="font-bold text-blue-700">③</span>{" "}
+                  トピックス一覧
                 </p>
 
-                <p className="mt-1 text-sm leading-7 text-slate-600">
-                  大学を通して申請する制度と、
-                  財団へ直接申請する制度があります。
-                  申込方法・締切を必ず確認してください。
+                <p className="pl-5 text-slate-500">↓</p>
+
+                <p>
+                  <span className="font-bold text-blue-700">④</span>{" "}
+                  民間財団等の奨学金情報更新のお知らせ
                 </p>
+
+                <p className="pl-5 text-slate-500">↓</p>
+
+                <p>
+                  <span className="font-bold text-blue-700">⑤</span>{" "}
+                  2026年度 奨学金募集について
+                </p>
+
               </div>
 
             </div>
 
           </div>
 
-        </section>
 
+          <ImageBox
+            src="/images/private-scholarship/step1-1.png"
+            alt="長崎大学ホームページ 民間財団等の奨学金情報更新のお知らせ"
+          />
+          <Arrow />
+          <ImageBox
+            src="/images/private-scholarship/step1-2.png"
+            alt="長崎大学ホームページ 民間財団等の奨学金情報更新のお知らせ"
+          />
+          <ImageBox
+            src="/images/private-scholarship/step1-3.png"
+            alt="長崎大学ホームページ 民間財団等の奨学金情報更新のお知らせ"
+          />
+          <Arrow /><ImageBox
+            src="/images/private-scholarship/step1-4.png"
+            alt="長崎大学ホームページ 民間財団等の奨学金情報更新のお知らせ"
+          />
+          <Arrow /><ImageBox
+            src="/images/private-scholarship/step1-5.png"
+            alt="長崎大学ホームページ 民間財団等の奨学金情報更新のお知らせ"
+          />
+          <Arrow /><ImageBox
+            src="/images/private-scholarship/step1-6.png"
+            alt="長崎大学ホームページ 民間財団等の奨学金情報更新のお知らせ"
+          />
+          
+          <p className="mt-3 text-sm leading-7 text-slate-500">
+            長崎大学公式サイトでは、民間財団等の奨学金募集情報が
+            掲載・更新されています。最新の募集内容を確認しましょう。
+          </p>
+
+          <a
+            href="https://www.nagasaki-u.ac.jp/ja/campuslife/topics/life798.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 flex items-center justify-between rounded-xl bg-blue-700 px-6 py-4 font-bold text-white transition hover:bg-blue-800"
+          >
+            <div>
+              <p className="text-xs font-bold tracking-[0.15em] text-blue-200">
+                OFFICIAL WEBSITE
+              </p>
+              <p className="mt-1">
+                長崎大学「民間財団等の奨学金情報更新のお知らせ」
+              </p>
+            </div>
+            <span className="ml-4 text-xl">↗</span>
+          </a>
+
+          <Arrow />
+
+
+          {/* ===================================================== */}
+          {/* STEP 2 */}
+          {/* ===================================================== */}
+
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+
+            <p className="font-black text-blue-700">
+              STEP 2
+            </p>
+
+            <h3 className="mt-2 text-xl font-black text-slate-800">
+              該当する奨学金を探し、申請の準備をする
+            </h3>
+
+            <p className="mt-3 leading-7 text-slate-700">
+              募集一覧から、自分の条件に合う奨学金を探します。
+              奨学金によって応募条件が異なるため、次の項目を確認しましょう。
+            </p>
+
+            <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2">
+
+              <div className="rounded-xl bg-white p-4 text-center font-bold text-slate-800 ring-1 ring-slate-200">
+                専攻・学部
+              </div>
+              <div className="rounded-xl bg-white p-4 text-center font-bold text-slate-800 ring-1 ring-slate-200">
+                学年
+              </div>
+              <div className="rounded-xl bg-white p-4 text-center font-bold text-slate-800 ring-1 ring-slate-200">
+                GPA・成績
+              </div>
+              <div className="rounded-xl bg-white p-4 text-center font-bold text-slate-800 ring-1 ring-slate-200">
+                所得・家計状況
+              </div>
+              <div className="rounded-xl bg-white p-4 text-center font-bold text-slate-800 ring-1 ring-slate-200">
+                地域条件
+              </div>
+              <div className="rounded-xl bg-white p-4 text-center font-bold text-slate-800 ring-1 ring-slate-200">
+                就職条件
+              </div>
+
+            </div>
+
+            <div className="mt-6 rounded-xl border-2 border-blue-200 bg-white p-5">
+              <p className="font-black text-blue-900">
+                次に、文教キャンパス 学生支援センターへ
+              </p>
+              <p className="mt-3 leading-7 text-slate-700">
+                該当する奨学金に応募したい旨を伝え、必要書類を受け取ります。
+                書類の内容を確認し、必要事項を記入しましょう。
+              </p>
+              <p className="mt-3 text-sm font-bold text-red-600">
+                ※申請書類の記入例・見本は後ほど掲載します。
+              </p>
+            </div>
+
+          </div>
+
+          <ImageBox
+            src="/images/private-scholarship/step2-1.png"
+            alt="2026年度 奨学金募集一覧"
+          />
+
+          
+
+          <Arrow />
+
+
+          {/* ===================================================== */}
+          {/* STEP 3 */}
+          {/* ===================================================== */}
+
+          <div className="rounded-2xl border-2 border-blue-200 bg-blue-50 p-6">
+
+            <p className="font-black text-blue-700">
+              STEP 3
+            </p>
+
+            <h3 className="mt-2 text-xl font-black text-blue-900">
+              申請方法・期限を確認する
+            </h3>
+
+            <p className="mt-3 leading-7 text-slate-700">
+              奨学金によって申請方法や提出期限が異なります。
+              「どこに申し込むのか」と「いつまでに申し込むのか」を
+              必ず確認しましょう。
+            </p>
+
+            <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
+
+              <div className="rounded-xl bg-white p-5 text-center ring-1 ring-slate-200">
+                <p className="text-sm font-bold text-blue-700">①</p>
+                <p className="mt-2 font-black text-blue-900">大学を通して申請</p>
+                <p className="mt-2 text-sm leading-6 text-slate-600">学内選考あり</p>
+              </div>
+
+              <div className="rounded-xl bg-white p-5 text-center ring-1 ring-slate-200">
+                <p className="text-sm font-bold text-blue-700">②</p>
+                <p className="mt-2 font-black text-blue-900">大学を通して申請</p>
+                <p className="mt-2 text-sm leading-6 text-slate-600">学内選考なし</p>
+              </div>
+
+              <div className="rounded-xl bg-white p-5 text-center ring-1 ring-slate-200">
+                <p className="text-sm font-bold text-blue-700">③</p>
+                <p className="mt-2 font-black text-blue-900">直接申請</p>
+                <p className="mt-2 text-sm leading-6 text-slate-600">財団等へ直接提出</p>
+              </div>
+
+            </div>
+
+            <div className="mt-6 rounded-xl border border-yellow-300 bg-yellow-50 p-5">
+              <p className="font-bold text-yellow-800">⚠️ 締切に注意</p>
+              <p className="mt-3 text-sm leading-7 text-slate-700">
+                大学を通して申請する場合と、財団等へ直接申請する場合では、
+                提出先や締切が異なることがあります。
+                時間に余裕をもって準備しましょう。
+              </p>
+            </div>
+
+          </div>
+
+        </section>
 
         {/* ===================================================== */}
         {/* ================= IMPORTANT ========================== */}
