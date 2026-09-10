@@ -107,6 +107,9 @@ export default function StudentSupportPage() {
             卒業後などに返済する「貸与型」があります。
             また、奨学金とあわせて授業料・入学金の減免を受けられる制度もあります。
           </p>
+          <p className="mt-7 text-base leading-8 text-red-600">
+              たとえ、低所得でなくとも給付型奨学金＋授業料減免が受けられる可能性があります。是非1度チェックを!
+         </p>
 
         </section>
 

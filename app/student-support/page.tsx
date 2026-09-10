@@ -239,6 +239,54 @@ export default function StudentSupportPage() {
 
   </div>
 </Link>
+{/* =========================
+    日本学生支援機構以外の団体等からの支援
+========================= */}
+<Link
+  href="/student-support/private-scholarship"
+  className="group mt-8 block"
+>
+  <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-10">
+
+    <div className="flex items-start justify-between gap-6">
+
+      <div>
+
+        <p className="text-xs font-bold tracking-[0.3em] text-blue-700">
+          PRIVATE SCHOLARSHIP SUPPORT
+        </p>
+
+        <h2 className="mt-4 text-3xl font-black text-blue-900 md:text-5xl">
+          財団・企業・自治体による奨学金
+        </h2>
+
+        <p className="mt-5 text-xl font-semibold text-slate-700 md:text-2xl">
+          民間財団、企業、自治体などが募集する給付型・貸与型奨学金について紹介します。
+        </p>
+        
+
+      </div>
+
+      {/* 矢印 */}
+      <span className="hidden text-3xl text-blue-700 transition-transform duration-300 group-hover:translate-x-2 md:block">
+        →
+      </span>
+
+    </div>
+
+    <p className="mt-6 max-w-4xl leading-8 text-slate-600 md:text-lg">
+      財団・企業・自治体による奨学金
+      民間財団、企業、自治体などが募集する
+      給付型・貸与型奨学金について紹介します。
+      <strong>また、このような奨学金がうけられる可能性についてもお話しします。</strong>
+    </p>
+
+    <p className="mt-7 font-bold text-blue-600">
+      ▶ 記事を読む
+    </p>
+
+  </div>
+</Link>
 
 
         
