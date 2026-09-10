@@ -63,6 +63,7 @@ export default function PrivateScholarshipPage() {
 
       {/* ================= HERO ================= */}
       <section className="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white">
+
         <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
 
           {/* Back */}
@@ -108,170 +109,1054 @@ export default function PrivateScholarshipPage() {
           </p>
 
           <h2 className="mt-4 text-3xl font-black text-blue-950 md:text-5xl">
-            奨学金を探してみよう
+            奨学金をさがし、大学生活を安定させる
           </h2>
 
           <div className="mt-7 h-1 w-24 bg-blue-700" />
 
           <p className="mt-7 text-base leading-8 text-slate-600 md:text-lg">
-            ここにページ全体の概要を入れます。
+            財団・企業・自治体などが募集する奨学金は、さまざまな条件のもとに多くあります。
+            主に<strong>低所得世帯向け</strong>のものが多いですが、
+            学業成績や研究活動、地域貢献活動、特定の専攻分野を対象とした奨学金など、
+            多様な支援制度があります。
+          </p>
+
+          <p className="mt-7 text-base leading-8 text-slate-600 md:text-lg">
+            こうした奨学金を活用することで、
+            <span className="font-bold text-blue-800">
+              経済的な負担を軽減し、学生生活を支える選択肢
+            </span>
+            を増やすことができます。
           </p>
 
         </section>
 
 
         {/* ===================================================== */}
-        {/* ================= SEARCH ============================= */}
+        {/* ============== LOW INCOME IS A CHANCE ================ */}
         {/* ===================================================== */}
 
-        <section className="mt-10 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 md:p-10">
+        <div className="mt-8 rounded-3xl bg-blue-950 p-8 text-white md:p-10">
 
-          <p className="text-xs font-bold tracking-[0.3em] text-blue-700">
-            SCHOLARSHIP SEARCH
+          <p className="text-sm font-bold tracking-[0.25em] text-blue-200">
+            LOW INCOME × SCHOLARSHIP
           </p>
 
-          <h2 className="mt-4 text-3xl font-black text-blue-900 md:text-4xl">
-            奨学金を探す
-          </h2>
+          <h3 className="mt-4 text-3xl font-black leading-tight md:text-4xl">
+            低所得であることは、
+            <br />
+            奨学金を探すうえでの「チャンス」です。
+          </h3>
 
-          <p className="mt-5 leading-8 text-slate-600">
-            ここに検索機能・検索条件などを入れます。
+          <p className="mt-5 text-lg leading-8 text-blue-100">
+            奨学金では、成績や専門分野だけでなく、
+            <span className="font-black text-white">
+              世帯収入や家計状況そのものが応募条件
+            </span>
+            になる制度があります。
           </p>
 
-          {/* 検索フォーム予定地 */}
-          <div className="mt-8 rounded-2xl border-2 border-slate-200 bg-slate-50 p-6">
-            <div className="grid gap-4 md:grid-cols-2">
-              
-              <div className="h-12 rounded-xl bg-white border border-slate-200" />
-              
-              <div className="h-12 rounded-xl bg-white border border-slate-200" />
+          <p className="mt-4 text-lg leading-8 text-blue-100">
+            つまり、
+            <span className="font-black text-white">
+              「収入が低いから奨学金をもらえない」のではありません。
+            </span>
+            むしろ、経済的な支援を必要としている学生だからこそ、
+            <span className="font-black text-white">
+              応募できる奨学金が見つかる可能性があります。
+            </span>
+          </p>
 
+
+          {/* DATA */}
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+
+            <div className="rounded-2xl bg-white/10 p-6 ring-1 ring-white/10">
+              <p className="text-sm font-bold text-blue-200">
+                2026年度・8月21日時点
+              </p>
+
+              <p className="mt-2 text-4xl font-black">
+                219件
+              </p>
+
+              <p className="mt-2 text-sm leading-6 text-blue-100">
+                長崎大学が公開するJASSO以外の
+                民間財団・企業・自治体等の奨学金
+              </p>
             </div>
 
-            <div className="mt-4 h-12 rounded-xl bg-blue-100" />
+
+            <div className="rounded-2xl bg-white/10 p-6 ring-1 ring-white/10">
+              <p className="text-sm font-bold text-blue-200">
+                家計・所得条件あり
+              </p>
+
+              <p className="mt-2 text-4xl font-black">
+                約60～80件
+              </p>
+
+              <p className="mt-2 text-sm leading-6 text-blue-100">
+                219件の一覧をもとにした概算。
+                所得・家計状況を条件とする制度があります。
+              </p>
+            </div>
+
+
+            <div className="rounded-2xl bg-white/10 p-6 ring-1 ring-white/10">
+              <p className="text-sm font-bold text-blue-200">
+                所得条件の例
+              </p>
+
+              <p className="mt-2 text-4xl font-black">
+                300万円以下
+              </p>
+
+              <p className="mt-2 text-sm leading-6 text-blue-100">
+                世帯所得300万円以下を条件とする
+                奨学金も確認されています。
+              </p>
+            </div>
+
           </div>
 
-        </section>
 
+          {/* STRONG MESSAGE */}
+          <div className="mt-8 rounded-2xl bg-white p-6 text-blue-950 md:p-8">
 
-        {/* ===================================================== */}
-        {/* ================= CONDITIONS ========================= */}
-        {/* ===================================================== */}
+            <p className="text-xl font-black md:text-2xl">
+              💡 低所得の学生こそ、調べる価値があります。
+            </p>
 
-        <section className="mt-10 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 md:p-10">
+            <p className="mt-4 leading-8 text-slate-700">
+              例えば、世帯収入が低い場合、
+              「経済的に修学が困難」「学費の支弁が困難」
+              といった条件に該当する可能性があります。
+              さらに、GPA・学年・専門分野などの条件も満たせば、
+              <span className="font-black text-blue-900">
+                給付型奨学金を受け取れる可能性があります。
+              </span>
+            </p>
 
-          <p className="text-xs font-bold tracking-[0.3em] text-blue-700">
-            REQUIREMENTS
-          </p>
+            <div className="mt-5 rounded-xl border-2 border-blue-200 bg-blue-50 p-5">
 
-          <h2 className="mt-4 text-3xl font-black text-blue-900 md:text-4xl">
-            応募条件
-          </h2>
-
-          <div className="mt-8 space-y-5">
-
-            {/* 条件1 */}
-            <div className="rounded-2xl border-2 border-slate-200 p-6">
-              <h3 className="text-xl font-black text-blue-700">
-                専攻・分野
-              </h3>
-
-              <p className="mt-3 text-sm leading-7 text-slate-700">
-                ここに内容を入れます。
+              <p className="font-black text-blue-900">
+                「低所得 ＝ 不利」ではありません。
               </p>
-            </div>
 
-            {/* 条件2 */}
-            <div className="rounded-2xl border-2 border-slate-200 p-6">
-              <h3 className="text-xl font-black text-blue-700">
-                学年
-              </h3>
-
-              <p className="mt-3 text-sm leading-7 text-slate-700">
-                ここに内容を入れます。
+              <p className="mt-2 font-bold leading-7 text-blue-800">
+                「低所得 ＝ 経済的支援の対象になる可能性がある」
               </p>
-            </div>
 
-            {/* 条件3 */}
-            <div className="rounded-2xl border-2 border-slate-200 p-6">
-              <h3 className="text-xl font-black text-blue-700">
-                成績・GPA
-              </h3>
-
-              <p className="mt-3 text-sm leading-7 text-slate-700">
-                ここに内容を入れます。
-              </p>
-            </div>
-
-            {/* 条件4 */}
-            <div className="rounded-2xl border-2 border-slate-200 p-6">
-              <h3 className="text-xl font-black text-blue-700">
-                家計・年収
-              </h3>
-
-              <p className="mt-3 text-sm leading-7 text-slate-700">
-                ここに内容を入れます。
-              </p>
             </div>
 
           </div>
 
-        </section>
+        </div>
 
 
         {/* ===================================================== */}
-        {/* ================= SCHOLARSHIP LIST =================== */}
+        {/* ================= FINAL CTA ========================== */}
+        {/* ===================================================== */}
+
+        <div className="mt-8 rounded-3xl bg-gradient-to-br from-blue-950 to-blue-800 p-8 text-center text-white md:p-10">
+
+          <p className="text-2xl font-black md:text-3xl">
+            だから、最初から諦めないでください。
+          </p>
+
+          <p className="mt-4 leading-7 text-blue-100">
+            専門分野・学年・GPA・所得・地域・就職条件から、
+            自分に該当する可能性のある奨学金を探してみましょう。
+          </p>
+
+        </div>
+
+
+        {/* ===================================================== */}
+        {/* ========== 2026 SCHOLARSHIP INTRODUCTION ============ */}
         {/* ===================================================== */}
 
         <section className="mt-10 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 md:p-10">
 
           <p className="text-xs font-bold tracking-[0.3em] text-blue-700">
-            SCHOLARSHIP LIST
+            2026 SCHOLARSHIP GUIDE
           </p>
 
           <h2 className="mt-4 text-3xl font-black text-blue-900 md:text-4xl">
-            奨学金一覧
+            2026年度、こんな奨学金があります
           </h2>
 
-          <p className="mt-5 leading-8 text-slate-600">
-            ここに奨学金の一覧を表示します。
+          <div className="mt-8 h-1 w-24 bg-blue-700" />
+
+          <p className="mt-8 text-lg leading-9 text-slate-600">
+            長崎大学では、2026年度も日本学生支援機構（JASSO）以外に、
+            民間財団・企業・地方公共団体などによるさまざまな
+            奨学金・返還支援制度が案内されています。
           </p>
 
+          <div className="mt-5 rounded-2xl border border-blue-200 bg-blue-50 p-6">
 
-          {/* 奨学金カード */}
-          <div className="mt-8 space-y-4">
+            <p className="font-black text-blue-900">
+              📅 2026年8月21日時点
+            </p>
 
-            <div className="rounded-2xl border-2 border-slate-200 p-6">
+            <p className="mt-3 leading-8 text-slate-700">
+              学業成績を重視するもの、家計状況を重視するもの、
+              特定の専攻・学年を対象とするもの、
+              卒業後の就職先や居住地域に条件があるものなど、
+              さまざまな制度があります。
+            </p>
+
+          </div>
+
+
+          {/* ================= CATEGORY 01 ================= */}
+
+          <div className="mt-10">
+
+            <div className="rounded-2xl border-2 border-blue-200 bg-blue-50 p-6">
+
               <p className="text-sm font-bold tracking-[0.2em] text-blue-700">
-                SCHOLARSHIP 01
+                CATEGORY 01
               </p>
 
-              <h3 className="mt-3 text-2xl font-black text-blue-900">
-                奨学金名
+              <h3 className="mt-3 text-2xl font-black text-blue-900 md:text-3xl">
+                📚 成績を活かしたい人へ
               </h3>
 
-              <p className="mt-3 text-sm leading-7 text-slate-600">
-                ここに概要を入れます。
+              <p className="mt-3 text-lg font-bold text-blue-800">
+                成績優秀者向け奨学金
               </p>
 
-              <div className="mt-5 grid gap-3 md:grid-cols-2">
-                <div className="rounded-xl bg-slate-50 p-4">
-                  <p className="text-xs text-slate-500">給付・貸与</p>
-                  <p className="mt-1 font-bold">給付型</p>
+              <p className="mt-3 leading-7 text-slate-600">
+                学業成績や学修意欲が重視される奨学金です。
+              </p>
+
+            </div>
+
+
+            <div className="mt-5 grid gap-4 md:grid-cols-3">
+
+              {/* KANSO */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+
+                <p className="text-xs font-bold tracking-[0.2em] text-blue-700">
+                  SCHOLARSHIP 01
+                </p>
+
+                <h4 className="mt-3 text-xl font-black text-blue-900">
+                  KANSO奨学金
+                </h4>
+
+                <div className="mt-5 space-y-2 text-sm leading-7 text-slate-600">
+
+                  <p>
+                    <span className="font-bold text-slate-900">対象：</span>
+                    経済系学部3年生
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">GPA：</span>
+                    3.0以上が目安
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">支給額：</span>
+                    年額48万円
+                  </p>
+
+                  <p className="font-bold text-blue-800">
+                    給付型（返済不要）
+                  </p>
+
                 </div>
 
-                <div className="rounded-xl bg-slate-50 p-4">
-                  <p className="text-xs text-slate-500">対象学年</p>
-                  <p className="mt-1 font-bold">○年生</p>
+              </div>
+
+
+              {/* 深川真マリモ */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+
+                <p className="text-xs font-bold tracking-[0.2em] text-blue-700">
+                  SCHOLARSHIP 02
+                </p>
+
+                <h4 className="mt-3 text-xl font-black text-blue-900">
+                  深川真マリモ奨学財団
+                </h4>
+
+                <div className="mt-5 space-y-2 text-sm leading-7 text-slate-600">
+
+                  <p>
+                    <span className="font-bold text-slate-900">対象：</span>
+                    経済系学部3年生
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">GPA：</span>
+                    3.0以上が目安
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">支給額：</span>
+                    年額48万円
+                  </p>
+
+                  <p className="font-bold text-blue-800">
+                    給付型（返済不要）
+                  </p>
+
                 </div>
+
+              </div>
+
+
+              {/* 丹下大未来 */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+
+                <p className="text-xs font-bold tracking-[0.2em] text-blue-700">
+                  SCHOLARSHIP 03
+                </p>
+
+                <h4 className="mt-3 text-xl font-black text-blue-900">
+                  丹下大未来創造育英財団
+                </h4>
+
+                <div className="mt-5 space-y-2 text-sm leading-7 text-slate-600">
+
+                  <p>
+                    <span className="font-bold text-slate-900">対象：</span>
+                    理工系学部3年生
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">GPA：</span>
+                    3.0以上が目安
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">支給額：</span>
+                    年額48万円
+                  </p>
+
+                  <p className="font-bold text-blue-800">
+                    給付型（返済不要）
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          {/* ================= CATEGORY 02 ================= */}
+
+          <div className="mt-10">
+
+            <div className="rounded-2xl border-2 border-green-200 bg-green-50 p-6">
+
+              <p className="text-sm font-bold tracking-[0.2em] text-green-700">
+                CATEGORY 02
+              </p>
+
+              <h3 className="mt-3 text-2xl font-black text-green-900 md:text-3xl">
+                💰 経済的な支援を必要とする人へ
+              </h3>
+
+              <p className="mt-3 text-lg font-bold text-green-800">
+                家計状況を重視する奨学金
+              </p>
+
+              <p className="mt-3 leading-7 text-slate-600">
+                世帯収入・所得など、経済的な状況を重視する奨学金です。
+              </p>
+
+            </div>
+
+
+            <div className="mt-5 grid gap-4 md:grid-cols-3">
+
+              {/* DYM */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+
+                <p className="text-xs font-bold tracking-[0.2em] text-green-700">
+                  SCHOLARSHIP 04
+                </p>
+
+                <h4 className="mt-3 text-xl font-black text-blue-900">
+                  DYM健康医療財団
+                </h4>
+
+                <div className="mt-5 space-y-2 text-sm leading-7 text-slate-600">
+
+                  <p>
+                    <span className="font-bold text-slate-900">対象：</span>
+                    看護学科3年生
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">GPA：</span>
+                    3.0以上が目安
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">家計：</span>
+                    世帯収入要件あり
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">支給額：</span>
+                    年額48万円 × 2年間
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              {/* 再チャレンジ */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+
+                <p className="text-xs font-bold tracking-[0.2em] text-green-700">
+                  SCHOLARSHIP 05
+                </p>
+
+                <h4 className="mt-3 text-xl font-black text-blue-900">
+                  再チャレンジ奨学金
+                </h4>
+
+                <div className="mt-5 space-y-2 text-sm leading-7 text-slate-600">
+
+                  <p>
+                    <span className="font-bold text-slate-900">対象：</span>
+                    医療・福祉・看護分野へ再進学する学生
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">所得：</span>
+                    給与所得500万円以内が目安
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">支給額：</span>
+                    月額5万円
+                  </p>
+
+                  <p className="font-bold text-green-800">
+                    給付型
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              {/* 平石 */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+
+                <p className="text-xs font-bold tracking-[0.2em] text-green-700">
+                  SCHOLARSHIP 06
+                </p>
+
+                <h4 className="mt-3 text-xl font-black text-blue-900">
+                  平石教育財団
+                </h4>
+
+                <div className="mt-5 space-y-2 text-sm leading-7 text-slate-600">
+
+                  <p>
+                    <span className="font-bold text-slate-900">対象：</span>
+                    大学1年生
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">所得：</span>
+                    世帯所得300万円以下
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">支給額：</span>
+                    年額36万円
+                  </p>
+
+                  <p className="font-bold text-green-800">
+                    給付型
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          {/* ================= CATEGORY 03 ================= */}
+
+          <div className="mt-10">
+
+            <div className="rounded-2xl border-2 border-purple-200 bg-purple-50 p-6">
+
+              <p className="text-sm font-bold tracking-[0.2em] text-purple-700">
+                CATEGORY 03
+              </p>
+
+              <h3 className="mt-3 text-2xl font-black text-purple-900 md:text-3xl">
+                🌏 将来の進路や地域貢献を考える人へ
+              </h3>
+
+              <p className="mt-3 text-lg font-bold text-purple-800">
+                返還支援・地域定着型の奨学金
+              </p>
+
+              <p className="mt-3 leading-7 text-slate-600">
+                特定の地域での就職・定住などを条件として、
+                奨学金の返還を支援する制度もあります。
+              </p>
+
+            </div>
+
+
+            <div className="mt-5 grid gap-4 md:grid-cols-3">
+
+              {/* 長崎県 */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+
+                <p className="text-xs font-bold tracking-[0.2em] text-purple-700">
+                  SCHOLARSHIP 07
+                </p>
+
+                <h4 className="mt-3 text-xl font-black text-blue-900">
+                  長崎県産業人材育成
+                  <br />
+                  奨学金返済アシスト事業
+                </h4>
+
+                <div className="mt-5 space-y-2 text-sm leading-7 text-slate-600">
+
+                  <p>
+                    <span className="font-bold text-slate-900">対象：</span>
+                    長崎県内就職・定住希望者
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">内容：</span>
+                    奨学金返還額の一部を補助
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">支援額：</span>
+                    最大150万円助成
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              {/* 山口県 */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+
+                <p className="text-xs font-bold tracking-[0.2em] text-purple-700">
+                  SCHOLARSHIP 08
+                </p>
+
+                <h4 className="mt-3 text-xl font-black text-blue-900">
+                  山口県奨学金返還補助制度
+                </h4>
+
+                <div className="mt-5 space-y-2 text-sm leading-7 text-slate-600">
+
+                  <p>
+                    <span className="font-bold text-slate-900">対象：</span>
+                    理系大学院生・薬学部生
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">地域：</span>
+                    山口県内就職希望者
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">支援額：</span>
+                    最大211.2万円補助
+                  </p>
+
+                </div>
+
+              </div>
+
+
+              {/* 石川県 */}
+              <div className="rounded-2xl border border-slate-200 bg-white p-6">
+
+                <p className="text-xs font-bold tracking-[0.2em] text-purple-700">
+                  SCHOLARSHIP 09
+                </p>
+
+                <h4 className="mt-3 text-xl font-black text-blue-900">
+                  いしかわ就職応援奨学金
+                  <br />
+                  返還助成制度
+                </h4>
+
+                <div className="mt-5 space-y-2 text-sm leading-7 text-slate-600">
+
+                  <p>
+                    <span className="font-bold text-slate-900">対象：</span>
+                    石川県内就職希望者
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">内容：</span>
+                    奨学金返還を助成
+                  </p>
+
+                  <p>
+                    <span className="font-bold text-slate-900">支援額：</span>
+                    最大200万円助成
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          {/* ===================================================== */}
+          {/* ============== SCHOLARSHIP DISTRIBUTION ============== */}
+          {/* ===================================================== */}
+
+          <div className="mt-10 rounded-3xl bg-white p-0">
+
+            <p className="text-xs font-bold tracking-[0.3em] text-blue-700">
+              SCHOLARSHIP DISTRIBUTION
+            </p>
+
+            <h2 className="mt-4 text-3xl font-black text-blue-900 md:text-4xl">
+              奨学金の応募条件には、どんな傾向がある？
+            </h2>
+
+            <p className="mt-5 leading-8 text-slate-600 md:text-lg">
+              2026年度に長崎大学で募集された日本学生支援機構以外の
+              奨学金をもとに、応募条件の傾向をおおまかに整理しました。
+              奨学金によって条件は大きく異なるため、
+              あくまで目安として確認してください。
+            </p>
+
+
+            {/* ================= GPA ================= */}
+
+            <div className="mt-10 rounded-2xl border-2 border-blue-200 bg-blue-50 p-6 md:p-8">
+
+              <p className="text-sm font-bold tracking-[0.2em] text-blue-700">
+                01 / GPA
+              </p>
+
+              <h3 className="mt-3 text-2xl font-black text-blue-900 md:text-3xl">
+                GPA条件の分布
+              </h3>
+
+              <p className="mt-4 text-slate-600">
+                GPAを応募条件として設定している奨学金もあります。
+                特に「GPA3.0以上」を目安とする財団が多く見られます。
+              </p>
+
+              <div className="mt-6 space-y-3">
+
+                <div className="flex items-center justify-between rounded-xl bg-white p-4">
+                  <span className="font-bold text-slate-700">
+                    GPA 3.0以上
+                  </span>
+                  <span className="font-black text-blue-900">
+                    約35～45件
+                  </span>
+                </div>
+
+                <div className="flex items-center justify-between rounded-xl bg-white p-4">
+                  <span className="font-bold text-slate-700">
+                    GPA 2.8以上
+                  </span>
+                  <span className="font-black text-blue-900">
+                    約3件
+                  </span>
+                </div>
+
+                <div className="flex items-center justify-between rounded-xl bg-white p-4">
+                  <span className="font-bold text-slate-700">
+                    GPA 2.5以上
+                  </span>
+                  <span className="font-black text-blue-900">
+                    約5件
+                  </span>
+                </div>
+
+                <div className="flex items-center justify-between rounded-xl bg-white p-4">
+                  <span className="font-bold text-slate-700">
+                    GPA 2.4以上
+                  </span>
+                  <span className="font-black text-blue-900">
+                    約5件
+                  </span>
+                </div>
+
+                <div className="flex items-center justify-between rounded-xl bg-white p-4">
+                  <span className="font-bold text-slate-700">
+                    GPA不要
+                  </span>
+                  <span className="font-black text-blue-900">
+                    約150件
+                  </span>
+                </div>
+
+              </div>
+
+              <div className="mt-6 rounded-xl border border-blue-200 bg-white p-5">
+
+                <p className="font-bold text-blue-900">
+                  POINT
+                </p>
+
+                <p className="mt-2 leading-7 text-slate-700">
+                  多くの財団で、
+                  <span className="font-black text-blue-700">
+                    「GPA3.0以上」が目安
+                  </span>
+                  として設定されています。
+                  一方で、GPAを応募条件として明記していない奨学金も多数あります。
+                </p>
+
               </div>
 
             </div>
 
 
-            {/* 追加カード */}
-            <div className="rounded-2xl border-2 border-slate-200 p-6">
-              奨学金カードを追加
+            {/* ================= FIELD ================= */}
+
+            <div className="mt-6 rounded-2xl border-2 border-slate-200 bg-slate-50 p-6 md:p-8">
+
+              <p className="text-sm font-bold tracking-[0.2em] text-slate-500">
+                02 / FIELD
+              </p>
+
+              <h3 className="mt-3 text-2xl font-black text-blue-900 md:text-3xl">
+                学部・専門分野の分布
+              </h3>
+
+              <p className="mt-4 text-slate-600">
+                奨学金によっては、対象となる学部・学科・専門分野が
+                細かく指定されています。
+              </p>
+
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+
+                {[
+                  ["全学部", "約80件"],
+                  ["理工系", "約25件"],
+                  ["経済系", "約15件"],
+                  ["医学系", "約15件"],
+                  ["看護系", "約5件"],
+                  ["薬学系", "約8件"],
+                  ["教育系", "約5件"],
+                  ["建築系", "約3件"],
+                  ["情報系", "約5件"],
+                  ["化学系", "約3件"],
+                  ["水産系", "約2件"],
+                ].map(([label, value]) => (
+                  <div
+                    key={label}
+                    className="rounded-xl bg-white p-4"
+                  >
+                    <p className="text-sm text-slate-500">
+                      {label}
+                    </p>
+                    <p className="mt-1 text-xl font-black text-blue-900">
+                      {value}
+                    </p>
+                  </div>
+                ))}
+
+              </div>
+
+              <div className="mt-6 rounded-xl border border-slate-200 bg-white p-5">
+
+                <p className="font-bold text-blue-900">
+                  POINT
+                </p>
+
+                <p className="mt-2 leading-7 text-slate-700">
+                  特に
+                  <span className="font-black text-blue-700">
+                    理工系・経済系
+                  </span>
+                  を対象とする奨学金が比較的多く見られます。
+                  一方、全学部を対象とする奨学金も多くあります。
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* ================= HOUSEHOLD ================= */}
+
+            <div className="mt-6 rounded-2xl border-2 border-green-200 bg-green-50 p-6 md:p-8">
+
+              <p className="text-sm font-bold tracking-[0.2em] text-green-700">
+                03 / HOUSEHOLD INCOME
+              </p>
+
+              <h3 className="mt-3 text-2xl font-black text-green-900 md:text-3xl">
+                家計条件の分布
+              </h3>
+
+              <p className="mt-4 text-slate-600">
+                世帯収入や所得、学費の支弁が困難であることを
+                応募条件としている奨学金もあります。
+              </p>
+
+              <div className="mt-6 space-y-3">
+
+                {[
+                  ["家計条件あり", "約60～80件"],
+                  ["収入500万円以下目安", "約15件"],
+                  ["世帯年収300万円以下", "約5件"],
+                  ["所得制限のみ記載", "約20件"],
+                  ["家計条件なし", "約120件"],
+                ].map(([label, value]) => (
+                  <div
+                    key={label}
+                    className="flex items-center justify-between rounded-xl bg-white p-4"
+                  >
+                    <span className="font-bold text-slate-700">
+                      {label}
+                    </span>
+
+                    <span className="font-black text-green-900">
+                      {value}
+                    </span>
+                  </div>
+                ))}
+
+              </div>
+
+              <div className="mt-6 rounded-xl border border-green-200 bg-white p-5">
+
+                <p className="font-bold text-green-900">
+                  POINT
+                </p>
+
+                <p className="mt-2 leading-7 text-slate-700">
+                  かなりの財団が
+                  <span className="font-black text-green-700">
+                    「学費の支弁が困難」
+                  </span>
+                  であることを応募条件の一つとしています。
+                  経済的に厳しい家庭の学生は、
+                  自分が対象になる奨学金がないか積極的に探すことが重要です。
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* ================= GRADE ================= */}
+
+            <div className="mt-6 rounded-2xl border-2 border-slate-200 bg-slate-50 p-6 md:p-8">
+
+              <p className="text-sm font-bold tracking-[0.2em] text-slate-500">
+                04 / SCHOOL YEAR
+              </p>
+
+              <h3 className="mt-3 text-2xl font-black text-blue-900 md:text-3xl">
+                学年分布
+              </h3>
+
+              <p className="mt-4 text-slate-600">
+                奨学金によって、応募できる学年が指定されている場合があります。
+                2026年度の募集一覧では、特に学部3年生を対象とする制度が
+                比較的多く見られます。
+              </p>
+
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+
+                {[
+                  ["学部1年", "約20件"],
+                  ["学部2年", "約15件"],
+                  ["学部3年", "約45件"],
+                  ["学部4年", "約10件"],
+                  ["医学部5年", "約5件"],
+                  ["大学院", "約30件"],
+                  ["全学年", "約80件"],
+                ].map(([label, value], index) => (
+                  <div
+                    key={label}
+                    className={`rounded-xl bg-white p-4 ${
+                      index === 6 ? "sm:col-span-2" : ""
+                    }`}
+                  >
+                    <p className="text-sm text-slate-500">
+                      {label}
+                    </p>
+
+                    <p className="mt-1 text-xl font-black text-blue-900">
+                      {value}
+                    </p>
+                  </div>
+                ))}
+
+              </div>
+
+              <div className="mt-6 rounded-xl border border-slate-200 bg-white p-5">
+
+                <p className="font-bold text-blue-900">
+                  POINT
+                </p>
+
+                <p className="mt-2 leading-7 text-slate-700">
+                  <span className="font-black text-blue-700">
+                    学部3年生向けの奨学金が比較的多い
+                  </span>
+                  ことが特徴です。
+                  一方で、1・2年生や4年生、医学部5年生、
+                  大学院生、全学年を対象とする制度もあります。
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* ================= IMPORTANT ================= */}
+
+            <div className="mt-8 rounded-2xl border-2 border-blue-700 bg-blue-950 p-6 text-white md:p-8">
+
+              <p className="text-sm font-bold tracking-[0.2em] text-blue-200">
+                IMPORTANT POINTS
+              </p>
+
+              <h3 className="mt-3 text-2xl font-black md:text-3xl">
+                奨学金を探すとき、特に確認したい4つ
+              </h3>
+
+              <div className="mt-6 grid gap-4 md:grid-cols-2">
+
+                <div className="rounded-xl bg-white/10 p-5">
+                  <p className="text-sm font-bold text-blue-200">
+                    01
+                  </p>
+
+                  <p className="mt-2 text-xl font-black">
+                    専門分野
+                  </p>
+
+                  <p className="mt-2 text-sm leading-6 text-blue-100">
+                    自分の学部・学科・専攻が対象になっているか。
+                  </p>
+                </div>
+
+
+                <div className="rounded-xl bg-white/10 p-5">
+                  <p className="text-sm font-bold text-blue-200">
+                    02
+                  </p>
+
+                  <p className="mt-2 text-xl font-black">
+                    GPA・学業成績
+                  </p>
+
+                  <p className="mt-2 text-sm leading-6 text-blue-100">
+                    GPA3.0以上などの成績条件があるか。
+                  </p>
+                </div>
+
+
+                <div className="rounded-xl bg-white/10 p-5">
+                  <p className="text-sm font-bold text-blue-200">
+                    03
+                  </p>
+
+                  <p className="mt-2 text-xl font-black">
+                    所得・家計状況
+                  </p>
+
+                  <p className="mt-2 text-sm leading-6 text-blue-100">
+                    世帯年収や所得、経済的困難に関する条件があるか。
+                  </p>
+                </div>
+
+
+                <div className="rounded-xl bg-white/10 p-5">
+                  <p className="text-sm font-bold text-blue-200">
+                    04
+                  </p>
+
+                  <p className="mt-2 text-xl font-black">
+                    学年
+                  </p>
+
+                  <p className="mt-2 text-sm leading-6 text-blue-100">
+                    1年生・3年生・大学院など、
+                    対象学年に該当するか。
+                  </p>
+                </div>
+
+              </div>
+
+
+              <div className="mt-6 rounded-xl bg-white p-5 text-slate-900">
+
+                <p className="font-black text-blue-900">
+                  重要なのは「自分に合った奨学金」を探すこと
+                </p>
+
+                <p className="mt-2 text-sm leading-7 text-slate-700">
+                  奨学金は、すべての学生が同じ条件で応募するものではありません。
+                  <span className="font-bold">
+                    専門分野・学年・GPA・所得
+                  </span>
+                  など、自分の条件に合う制度を探すことで、
+                  利用できる支援が見つかる可能性があります。
+                </p>
+
+              </div>
+
+            </div>
+
+
+            {/* ================= NOTE ================= */}
+
+            <div className="mt-6 rounded-xl border border-yellow-300 bg-yellow-50 p-5">
+
+              <p className="font-bold text-yellow-800">
+                ⚠️ この分布について
+              </p>
+
+              <p className="mt-3 text-sm leading-7 text-slate-700">
+                上記の件数は、2026年度の長崎大学における
+                日本学生支援機構以外の奨学金募集一覧をもとにした
+                <span className="font-bold">
+                  概算
+                </span>
+                です。
+                1つの奨学金が複数の条件に該当する場合があるため、
+                各項目の件数を合計しても219件とは一致しません。
+              </p>
+
+              <p className="mt-3 text-sm leading-7 text-slate-700">
+                また、「GPA不要」「家計条件なし」は、
+                募集要項にその条件が明記されていないものを
+                おおまかに分類したものです。
+                実際の応募資格・採用基準・支援額については、
+                必ず各財団・自治体等の最新の募集要項を確認してください。
+              </p>
+
             </div>
 
           </div>
@@ -279,27 +1164,9 @@ export default function PrivateScholarshipPage() {
         </section>
 
 
-        {/* ===================================================== */}
-        {/* ================= SEARCH RESULT ====================== */}
-        {/* ===================================================== */}
+        
 
-        <section className="mt-10 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 md:p-10">
 
-          <p className="text-xs font-bold tracking-[0.3em] text-blue-700">
-            SEARCH RESULT
-          </p>
-
-          <h2 className="mt-4 text-3xl font-black text-blue-900 md:text-4xl">
-            あなたに合った奨学金
-          </h2>
-
-          <div className="mt-8 rounded-2xl border-2 border-blue-200 bg-blue-50 p-6">
-            <p className="text-sm leading-7 text-slate-700">
-              ここに検索結果を表示します。
-            </p>
-          </div>
-
-        </section>
 
 
         {/* ===================================================== */}
@@ -319,6 +1186,7 @@ export default function PrivateScholarshipPage() {
           <div className="mt-8 space-y-4">
 
             <div className="flex gap-4 rounded-2xl bg-blue-50 p-5">
+
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-700 font-black text-white">
                 1
               </div>
@@ -328,14 +1196,17 @@ export default function PrivateScholarshipPage() {
                   募集内容を確認
                 </p>
 
-                <p className="mt-1 text-sm text-slate-600">
-                  ここに内容を入れます。
+                <p className="mt-1 text-sm leading-7 text-slate-600">
+                  対象学年、専攻、GPA、所得、地域、
+                  就職条件などを確認します。
                 </p>
               </div>
+
             </div>
 
 
             <div className="flex gap-4 rounded-2xl bg-slate-50 p-5">
+
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-700 font-black text-white">
                 2
               </div>
@@ -345,14 +1216,17 @@ export default function PrivateScholarshipPage() {
                   必要書類を準備
                 </p>
 
-                <p className="mt-1 text-sm text-slate-600">
-                  ここに内容を入れます。
+                <p className="mt-1 text-sm leading-7 text-slate-600">
+                  奨学金によって必要書類が異なります。
+                  募集要項を確認して準備します。
                 </p>
               </div>
+
             </div>
 
 
             <div className="flex gap-4 rounded-2xl bg-slate-50 p-5">
+
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-700 font-black text-white">
                 3
               </div>
@@ -362,10 +1236,13 @@ export default function PrivateScholarshipPage() {
                   申請
                 </p>
 
-                <p className="mt-1 text-sm text-slate-600">
-                  ここに内容を入れます。
+                <p className="mt-1 text-sm leading-7 text-slate-600">
+                  大学を通して申請する制度と、
+                  財団へ直接申請する制度があります。
+                  申込方法・締切を必ず確認してください。
                 </p>
               </div>
+
             </div>
 
           </div>
@@ -390,15 +1267,26 @@ export default function PrivateScholarshipPage() {
           <div className="mt-6 space-y-4 text-sm leading-8 text-slate-700">
 
             <p>
-              ・ここに注意事項を入れます。
+              ・奨学金ごとに応募条件・締切・必要書類が異なります。
             </p>
 
             <p>
-              ・ここに注意事項を入れます。
+              ・GPAや所得の条件を満たしていても、必ず採用されるとは限りません。
             </p>
 
             <p>
-              ・ここに注意事項を入れます。
+              ・地域条件や卒業後の就職条件など、
+              将来の進路に関わる条件が設定されている場合があります。
+            </p>
+
+            <p>
+              ・募集内容や支援額は変更される場合があるため、
+              最新の募集要項を確認してください。
+            </p>
+
+            <p>
+              ・検索結果は「応募条件に該当する可能性」を示すものであり、
+              最終的な応募資格を保証するものではありません。
             </p>
 
           </div>
@@ -430,19 +1318,31 @@ export default function PrivateScholarshipPage() {
 
             <div className="rounded-2xl border border-slate-200 p-5">
               <p className="font-bold text-slate-700">
-                □ 成績条件を確認した
+                □ 対象学年・専門分野を確認した
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-200 p-5">
               <p className="font-bold text-slate-700">
-                □ 家計条件を確認した
+                □ 成績・GPA条件を確認した
               </p>
             </div>
 
             <div className="rounded-2xl border border-slate-200 p-5">
               <p className="font-bold text-slate-700">
-                □ 必要書類を確認した
+                □ 家計・所得条件を確認した
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 p-5">
+              <p className="font-bold text-slate-700">
+                □ 地域・就職条件を確認した
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-slate-200 p-5">
+              <p className="font-bold text-slate-700">
+                □ 必要書類・申込期限を確認した
               </p>
             </div>
 
@@ -461,13 +1361,33 @@ export default function PrivateScholarshipPage() {
             MESSAGE
           </p>
 
-          <h2 className="mt-4 text-3xl font-black text-blue-950">
+          <h2 className="mt-4 text-3xl font-black text-blue-950 md:text-4xl">
             自分に合った奨学金を探してみよう
           </h2>
 
           <p className="mt-5 leading-8 text-slate-600 md:text-lg">
-            ここに最後のメッセージを入れます。
+            奨学金は、低所得世帯向けの制度だけではありません。
+            成績、専門分野、学年、地域、将来の進路など、
+            さまざまな条件に応じた制度があります。
           </p>
+
+          <p className="mt-4 leading-8 text-slate-600 md:text-lg">
+            「自分には無理」と最初から決めつけず、
+            自分の条件に合う制度がないか探してみましょう。
+          </p>
+
+          <div className="mt-6 rounded-2xl bg-blue-950 p-6 text-white">
+
+            <p className="text-xl font-black">
+              奨学金は「探すこと」から始まります。
+            </p>
+
+            <p className="mt-3 text-sm leading-7 text-blue-100">
+              専門分野・学年・GPA・所得・地域・就職条件を確認して、
+              自分に合った支援を見つけましょう。
+            </p>
+
+          </div>
 
         </section>
 
