@@ -112,6 +112,129 @@ export default function StudentSupportPage() {
          </p>
 
         </section>
+        {/* ===================================================== */}
+{/* ================= REFERENCE MATERIALS =============== */}
+{/* ===================================================== */}
+
+<section className="mt-10 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 md:p-10">
+
+  <p className="text-xs font-bold tracking-[0.3em] text-blue-700">
+    REFERENCE MATERIALS
+  </p>
+
+  <h2 className="mt-4 text-3xl font-black text-blue-900 md:text-4xl">
+    このページについて
+  </h2>
+
+  <div className="mt-5 h-1 w-16 bg-blue-700"></div>
+
+  <p className="mt-7 text-base leading-8 text-slate-600 md:text-lg">
+    奨学金制度についてさらに詳しく知りたい場合は、
+    日本学生支援機構（JASSO）の公式サイトも参考にしてください。
+    奨学金の種類や申込資格、返還などについて詳しく確認できます。
+  </p>
+
+
+  {/* ================= REFERENCE ================= */}
+
+  <div className="mt-8 rounded-2xl border-2 border-blue-200 bg-blue-50 p-6 md:p-8">
+
+    <p className="text-xl font-black text-blue-900">
+      📌 参考資料
+    </p>
+
+
+    {/* 給付奨学金 */}
+
+    <a
+      href="https://www.jasso.go.jp/shogakukin/about/kyufu/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-5 block rounded-xl bg-white p-5 ring-1 ring-blue-200 transition hover:-translate-y-0.5 hover:ring-blue-400"
+    >
+
+      
+      
+
+      <p className="mt-2 text-lg font-black text-blue-900">
+        給付奨学金（返済不要）｜JASSO
+      </p>
+
+      <p className="mt-2 text-sm leading-7 text-slate-600">
+        返済を必要としない給付型奨学金について、
+        申込資格・学力基準・家計基準・支給額などを確認できます。
+      </p>
+
+      <div className="mt-4 flex items-center justify-between">
+
+        <span className="text-sm font-bold text-blue-700">
+          JASSO公式サイトで確認する
+        </span>
+
+        <span className="text-xl font-black text-blue-700">
+          ↗
+        </span>
+
+      </div>
+
+    </a>
+
+
+    {/* 貸与奨学金 */}
+
+    <a
+      href="https://www.jasso.go.jp/shogakukin/about/taiyo/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-4 block rounded-xl bg-white p-5 ring-1 ring-blue-200 transition hover:-translate-y-0.5 hover:ring-blue-400"
+    >
+
+      
+
+      <p className="mt-2 text-lg font-black text-blue-900">
+        貸与奨学金（返済必要）｜JASSO
+      </p>
+
+      <p className="mt-2 text-sm leading-7 text-slate-600">
+        返済が必要な貸与型奨学金について、
+        第一種奨学金（無利子）・第二種奨学金（有利子）などを確認できます。
+      </p>
+
+      <div className="mt-4 flex items-center justify-between">
+
+        <span className="text-sm font-bold text-blue-700">
+          JASSO公式サイトで確認する
+        </span>
+
+        <span className="text-xl font-black text-blue-700">
+          ↗
+        </span>
+
+      </div>
+
+    </a>
+
+  </div>
+
+
+  {/* 注意 */}
+
+  <div className="mt-6 rounded-xl border border-yellow-300 bg-yellow-50 p-5">
+
+    <p className="font-bold text-yellow-800">
+      ⚠️ 奨学金を申し込む前に
+    </p>
+
+    <p className="mt-3 text-sm leading-7 text-slate-700">
+      奨学金には、それぞれ申込資格・学力基準・家計基準・
+      返還条件などがあります。
+      実際に申し込む際は、必ずJASSOや各団体の
+      最新の募集要項を確認してください。
+    </p>
+
+  </div>
+
+</section>
 
 
         {/* ===================================================== */}
@@ -191,6 +314,14 @@ export default function StudentSupportPage() {
               <p>
                 ・家計基準は収入だけではなく、資産等も含めて判定されます
               </p>
+              <a
+    href="https://www.jasso.go.jp/shogakukin/about/kyufu/kakei/index.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+  >
+    給付奨学金の家計基準｜JASSO
+  </a>
 
             </div>
 
@@ -231,6 +362,14 @@ export default function StudentSupportPage() {
                 </p>
 
               </div>
+              <a
+  href="https://www.jasso.go.jp/news/1216189_1579.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+>
+  給付奨学金（授業料減免）説明用ショート動画を公開しました｜JASSO
+</a>
 
             </div>
 
@@ -302,6 +441,14 @@ export default function StudentSupportPage() {
               </p>
 
             </div>
+            <a
+    href="https://www.jasso.go.jp/shogakukin/about/kyufu/kingaku.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+  >
+    給付奨学金の支給額｜JASSO
+  </a>
 
           </div>
 
@@ -344,41 +491,53 @@ export default function StudentSupportPage() {
             <p className="mt-5 text-sm leading-7 text-slate-600">
               ※減免額は支援区分等によって異なります。
             </p>
+            <a
+    href="https://www.jasso.go.jp/shogakukin/about/kyufu/index.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+  >
+    給付奨学金（返済不要）｜JASSO
+  </a>
 
           </div>
 
 
           {/* 詳細リンク */}
-          <Link
-            href="/student-support/jasso-support"
-            className="group mt-8 block"
-          >
-            <div className="rounded-2xl border-2 border-green-200 bg-green-50 p-6 transition group-hover:-translate-y-1 group-hover:border-green-400 group-hover:shadow-md">
+{/* 詳細リンク */}
+<Link
+  href="https://www.jasso.go.jp/shogakukin/about/kyufu/index.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block"
+>
+  <div className="rounded-2xl border-2 border-green-200 bg-green-50 p-6 transition group-hover:-translate-y-1 group-hover:border-green-400 group-hover:shadow-md">
+    <div className="flex items-center justify-between">
+      
+      {/* 左側 */}
+      <div>
+        <p className="text-sm font-bold tracking-[0.2em] text-green-700">
+          MORE INFORMATION
+        </p>
 
-              <div className="flex items-center justify-between gap-4">
+        <h3 className="mt-2 text-2xl font-black text-green-900">
+          給付型奨学金の詳細を見る
+        </h3>
 
-                <div>
-                  <p className="text-sm font-bold tracking-[0.2em] text-green-700">
-                    MORE INFORMATION
-                  </p>
+        <p className="mt-2 text-sm text-slate-600">
+          家計基準・学力基準・申込方法・継続条件など
+        </p>
+      </div>
 
-                  <h3 className="mt-2 text-2xl font-black text-green-900">
-                    給付型奨学金の詳細を見る
-                  </h3>
+      {/* 右側 */}
+      <span className="ml-6 shrink-0 text-3xl text-green-700 transition group-hover:translate-x-1">
+        →
+      </span>
 
-                  <p className="mt-2 text-sm text-slate-600">
-                    家計基準・学力基準・申込方法・継続条件など
-                  </p>
-                </div>
-
-                <span className="text-3xl text-green-700 transition group-hover:translate-x-1">
-                  →
-                </span>
-
-              </div>
-
-            </div>
-          </Link>
+    </div>
+  </div>
+</Link>
+          
 
         </section>
 
@@ -401,6 +560,14 @@ export default function StudentSupportPage() {
             世帯構成や保護者の収入によって、
             どの程度の支援になる可能性があるのかを具体例で紹介します。
           </p>
+           <a
+    href="https://shogakukin-simulator.jasso.go.jp/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+  >
+    進学資金シミュレーター｜JASSO
+  </a>
 
           {/* CASE 01 */}
           <div className="mt-8 rounded-2xl border-2 border-blue-200 bg-blue-50 p-6">
@@ -802,6 +969,14 @@ export default function StudentSupportPage() {
                 <p>
                   ・JASSO給付型奨学金と併用できますが、支援額の調整があります
                 </p>
+                 <a
+    href="https://www.jasso.go.jp/shogakukin/about/taiyo/taiyo_1shu/kakei/index.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+  >
+    第一種奨学金の家計基準｜JASSO
+  </a>
 
               </div>
 
@@ -836,6 +1011,14 @@ export default function StudentSupportPage() {
                 <p>
                   ・返還方式は定額返還方式
                 </p>
+                 <a
+    href="https://www.jasso.go.jp/shogakukin/about/taiyo/taiyo_2shu/kakei/index.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+  >
+    第二種奨学金の家計基準｜JASSO
+  </a>
 
               </div>
 
@@ -858,6 +1041,14 @@ export default function StudentSupportPage() {
                 <p>
                   ・返還は第二種と同様に利子あり
                 </p>
+                <a
+    href="https://www.jasso.go.jp/shogakukin/about/taiyo/nyuzo/index.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+  >
+    入学時特別増額貸与奨学金｜JASSO
+  </a>
 
               </div>
 
@@ -933,6 +1124,14 @@ export default function StudentSupportPage() {
               <p>
                 ・海外大学は第二種奨学金のみ利用可能な場合があります
               </p>
+              <a
+    href="https://www.mext.go.jp/kyufu/support/index.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+  >
+    支援対象校一覧｜文部科学省
+  </a>
 
             </div>
 
@@ -1013,6 +1212,14 @@ export default function StudentSupportPage() {
               <p>
                 ・第一種で所得連動返還方式を選ぶ場合は機関保証のみ
               </p>
+               <a
+    href="https://www.jasso.go.jp/shogakukin/oyakudachi/document/kikan_hosho/links.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+  >
+    保証制度について｜JASSO
+  </a>
 
             </div>
 
@@ -1039,6 +1246,14 @@ export default function StudentSupportPage() {
               <p>
                 ・返還困難時は期限を猶予、減額などの救済制度があります
               </p>
+              <a
+    href="https://www.jasso.go.jp/shogakukin/henkan/houhou/index.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+  >
+    奨学金の返還について｜JASSO
+  </a>
 
             </div>
 
@@ -1179,6 +1394,26 @@ export default function StudentSupportPage() {
               </p>
 
             </div>
+<div className="mt-4 space-y-2">
+  <a
+    href="https://www.jasso.go.jp/shogakukin/about/kyufu/gakuryoku/index.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+  >
+    給付奨学金の学力基準｜JASSO
+  </a>
+
+  <a
+    href="https://www.jasso.go.jp/shogakukin/about/kyufu/gakuryoku/zaigaku.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+  >
+    進学後（在学採用）の給付奨学金の学力基準｜JASSO
+  </a>
+</div>
+
 
           </div>
 
@@ -1333,8 +1568,17 @@ export default function StudentSupportPage() {
               </div>
 
             </div>
+            
 
           </div>
+          <a
+  href="https://www.jasso.go.jp/shogakukin/saiyochu/kyufu/tekikaku_gakuryoku.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block font-bold text-blue-700 underline underline-offset-4 hover:text-blue-900"
+>
+  適格認定（学業等）｜JASSO
+</a>
 
         </section>
 
