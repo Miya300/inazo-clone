@@ -1284,41 +1284,42 @@ export default function StudentSupportPage() {
             </div>
 
           </div>
-
-
           {/* 詳細リンク */}
-          <Link
-            href="/student-support/jasso-support"
-            className="group mt-8 block"
-          >
-            <div className="rounded-2xl border-2 border-blue-200 bg-blue-50 p-6 transition group-hover:-translate-y-1 group-hover:border-blue-400 group-hover:shadow-md">
+<a
+  href="https://www.jasso.go.jp/shogakukin/about/taiyo/index.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group block"
+  
+>
+  <div className="rounded-2xl border-2 border-blue-200 bg-blue-50 p-6 transition group-hover:-translate-y-1 group-hover:border-blue-400 group-hover:shadow-md">
 
-              <div className="flex items-center justify-between gap-4">
+  <div className="flex items-center justify-between gap-4">
 
-                <div>
+    <div>
+      <p className="text-sm font-bold tracking-[0.2em] text-blue-700">
+        MORE INFORMATION
+      </p>
 
-                  <p className="text-sm font-bold tracking-[0.2em] text-blue-700">
-                    MORE INFORMATION
-                  </p>
+      <h3 className="mt-2 text-2xl font-black text-blue-900">
+        貸与型奨学金の詳細を見る
+      </h3>
 
-                  <h3 className="mt-2 text-2xl font-black text-blue-900">
-                    貸与型奨学金の詳細を見る
-                  </h3>
+      <p className="mt-2 text-sm text-slate-600">
+        第一種・第二種・入学時特別増額貸与など
+      </p>
+    </div>
 
-                  <p className="mt-2 text-sm text-slate-600">
-                    第一種・第二種・入学時特別増額貸与など
-                  </p>
+    <span className="text-3xl text-blue-700 transition group-hover:translate-x-1">
+      →
+    </span>
 
-                </div>
+  </div>
+  </div>
+</a>
 
-                <span className="text-3xl text-blue-700 transition group-hover:translate-x-1">
-                  →
-                </span>
 
-              </div>
-
-            </div>
-          </Link>
+         
 
         </section>
 
@@ -1802,43 +1803,7 @@ export default function StudentSupportPage() {
         </section>
 
 
-        {/* ===================================================== */}
-        {/* ================= DETAIL LINK ======================== */}
-        {/* ===================================================== */}
-
-        <Link
-          href="/student-support/jasso-support"
-          className="group mt-10 block"
-        >
-          <div className="rounded-3xl bg-blue-950 p-8 text-white shadow-lg transition group-hover:-translate-y-1 group-hover:shadow-xl md:p-10">
-
-            <div className="flex items-center justify-between gap-6">
-
-              <div>
-
-                <p className="text-xs font-bold tracking-[0.3em] text-blue-300">
-                  JASSO SUPPORT
-                </p>
-
-                <h2 className="mt-3 text-3xl font-black md:text-4xl">
-                  JASSOの制度をさらに詳しく見る
-                </h2>
-
-                <p className="mt-4 max-w-2xl leading-7 text-blue-100">
-                  給付型・貸与型それぞれの制度、家計基準、
-                  学力基準、申込方法などを詳しく確認できます。
-                </p>
-
-              </div>
-
-              <div className="shrink-0 text-4xl transition group-hover:translate-x-2">
-                →
-              </div>
-
-            </div>
-
-          </div>
-        </Link>
+       
 
 
         {/* ===================================================== */}
