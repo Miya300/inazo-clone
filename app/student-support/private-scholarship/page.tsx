@@ -1497,6 +1497,174 @@ export default function PrivateScholarshipPage() {
           </div>
 
         </section>
+        {/* ===================================================== */}
+{/* ================= DOCUMENT GUIDE ==================== */}
+{/* ===================================================== */}
+
+<section className="mt-10 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 md:p-10">
+
+  <p className="text-xs font-bold tracking-[0.3em] text-blue-700">
+    DOCUMENT GUIDE
+  </p>
+
+  <h2 className="mt-4 text-3xl font-black text-blue-900 md:text-4xl">
+    奨学金申請書類の書き方
+  </h2>
+
+  <div className="mt-5 h-1 w-16 bg-blue-700" />
+
+  <p className="mt-6 leading-8 text-slate-600 md:text-lg">
+    民間財団等の奨学金では、志望理由書や将来の展望などを
+    記入して提出する場合があります。
+    ここでは、申請書類を作成するときのポイントと記入例を紹介します。
+  </p>
+
+
+  {/* 志望理由 */}
+  <div className="mt-10 rounded-2xl border-2 border-blue-200 bg-blue-50 p-6 md:p-8">
+
+    <p className="text-sm font-bold tracking-[0.2em] text-blue-700">
+      01 / MOTIVATION
+    </p>
+
+    <h3 className="mt-3 text-2xl font-black text-blue-900 md:text-3xl">
+      志望理由の書き方
+    </h3>
+
+    <p className="mt-4 leading-8 text-slate-700">
+      家庭の経済状況や困難な環境の中で学業に励んでいること、
+      奨学金を受給することで学業により専念できること、
+      そして将来の目標を具体的に記載すると、
+      自分の状況や奨学金を必要とする理由を伝えやすくなります。
+    </p>
+
+    <div className="mt-6 rounded-xl bg-white p-6 ring-1 ring-slate-200">
+
+      <p className="font-black text-blue-900">
+        志望理由の記入例
+      </p>
+
+      <p className="mt-4 leading-8 text-slate-700">
+        私は経済的に恵まれない環境で育ち、学業に力を注ぎたいと願いながらも、
+        生活費を確保するための十分な勤務時間を確保できず、
+        厳しい状況が続いております。
+        将来の目標を実現するためには、落ち着いて学修に向き合える
+        安定した環境が欠かせず、その基盤が整わない現状に強い不安を抱いております。
+      </p>
+
+      <p className="mt-4 leading-8 text-slate-700">
+        貴財団からご支援をいただければ、学びに集中できる環境が整い、
+        学生として果たすべき役割により一層専念できると確信しております。
+        私は学業を通じて成長し、将来は●●分野において地域社会の発展に
+        確かな貢献ができる人材へと歩んでいく決意です。
+        ご支援を賜れましたら、心よりありがたく存じます。
+      </p>
+
+    </div>
+
+  </div>
+
+
+  {/* 将来の展望 */}
+  <div className="mt-6 rounded-2xl border-2 border-slate-200 bg-slate-50 p-6 md:p-8">
+
+    <p className="text-sm font-bold tracking-[0.2em] text-slate-500">
+      02 / FUTURE PLAN
+    </p>
+
+    <h3 className="mt-3 text-2xl font-black text-blue-900 md:text-3xl">
+      将来の展望の書き方
+    </h3>
+
+    <p className="mt-4 leading-8 text-slate-700">
+      将来どのような職業に就き、何に取り組みたいのか、
+      その目標を実現するために何が必要なのかを具体的に記載します。
+    </p>
+
+    <div className="mt-6 space-y-4">
+
+      <div className="rounded-xl bg-white p-5 ring-1 ring-slate-200">
+        <p className="font-bold text-blue-900">
+          ① 将来の職業・取り組み
+        </p>
+        <p className="mt-2 leading-7 text-slate-700">
+          私は将来、●●として●●に携わり、●●に取り組みたいと考えています。
+        </p>
+      </div>
+
+      <div className="rounded-xl bg-white p-5 ring-1 ring-slate-200">
+        <p className="font-bold text-blue-900">
+          ② 具体的な目標と手段
+        </p>
+        <p className="mt-2 leading-7 text-slate-700">
+          ●●●することは、私にとって揺るぎない目標です。
+          そのためには●●●することが必要です。
+        </p>
+      </div>
+
+      <div className="rounded-xl bg-white p-5 ring-1 ring-slate-200">
+        <p className="font-bold text-blue-900">
+          ③ 必要な知識・経験
+        </p>
+        <p className="mt-2 leading-7 text-slate-700">
+          私はそのために必要な知識と経験を着実に積み重ね、
+          ●●して成長していく決意です。
+        </p>
+      </div>
+
+      <div className="rounded-xl bg-white p-5 ring-1 ring-slate-200">
+        <p className="font-bold text-blue-900">
+          ④ 地域・社会への貢献
+        </p>
+        <p className="mt-2 leading-7 text-slate-700">
+          将来は地域社会や●●に貢献し、
+          ●●の実現に力を尽くしたいです。
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  {/* 注意事項 */}
+  <div className="mt-6 rounded-2xl border-2 border-yellow-300 bg-yellow-50 p-6 md:p-8">
+
+    <p className="text-sm font-bold tracking-[0.2em] text-yellow-700">
+      IMPORTANT
+    </p>
+
+    <h3 className="mt-3 text-2xl font-black text-yellow-900">
+      書類作成時の注意
+    </h3>
+
+    <div className="mt-5 space-y-3 leading-7 text-slate-700">
+
+      <p>
+        ・専用のExcelやWordに記入する場合は、
+        印刷時の文字ずれやレイアウトの乱れがないか確認しましょう。
+      </p>
+
+      <p>
+        ・枠内の字数制限や行間を確認し、提出前に最終チェックを行いましょう。
+      </p>
+
+      <p>
+        ・メールで提出する場合は、添付書類の名称、本文、
+        学生番号、連絡先などを正確に記載しましょう。
+      </p>
+
+      <p>
+        ・推薦書については、長崎大学の注意事項を確認し、
+        必要に応じて直接教員へ依頼してください。
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
 
 
         {/* ===================================================== */}
