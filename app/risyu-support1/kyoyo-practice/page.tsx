@@ -506,33 +506,24 @@ export default function KyoyoPracticePage() {
             <Step
               number="5"
               title="科目を選択"
-              description="履修したい科目を選択します。"
+              description="履修したい科目を日時を合わせて選択します。"
             />
+            <ImageBox
+              src="/images/kyoyo/rishu5.png"
+              alt="「未登録」をクリックする画面"
+            />
+            <Arrow />
+            <ImageBox
+              src="/images/kyoyo/rishu6.png"
+              alt="「未登録」をクリックする画面"
+            />
+            
+
 
           </div>
 
 
-          {/* 集中講義 */}
-          <div className="mt-6 rounded-2xl border-2 border-purple-200 bg-purple-50 p-6">
-
-            <p className="mb-3 text-lg font-black text-purple-800">
-              📌 集中講義科目について
-            </p>
-
-            <p className="mb-3 text-slate-700 leading-7">
-              一部の集中講義科目は、通常の曜日・時限とは別に
-              「集中講義を登録」から登録します。
-            </p>
-
-            <ul className="space-y-1 text-slate-700">
-              <li>・データサイエンス概論</li>
-              <li>・統計学概論</li>
-              <li>・キャリア入門</li>
-              <li>・プラネタリーヘルス入門</li>
-              <li>・キャリア実践</li>
-            </ul>
-
-          </div>
+          
 
 
           {/* STEP 6・7 */}
@@ -544,6 +535,10 @@ export default function KyoyoPracticePage() {
               number="6"
               title="「登録」をクリック"
               description="選択した科目を確認し、「登録」をクリックします。"
+            />
+            <ImageBox
+              src="/images/kyoyo/rishu6.5.png"
+              alt="「未登録」をクリックする画面"
             />
 
             <Arrow />
@@ -559,10 +554,15 @@ export default function KyoyoPracticePage() {
               </p>
 
               <p className="mt-2 text-slate-700 leading-7">
-                最後に「登録完了」をクリックします。
+                全ての科目を「登録」し終えたら、最後に「登録完了」をクリックします。
               </p>
+              
 
             </div>
+            <ImageBox
+              src="/images/kyoyo/rishu7.5.png"
+              alt="「未登録」をクリックする画面"
+            />
 
           </div>
 
@@ -582,6 +582,31 @@ export default function KyoyoPracticePage() {
             <p className="mt-3 mb-6 text-lg font-bold text-red-600">
               ※このボタンを押さないと履修登録は完了しません
             </p>
+
+          </div>
+          {/* 集中講義 */}
+          <div className="mt-6 rounded-2xl border-2 border-purple-200 bg-purple-50 p-6">
+
+            <p className="mb-3 text-lg font-black text-purple-800">
+              📌 集中講義科目について
+            </p>
+
+            <p className="mb-3 text-slate-700 leading-7">
+              一部の集中講義科目は、通常の曜日・時限とは別に
+              「集中講義を登録」から登録します。
+            </p>
+
+            <ul className="space-y-1 text-slate-700">
+              <li>・データサイエンス概論</li>
+              <li>・統計学概論</li>
+              <li>・キャリア入門</li>
+              <li>・プラネタリーヘルス入門</li>
+              <li>・キャリア実践</li>
+            </ul>
+            <ImageBox
+              src="/images/kyoyo/rishu7.png"
+              alt="「未登録」をクリックする画面"
+            />
 
           </div>
 
