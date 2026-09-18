@@ -1664,9 +1664,14 @@ export default function PrivateScholarshipPage() {
   </div>
 
 </section>
-
-
-
+<a
+  href="/奨学金資料.xlsx"
+  download
+  className="mt-5 inline-flex items-center justify-center rounded-xl bg-blue-950 px-6 py-3 font-semibold text-white transition hover:bg-blue-900"
+>
+  奨学金申請資料記入例をダウンロードする
+  <span className="ml-2">→</span>
+</a>
         {/* ===================================================== */}
         {/* ================= FINAL MESSAGE ====================== */}
         {/* ===================================================== */}
@@ -1709,6 +1714,7 @@ export default function PrivateScholarshipPage() {
 
 
       </main>
+
 
 
       {/* ================= FOOTER ================= */}
