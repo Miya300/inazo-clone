@@ -215,9 +215,34 @@ export default function StudentSupportPage() {
     国（JASSO）からの支援
   </h2>
 
-  <span className="shrink-0 rounded-2xl bg-red-50 px-5 py-2 text-xl font-bold tracking-wide text-red-700 ring-1 ring-red-200 md:px-6 md:py-3 md:text-2xl">
-    【高校生・新入生向け】
-  </span>
+  <span
+  className="
+    inline-flex
+    max-w-full
+    shrink-0
+    rounded-2xl
+    bg-red-50
+    px-4
+    py-2
+    text-lg
+    font-bold
+    leading-tight
+    tracking-wide
+    text-red-700
+    ring-1
+    ring-red-200
+
+    sm:px-5
+    sm:py-2
+    sm:text-xl
+
+    md:px-6
+    md:py-3
+    md:text-2xl
+  "
+>
+  【高校生・新入生向け】
+</span>
 </div>
 
         <p className="mt-5 text-xl font-semibold text-slate-700 md:text-2xl">
@@ -267,9 +292,34 @@ export default function StudentSupportPage() {
     財団・企業・自治体による奨学金
   </h2>
 
-  <span className="shrink-0 rounded-2xl bg-blue-50 px-5 py-2 text-xl font-bold tracking-wide text-blue-700 ring-1 ring-blue-200 md:px-6 md:py-3 md:text-2xl">
-    【新入生・在学生向け】
-  </span>
+  <span
+  className="
+    inline-flex
+    max-w-full
+    shrink-0
+    rounded-2xl
+    bg-blue-50
+    px-4
+    py-2
+    text-lg
+    font-bold
+    leading-tight
+    tracking-wide
+    text-blue-700
+    ring-1
+    ring-blue-200
+
+    sm:px-5
+    sm:py-2
+    sm:text-xl
+
+    md:px-6
+    md:py-3
+    md:text-2xl
+  "
+>
+  【新入生・在学生向け】
+</span>
 </div>
 
         <p className="mt-5 text-xl font-semibold text-slate-700 md:text-2xl">

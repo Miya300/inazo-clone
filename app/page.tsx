@@ -135,208 +135,202 @@ export default function Home() {
       </section>
 
 
-      {/* ================= NUSNAVIとは ================= */}
-      <section className="mx-auto max-w-7xl px-6 py-24">
+      {/* =========================
+    NUSNAVIの主なサービス
+========================= */}
+<section className="mx-auto max-w-7xl px-6 py-16">
 
-        <div className="grid gap-12 md:grid-cols-[1fr_1.4fr] md:items-start">
-
-          <div>
-            <p className="text-xs font-bold tracking-[0.3em] text-blue-700">
-              ABOUT NUSNAVI
-            </p>
-
-            <h2 className="mt-3 text-4xl font-bold">
-              NUSNAVIとは？
-            </h2>
-          </div>
-
-          <div>
-
-            <p className="text-lg leading-9 text-slate-700">
-              NUSNAVIは、長崎大学へ入学した学生がより充実した大学生活の
-              <span className="font-bold text-blue-900">
-                スタートダッシュ
-              </span>
-              を切るための総合支援プラットフォームです。
-            </p>
-
-            <div className="mt-10">
-
-              <h3 className="text-lg font-bold">
-                主なサポート内容
-              </h3>
-
-              <div className="mt-5 grid gap-3 sm:grid-cols-2">
-
-                {[
-                  "履修登録",
-                  "講義情報の収集",
-                  "学生生活に関する情報提供",
-                  "奨学金・学費支援制度案内",
-                ].map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
-                  >
-                    <span className="mr-2">✅</span>
-                    <span className="font-medium">{item}</span>
-                  </div>
-                ))}
-
-              </div>
-
-            </div>
-
-            <p className="mt-8 leading-8 text-slate-600">
-              主に高校既卒生、新入生から学部2年生を対象としていますが、
-              <br className="hidden md:block" />
-              すべての長崎大学生が活用できるサービスを目指しています。
-            </p>
-
-          </div>
-        </div>
-      </section>
+  <h2 className="text-3xl font-black tracking-tight text-slate-900 md:text-4xl">
+    NUSNAVIの主なサービス
+  </h2>
 
 
-      {/* ================= PICK UP ================= */}
-      <section className="border-y border-slate-200 bg-white">
-
-        <div className="mx-auto max-w-7xl px-6 py-24">
-
-          <p className="text-xs font-bold tracking-[0.3em] text-blue-700">
-            PICK UP
-          </p>
-
-          <h2 className="mt-3 text-4xl font-bold">
-            NUSNAVIの主なサービス
-          </h2>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+  {/* =========================
+      サービスカード
+  ========================= */}
+  <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 
 
-            {/* NUKYO REGI */}
-            <Link
-              href="/risyu-support1"
-              className="group relative rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
-            >
-              {/* 新入生向け */}
-  <div className="absolute right-8 top-8 z-10">
-    <span className="block rounded-2xl bg-blue-50 px-6 py-3 text-2xl font-bold tracking-wide text-blue-700 ring-1 ring-blue-200">
-      【新入生向け】
-    </span>
+    {/* =========================
+        NUKYO REGI Support
+    ========================= */}
+    <Link
+      href="/risyu-support1"
+      className="
+        group
+        relative
+        rounded-3xl
+        bg-slate-50
+        p-7
+        ring-1
+        ring-slate-200
+        transition
+        hover:-translate-y-1
+        hover:shadow-xl
+        md:p-8
+      "
+    >
+
+      {/* 対象者 */}
+      <div className="mb-6">
+        <span
+          className="mb-4 inline-flex rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-blue-700 ring-1 ring-blue-200"
+        >
+          【新入生向け】
+        </span>
+      </div>
+
+
+      <p className="text-xs font-bold tracking-[0.2em] text-blue-700">
+        NUKYO REGI SUPPORT
+      </p>
+
+
+      <h3 className="mt-3 text-2xl font-bold leading-snug text-slate-900">
+        長崎大学 履修登録支援サービス
+      </h3>
+
+
+      <p className="mt-4 text-sm tracking-wide text-slate-500">
+        Nagasaki University Registration Support
+      </p>
+
+
+      <p className="mt-6 leading-7 text-slate-600">
+        履修登録に必要な情報を整理し、
+        長崎大学生の履修登録をサポートします。
+      </p>
+
+
+      <p className="mt-8 font-bold text-blue-700">
+        サービスを見る →
+      </p>
+
+    </Link>
+
+
+
+    {/* =========================
+        NUKYOYO Search
+    ========================= */}
+    <Link
+      href="/nukyoyo-search"
+      className="
+        group
+        relative
+        rounded-3xl
+        bg-slate-50
+        p-7
+        ring-1
+        ring-slate-200
+        transition
+        hover:-translate-y-1
+        hover:shadow-xl
+        md:p-8
+      "
+    >
+
+      {/* 対象者 */}
+      <div className="mb-6">
+        <span
+          className="mb-4 inline-flex rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-blue-700 ring-1 ring-blue-200"
+        >
+          【新入生・在学生向け】
+        </span>
+      </div>
+
+
+      <p className="text-xs font-bold tracking-[0.2em] text-blue-700">
+        NUKYOYO SEARCH
+      </p>
+
+
+      <h3 className="mt-3 text-2xl font-bold leading-snug text-slate-900">
+        長崎大学教養教育
+        <br />
+        成績分布検索サービス
+      </h3>
+
+
+      <p className="mt-4 text-sm tracking-wide text-slate-500">
+        Nagasaki University Kyoyo Search
+      </p>
+
+
+      <p className="mt-6 leading-7 text-slate-600">
+        長崎大学の教養教育科目について、
+        成績分布を検索・比較できます。
+      </p>
+
+
+      <p className="mt-8 font-bold text-blue-700">
+        科目を探す →
+      </p>
+
+    </Link>
+
+
+
+    {/* =========================
+        Financial Support
+    ========================= */}
+    <Link
+      href="/financial-support"
+      className="
+        group
+        relative
+        rounded-3xl
+        bg-slate-50
+        p-7
+        ring-1
+        ring-slate-200
+        transition
+        hover:-translate-y-1
+        hover:shadow-xl
+        md:p-8
+      "
+    >
+
+      {/* 対象者 */}
+      <div className="mb-6">
+        <span
+          className="mb-4 inline-flex rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-blue-700 ring-1 ring-blue-200"
+        >
+          【高校生・新入生・在学生向け】
+        </span>
+      </div>
+
+
+      <p className="text-xs font-bold tracking-[0.2em] text-blue-700">
+        FINANCIAL SUPPORT
+      </p>
+
+
+      <h3 className="mt-3 text-2xl font-bold leading-snug text-slate-900">
+        経済支援情報
+      </h3>
+
+
+      <p className="mt-4 text-sm tracking-wide text-slate-500">
+        Financial Support Information
+      </p>
+
+
+      <p className="mt-6 leading-7 text-slate-600">
+        奨学金、授業料免除、各種支援制度など、
+        学生生活を支える経済支援に関する情報を掲載しています。
+      </p>
+
+
+      <p className="mt-8 font-bold text-blue-700">
+        支援情報を見る →
+      </p>
+
+    </Link>
+
   </div>
 
-              <div className="text-3xl"></div>
-
-              <p className="mt-6 text-xs font-bold tracking-[0.2em] text-blue-700">
-                NUKYO REGI SUPPORT
-              </p>
-
-              <h3 className="mt-3 text-2xl font-bold">
-                長崎大学 履修登録支援サービス
-              </h3>
-
-              <p className="mt-4 text-sm tracking-wide text-slate-500">
-                Nagasaki University Registration Support
-              </p>
-
-              <p className="mt-6 leading-7 text-slate-600">
-                履修登録に必要な情報を整理し、
-                長崎大学生の履修登録をサポートします。
-              </p>
-
-              <p className="mt-8 font-semibold text-blue-700">
-                サービスを見る →
-              </p>
-
-            </Link>
-
-
-            {/* NUKYOYO */}
-            <Link
-              href="/nukyoyo-search"
-              className="group relative rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
-            >
-             {/* 新入生向け */}
-  <div className="absolute right-8 top-8 z-10">
-    <span className="block rounded-2xl bg-blue-50 px-6 py-3 text-2xl font-bold tracking-wide text-blue-700 ring-1 ring-blue-200">
-      【新入生・在学生向け】
-    </span>
-  </div>
-
-              <div className="text-3xl"></div>
-
-              <p className="mt-6 text-xs font-bold tracking-[0.2em] text-blue-700">
-                NUKYOYO SEARCH
-              </p>
-
-              <h3 className="mt-3 text-2xl font-bold">
-                長崎大学教養教育
-                <br />
-                成績分布検索サービス
-              </h3>
-              
-
-              <p className="mt-4 text-sm tracking-wide text-slate-500">
-                Nagasaki University Kyoyo Search
-              </p>
-
-              <p className="mt-6 leading-7 text-slate-600">
-                長崎大学の教養教育科目について、
-                成績分布を検索・比較できます。
-              </p>
-
-              <p className="mt-8 font-semibold text-blue-700">
-                科目を探す →
-              </p>
-
-            </Link>
-
-
-          
-{/* 経済支援 */}
-<Link
-  href="/student-support"
-  className="group relative rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
->
-  {/* 新入生向け */}
-  <div className="absolute right-8 top-8 z-10">
-    <span className="block rounded-2xl bg-blue-50 px-6 py-3 text-2xl font-bold tracking-wide text-blue-700 ring-1 ring-blue-200">
-      【高校生・新入生・在学生向け】
-
-    </span>
-  </div>
-
-  <div className="text-3xl"></div>
-
-  <p className="mt-6 text-xs font-bold tracking-[0.2em] text-blue-700">
-    FINANCIAL SUPPORT
-  </p>
-
-  <h3 className="mt-3 text-2xl font-bold">
-    経済支援情報
-  </h3>
-
-  <p className="mt-4 text-sm tracking-wide text-slate-500">
-    Financial Support Information
-  </p>
-
-  <p className="mt-6 leading-7 text-slate-600">
-    奨学金、授業料免除、各種支援制度など、
-    学生生活を支える経済支援に関する情報を掲載しています。
-  </p>
-
-  <p className="mt-8 font-semibold text-blue-700">
-    支援情報を見る →
-  </p>
-
-</Link>
-
-
-
-          </div>
-        </div>
-      </section>
+</section>
 
 
       {/* ================= QUICK ACCESS ================= */}
