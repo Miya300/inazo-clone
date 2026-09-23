@@ -23,6 +23,31 @@ export default function Home() {
               </p>
             </div>
           </Link>
+          <div className="ml-8 flex items-center gap-3">
+
+  {/* X */}
+  <a
+    href="https://x.com/NUSNAVInagasaki"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="NUSNAVI X"
+    className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-lg font-bold text-white transition hover:-translate-y-1 hover:shadow-lg"
+  >
+    𝕏
+  </a>
+
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/nusnavi_nagasaki/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="NUSNAVI Instagram"
+    className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-lg font-bold text-white transition hover:-translate-y-1 hover:shadow-lg"
+  >
+    ◎
+  </a>
+
+</div>
 
           <nav className="hidden items-center gap-8 md:flex">
             <Link
@@ -382,12 +407,39 @@ export default function Home() {
               <p className="mt-2 text-xs tracking-wider text-blue-300">
                 Nagasaki University Student Navigation
               </p>
+              
 
             </div>
+            {/* SNS */}
+      <div className="flex items-center gap-3">
+
+        {/* X */}
+        <a
+          href="https://x.com/NUSNAVInagasaki"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="NUSNAVI X"
+          className="flex h-11 w-11 items-center justify-center rounded-full bg-slate-900 text-lg font-bold text-white transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          𝕏
+        </a>
+
+        {/* Instagram */}
+        <a
+          href="https://www.instagram.com/nusnavi_nagasaki/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="NUSNAVI Instagram"
+          className="flex h-11 w-11 items-center justify-center rounded-full bg-slate-900 text-lg font-bold text-white transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          ◎
+        </a>
+
+      </div>
 
             <div className="text-sm leading-8 text-blue-200">
               <p>長崎大学生のための学生情報ポータル</p>
-              <p>主に新入生から学部2年生を対象</p>
+              <p>主に高校生・新入生から学部2年生を対象</p>
               <p className="mt-3 text-blue-400">
                 © 2026 NUSNAVI
               </p>
