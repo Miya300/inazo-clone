@@ -64,9 +64,9 @@ export default function Home() {
           </p>
 
           <h1 className="text-4xl font-bold leading-tight md:text-6xl">
-            長崎大学 新入生のための
+            長崎大学を目指す人と、
             <br />
-            総合支援サイト
+            長崎大学新入生のための総合支援サイト
           </h1>
 
           <p className="mt-6 text-lg text-blue-100 md:text-xl">
@@ -78,9 +78,9 @@ export default function Home() {
           </p>
 
           <p className="mt-8 max-w-2xl leading-8 text-blue-100">
-            <strong>大学生活のスタートを、もっとスマートに</strong>
+            <strong>進学準備から大学生活まで、もっとスマートに</strong>
             <br />
-            履修登録から学生生活まで、長崎大学生に必要な情報をまとめています
+            長崎大学への進学を考える高校生・新入生から在学生まで、必要な情報をまとめています
           </p>
           <p className="mt-8 max-w-2xl leading-8 text-blue-100">
             <strong>成績を味方に、大学生活をもっと安心に</strong>
@@ -163,7 +163,7 @@ export default function Home() {
             </div>
 
             <p className="mt-8 leading-8 text-slate-600">
-              主に新入生から学部2年生を対象としていますが、
+              主に高校既卒生、新入生から学部2年生を対象としていますが、
               <br className="hidden md:block" />
               すべての長崎大学生が活用できるサービスを目指しています。
             </p>
@@ -192,8 +192,14 @@ export default function Home() {
             {/* NUKYO REGI */}
             <Link
               href="/risyu-support1"
-              className="group rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
+              className="group relative rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
             >
+              {/* 新入生向け */}
+  <div className="absolute right-8 top-8 z-10">
+    <span className="block rounded-2xl bg-blue-50 px-6 py-3 text-2xl font-bold tracking-wide text-blue-700 ring-1 ring-blue-200">
+      【新入生向け】
+    </span>
+  </div>
 
               <div className="text-3xl"></div>
 
@@ -224,8 +230,14 @@ export default function Home() {
             {/* NUKYOYO */}
             <Link
               href="/nukyoyo-search"
-              className="group rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
+              className="group relative rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
             >
+             {/* 新入生向け */}
+  <div className="absolute right-8 top-8 z-10">
+    <span className="block rounded-2xl bg-blue-50 px-6 py-3 text-2xl font-bold tracking-wide text-blue-700 ring-1 ring-blue-200">
+      【新入生・在学生向け】
+    </span>
+  </div>
 
               <div className="text-3xl"></div>
 
@@ -238,6 +250,7 @@ export default function Home() {
                 <br />
                 成績分布検索サービス
               </h3>
+              
 
               <p className="mt-4 text-sm tracking-wide text-slate-500">
                 Nagasaki University Kyoyo Search
@@ -259,8 +272,15 @@ export default function Home() {
 {/* 経済支援 */}
 <Link
   href="/student-support"
-  className="group rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
+  className="group relative rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-xl"
 >
+  {/* 新入生向け */}
+  <div className="absolute right-8 top-8 z-10">
+    <span className="block rounded-2xl bg-blue-50 px-6 py-3 text-2xl font-bold tracking-wide text-blue-700 ring-1 ring-blue-200">
+      【高校生・新入生・在学生向け】
+
+    </span>
+  </div>
 
   <div className="text-3xl"></div>
 

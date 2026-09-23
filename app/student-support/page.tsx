@@ -210,9 +210,15 @@ export default function StudentSupportPage() {
           NATIONAL SUPPORT
         </p>
 
-        <h2 className="mt-4 text-3xl font-black text-blue-900 md:text-5xl">
-          国（JASSO）からの支援
-        </h2>
+        <div className="mt-4 flex items-center gap-6">
+  <h2 className="text-3xl font-black text-blue-900 md:text-4xl">
+    国（JASSO）からの支援
+  </h2>
+
+  <span className="shrink-0 rounded-2xl bg-red-50 px-5 py-2 text-xl font-bold tracking-wide text-red-700 ring-1 ring-red-200 md:px-6 md:py-3 md:text-2xl">
+    【高校生・新入生向け】
+  </span>
+</div>
 
         <p className="mt-5 text-xl font-semibold text-slate-700 md:text-2xl">
           入学前から入学後まで利用できる奨学金・学費減免
@@ -256,9 +262,15 @@ export default function StudentSupportPage() {
           PRIVATE SCHOLARSHIP SUPPORT
         </p>
 
-        <h2 className="mt-4 text-3xl font-black text-blue-900 md:text-5xl">
-          財団・企業・自治体による奨学金
-        </h2>
+        <div className="mt-4 flex items-center gap-6">
+  <h2 className="text-3xl font-black text-blue-900 md:text-4xl">
+    財団・企業・自治体による奨学金
+  </h2>
+
+  <span className="shrink-0 rounded-2xl bg-blue-50 px-5 py-2 text-xl font-bold tracking-wide text-blue-700 ring-1 ring-blue-200 md:px-6 md:py-3 md:text-2xl">
+    【新入生・在学生向け】
+  </span>
+</div>
 
         <p className="mt-5 text-xl font-semibold text-slate-700 md:text-2xl">
           民間財団、企業、自治体などが募集する給付型・貸与型奨学金について紹介します。

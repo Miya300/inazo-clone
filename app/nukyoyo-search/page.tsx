@@ -351,93 +351,122 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 py-20">
 
 
-        {/* =========================
-            ページタイトル
-        ========================= */}
-        <div
-          className="
-            mb-12
-            rounded-3xl
-            bg-white
-            p-8
-            shadow-sm
-            ring-1
-            ring-slate-200
-            md:p-10
-          "
-        >
+       {/* =========================
+    ページタイトル
+========================= */}
+<div
+  className="
+    mb-12
+    rounded-3xl
+    bg-white
+    p-8
+    shadow-sm
+    ring-1
+    ring-slate-200
+    md:p-10
+  "
+>
 
-          <div className="border-l-8 border-blue-700 pl-6">
+  {/* 上段：NUKYOYO SEARCH ＋ 新入生向け */}
+  <div className="mb-6 flex items-start justify-between gap-6">
 
-            <p
-              className="
-                text-sm
-                font-bold
-                tracking-[0.35em]
-                text-blue-700
-              "
-            >
-              NUKYOYO SEARCH
-            </p>
+    <p
+      className="
+        text-sm
+        font-bold
+        tracking-[0.35em]
+        text-blue-700
+      "
+    >
+      NUKYOYO SEARCH
+    </p>
 
+    
 
-            <h1
-              className="
-                mt-3
-                text-4xl
-                font-black
-                tracking-tight
-                text-blue-950
-                md:text-6xl
-              "
-            >
-              成績分布検索
-            </h1>
+  </div>
 
 
-            <div className="mt-5 h-1 w-20 bg-blue-700"></div>
+  <div className="border-l-8 border-blue-700 pl-6">
 
+    <div className="mt-3 flex items-center justify-between gap-6">
+  
+  <h1
+    className="
+      text-4xl
+      font-black
+      tracking-tight
+      text-blue-950
+      md:text-6xl
+    "
+  >
+    成績分布検索
+  </h1>
 
-            <h2
-              className="
-                mt-6
-                text-3xl
-                font-black
-                text-blue-900
-                md:text-5xl
-              "
-            >
-              NUKYOYO Search
-            </h2>
+  {/* 新入生向け */}
+  <span
+    className="
+      shrink-0
+      rounded-2xl
+      bg-blue-50
+      px-6
+      py-3
+      text-2xl
+      font-bold
+      tracking-wide
+      text-blue-700
+      ring-1
+      ring-blue-200
+      md:px-7
+      md:py-4
+      md:text-3xl
+    "
+  >
+    【新入生・
+    在学生向け】
+  </span>
 
+</div>
 
-            <p
-              className="
-                mt-4
-                text-xl
-                font-bold
-                text-slate-700
-                md:text-2xl
-              "
-            >
-              長崎大学教養教育 成績分布検索サービス
-            </p>
+    <div className="mt-5 h-1 w-20 bg-blue-700"></div>
 
+    <h2
+      className="
+        mt-6
+        text-3xl
+        font-black
+        text-blue-900
+        md:text-5xl
+      "
+    >
+      NUKYOYO Search
+    </h2>
 
-            <p
-              className="
-                mt-2
-                text-base
-                text-slate-500
-                md:text-lg
-              "
-            >
-              Nagasaki University Kyoyo Search
-            </p>
+    <p
+      className="
+        mt-4
+        text-xl
+        font-bold
+        text-slate-700
+        md:text-2xl
+      "
+    >
+      長崎大学教養教育 成績分布検索サービス
+    </p>
 
-          </div>
+    <p
+      className="
+        mt-2
+        text-base
+        text-slate-500
+        md:text-lg
+      "
+    >
+      Nagasaki University Kyoyo Search
+    </p>
 
-        </div>
+  </div>
+
+</div>
 
 
         {/* =========================

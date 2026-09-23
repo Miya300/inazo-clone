@@ -165,9 +165,15 @@ export default function RisyuSupportPage() {
                   KYOTOYO EDUCATION
                 </p>
 
-                <h2 className="mt-4 text-3xl font-black text-blue-900 md:text-4xl">
-                  教養教育〈総論編〉
-                </h2>
+                <div className="mt-4 flex items-center gap-6">
+  <h2 className="text-3xl font-black text-blue-900 md:text-4xl">
+    教養教育〈総論編〉
+  </h2>
+
+  <span className="shrink-0 rounded-2xl bg-blue-50 px-5 py-2 text-xl font-bold tracking-wide text-blue-700 ring-1 ring-blue-200 md:px-6 md:py-3 md:text-2xl">
+    【新入生向け】
+  </span>
+</div>
 
                 <p className="mt-4 text-xl font-semibold text-slate-700">
                   新入生向け・履修登録完全ガイド
@@ -215,9 +221,15 @@ export default function RisyuSupportPage() {
                   PRACTICAL GUIDE
                 </p>
 
-                <h2 className="mt-4 text-3xl font-black text-blue-900 md:text-4xl">
-                  教養教育〈実践編〉
-                </h2>
+                <div className="mt-4 flex items-center gap-6">
+  <h2 className="text-3xl font-black text-blue-900 md:text-4xl">
+    教養教育〈実践編〉
+  </h2>
+
+  <span className="shrink-0 rounded-2xl bg-blue-50 px-5 py-2 text-xl font-bold tracking-wide text-blue-700 ring-1 ring-blue-200 md:px-6 md:py-3 md:text-2xl">
+    【新入生向け】
+  </span>
+</div>
 
                 <p className="mt-4 text-xl font-semibold text-slate-700">
                   新入生向け・科目選択＆履修登録ガイド
