@@ -403,33 +403,14 @@ export default function Home() {
   </h1>
 
   {/* 新入生向け */}
-<span
-  className="
-    inline-flex
-    max-w-full
-    rounded-2xl
-    bg-blue-50
-    px-4
-    py-2
-    text-lg
-    font-bold
-    leading-tight
-    tracking-wide
-    text-blue-700
-    ring-1
-    ring-blue-200
 
-    sm:px-5
-    sm:py-3
-    sm:text-xl
-
-    md:px-7
-    md:py-4
-    md:text-3xl
-  "
->
-  【新入生・在学生向け】
-</span>
+<div className="mb-6">
+        <span
+          className="mb-4 inline-flex rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-blue-700 ring-1 ring-blue-200"
+        >
+          【新入生・在学生向け】
+        </span>
+      </div>
 
 </div>
 

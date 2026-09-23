@@ -156,6 +156,13 @@ export default function RisyuSupportPage() {
         >
 
           <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-10">
+            <div className="mb-6">
+        <span
+          className="mb-4 inline-flex rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-blue-700 ring-1 ring-blue-200"
+        >
+          【新入生向け】
+        </span>
+      </div>
 
             <div className="flex items-start justify-between gap-6">
 
@@ -170,34 +177,7 @@ export default function RisyuSupportPage() {
     教養教育〈総論編〉
   </h2>
 
-  <span
-  className="
-    inline-flex
-    max-w-full
-    shrink-0
-    rounded-2xl
-    bg-blue-50
-    px-4
-    py-2
-    text-lg
-    font-bold
-    leading-tight
-    tracking-wide
-    text-blue-700
-    ring-1
-    ring-blue-200
-
-    sm:px-5
-    sm:py-2
-    sm:text-xl
-
-    md:px-6
-    md:py-3
-    md:text-2xl
-  "
->
-  【新入生向け】
-</span>
+  
 </div>
 
                 <p className="mt-4 text-xl font-semibold text-slate-700">
@@ -235,8 +215,19 @@ export default function RisyuSupportPage() {
           href="/risyu-support1/kyoyo-practice"
           className="group mt-8 block"
         >
+         
+          
+          
+      
 
           <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-10">
+             <div className="mb-6">
+        <span
+          className="mb-4 inline-flex rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-blue-700 ring-1 ring-blue-200"
+        >
+          【新入生向け】
+        </span>
+      </div>
 
             <div className="flex items-start justify-between gap-6">
 
@@ -251,34 +242,7 @@ export default function RisyuSupportPage() {
     教養教育〈実践編〉
   </h2>
 
-  <span
-  className="
-    inline-flex
-    max-w-full
-    shrink-0
-    rounded-2xl
-    bg-blue-50
-    px-4
-    py-2
-    text-lg
-    font-bold
-    leading-tight
-    tracking-wide
-    text-blue-700
-    ring-1
-    ring-blue-200
 
-    sm:px-5
-    sm:py-2
-    sm:text-xl
-
-    md:px-6
-    md:py-3
-    md:text-2xl
-  "
->
-  【新入生向け】
-</span>
 </div>
 
                 <p className="mt-4 text-xl font-semibold text-slate-700">
