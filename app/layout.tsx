@@ -14,15 +14,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nusnavi.vercel.app"),
-  title: "ホームページ | NUSNAVI",
+
+  title: "NUSNAVI｜長崎大学の進学・学生生活情報サイト",
+
   description:
-    "NUSNAVIは長崎大学生向けの履修登録支援、教養教育検索、学生生活支援を提供する総合支援サイトです。",
+    "長崎大学への進学を考える高校生から現役大学生まで。奨学金・経済支援・履修登録・成績情報など、進学準備と大学生活に役立つ情報をわかりやすく届けます。",
+
   applicationName: "NUSNAVI",
 
   openGraph: {
-    title: "NUSNAVI",
+    title: "NUSNAVI｜進学準備から大学生活まで",
     description:
-      "長崎大学生向けの総合支援サイト",
+      "長崎大学への進学を考える高校生・高校既卒生から大学生まで。奨学金・経済支援・履修登録・成績情報など、進学準備と大学生活に役立つ情報を届けます。",
     siteName: "NUSNAVI",
     url: "https://nusnavi.vercel.app",
     type: "website",
@@ -31,13 +34,20 @@ export const metadata: Metadata = {
   keywords: [
     "NUSNAVI",
     "長崎大学",
+    "長崎大学 進学",
+    "長崎大学 奨学金",
+    "奨学金",
+    "経済支援",
+    "授業料免除",
     "履修登録",
     "教養教育",
     "成績分布",
     "学生支援",
+    "高校生",
+    "高校既卒生",
+    "大学生",
   ],
 };
-
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
