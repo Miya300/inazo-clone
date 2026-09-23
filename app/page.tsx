@@ -275,7 +275,7 @@ export default function Home() {
         Financial Support
     ========================= */}
     <Link
-      href="/financial-support"
+      href="/student-support"
       className="
         group
         relative

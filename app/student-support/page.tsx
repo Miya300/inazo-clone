@@ -203,7 +203,7 @@ export default function StudentSupportPage() {
   <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-10">
     <div className="mb-6">
         <span
-          className="mb-4 inline-flex rounded-full bg-blue-50 px-3 py-1 text-sm font-bold text-blue-700 ring-1 ring-blue-200"
+          className="mb-4 inline-flex rounded-full bg-red-50 px-3 py-1 text-sm font-bold text-red-700 ring-1 ring-red-200"
         >
           【高校生・新入生向け】
         </span>
